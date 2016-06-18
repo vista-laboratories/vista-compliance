@@ -56,8 +56,17 @@ a {
 .page-header {
   color: #fff;
   text-align: center;
+  /*sea*/
   background-color: #159957;
   background-image: linear-gradient(120deg, #155799, #159957); }
+  /*peach*/
+  /*background-color: #FF9957;
+  background-image: linear-gradient(120deg, #FF5799, #FF9957); }*/
+  /*gold*/
+  /*background-color: #B8860B;
+  background-image: linear-gradient(120deg, #B8860B, #B8C7C9); }*/
+  /*background-color: #FFFF00;
+  background-image: linear-gradient(120deg, #FFFF00, #10040); }*/
 
 @media screen and (min-width: 64em) {
   .page-header {
@@ -243,3 +252,5 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+
