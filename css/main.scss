@@ -36,4 +36,5 @@ $on-laptop:        800px;
 // }
 
 // Import partials from the `minima` theme.
-@import "minima";
+//commented this out to fix jekyll serve error: Conversion //error: Jekyll::Converters::Scss encountered an error while //converting 'css/main.scss':File to import not found or //unreadable: minima. on line 36
+//@import "minima";
