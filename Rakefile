@@ -5,8 +5,8 @@ require "bundler/setup"
 require "jekyll"
 
 
-# Change your GitHub reponame eg. "kippt/jekyll-incorporated"
-GITHUB_REPONAME = ""
+#GitHub reponame
+GITHUB_REPONAME = "vista-laboratories/vista-compliance"
 
 
 namespace :site do
