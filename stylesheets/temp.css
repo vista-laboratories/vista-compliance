@@ -53,6 +53,131 @@ summary {
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
 
+ .brand__container {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    color: #fff;
+    position: relative;
+    margin-bottom: 8.2%;
+    background-color: #303033;
+    background-clip: content-box
+}
+.brand__container:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-image: -webkit-radial-gradient(center left, ellipse cover, #fff 0, hsla(0, 0%, 100%, 0) 100%);
+    background-image: radial-gradient(center left, ellipse cover, #fff 0, hsla(0, 0%, 100%, 0) 100%);
+    opacity: .2
+}
+.brand__container-wrap {
+    width: 100%;
+    max-width: 1600px;
+    position: relative;
+    z-index: 5;
+    margin: 0 auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+.brand__container-logos,
+.brand__container-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+.brand__container-logos {
+    max-width: none;
+    margin-right: 12px;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+.brand__container-copy {
+    margin: auto;
+    padding: 24px 56px
+}
+.brand__container .logo__circled img {
+    width: 60px
+}
+.brand__header {
+    font: 700 14px/24px Gotham A, Gotham B, sans-serif;
+    font: 700 .875rem/1.5rem Gotham A, Gotham B, sans-serif;
+    letter-spacing: .08em;
+    text-transform: uppercase
+}
+.brand__copy,
+.brand__header {
+    color: #fff;
+    text-align: center;
+    margin: 0
+}
+.brand__copy {
+    font: 100 32px/48px Gotham A, Gotham B, sans-serif;
+    font: 100 2rem/3rem Gotham A, Gotham B, sans-serif;
+    padding: 24px 0 32px
+}
+.brand__background-overlay {
+    background-color: #222;
+    position: absolute;
+    height: 100%;
+    width: 100%
+}
+.brand__column-a,
+.brand__column-b {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+.brand__column-b .brand__block-big {
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0)
+}
+.brand__column-c {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+.brand__block-big {
+    width: 100%
+}
+.brand__block-big img {
+    width: 100%;
+    display: block
+}
+.brand__block-small {
+    width: 100%
+}
+.brand__block-small img {
+    width: 100%;
+    display: block
+}
+
 audio,
 canvas,
 video {
@@ -2456,7 +2581,7 @@ body.landing .signup .btn:hover {
 body.landing section {
     text-align: center;
     padding: 100px 0;
-    border-bottom: 1px solid #eee
+    border-bottom: 2px solid #eee
 }
 body.landing section .btn-signup {
     border: 2px solid #1d5cb9;
@@ -2611,7 +2736,7 @@ body.landing section#testimonials .row .col .col-thrice {
     height: 360px
 }
 body.landing section#testimonials .row .col .comment {
-    border: 2px solid #1d5cb9;
+    /*border: 2px solid #1d5cb9;*/
     border-radius: 2px;
     height: 100%;
     padding: 40px;
@@ -2619,7 +2744,8 @@ body.landing section#testimonials .row .col .comment {
     margin: 10px
 }
 body.landing section#testimonials .row .col .comment::before {
-    content: " ";
+    /*no tick */
+    /*content: " ";*/
     width: 20px;
     height: 20px;
     position: absolute;
@@ -2677,6 +2803,15 @@ body.landing section#testimonials .row .col .comment.three strong {
 }
 body.landing section#testimonials .row .col .comment.three::before {
     border-bottom: 14px solid #2b9374
+}
+body.landing section#testimonials .row .col .comment.four {
+    border-color: #ff8c00
+}
+body.landing section#testimonials .row .col .comment.four strong {
+    color: #ff8c00
+}
+body.landing section#testimonials .row .col .comment.four::before {
+    border-bottom: 14px solid #ff8c00
 }
 body.landing section#testimonials p {
     padding-right: 30px;
