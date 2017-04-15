@@ -421,5 +421,6 @@ table {
 td,
 th {
   padding: 0;
+  border: 1px solid #dddddd;
+  padding: 8px;
 }
-
