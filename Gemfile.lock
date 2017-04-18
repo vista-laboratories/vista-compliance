@@ -157,6 +157,7 @@ DEPENDENCIES
   jekyll
   jekyll-assets
   jekyll-paginate
+  jekyll-seo-tag
   maruku
   rake
   sass
