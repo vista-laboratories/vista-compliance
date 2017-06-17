@@ -4,11 +4,11 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport"> <!--content="width=device-width, initial-scale=1.0">-->
-    <title>Vista Laboratories - About</title>
+    <title>Vista Laboratories - Contact Us</title>
     <meta name="description" content="Vista Labs is a third-party testing and product certification service provider located in Orange County. Our goal is to certify your product and help you access world-wide markets. We provide full compliance testing for prototype and finished electrical and electronic products. We also help customers obtain regulatory certifications recognized both domestically and internationally.">
 
 
-<link rel="stylesheet" href="/stylesheets/about.css" type="text/css" />
+<link rel="stylesheet" href="/stylesheets/contact_us.css" type="text/css" />
 
 
 <!------>
@@ -37,11 +37,15 @@
     <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 <!------>
-
+<style>
+  #map {
+    height: 400px;
+    width: 100%;
+   }
+</style>
 </head>
 
 <body class="about site">
-
 
 
 <div class="navbar navbar-fixed-top">
@@ -61,30 +65,113 @@
 </div>
 
 <div class="background">
-    <h1>Our Story</h1>
+    <h1>Contact Us</h1>
 </div>
-<article class="container">
-    <section class="col col-sm-6 col-sm-offset-3">
-        <blockquote>
-            <p>“National markets are held together by shared values and confidence in certain minimum standards. But in the global market, people do not yet have that confidence.”
-            </p>
-            &mdash; Kofi Annan
-        </blockquote>
-        <hr>
-        <p>
-        Vista Labs is a third-party testing and product certification service provider located in Orange County. Our goal is to certify your product and help you access world-wide markets.
-        </p>
-        <p>
-        We provide full compliance testing for prototype and finished electrical and electronic products. We also help customers obtain regulatory certifications recognized both domestically and internationally.
-        </p>
-        <p>
-        The team at Vista Labs is with you every step of the way through the testing and certification process. We will also keep you up to date on regulations in order assist you in maintaining compliance for your product as standards change over time.
-        </p>
 
-        <hr>
-        <p>Questions? <a href="mailto:info@vista-compliance.com">Email us</a> or <a href="https://twitter.com/vista_labs">tweet to us</a></p>
 
-    </section>
+
+<!--<h3>My Google Maps Demo</h3>-->
+<div id="map"></div>
+<script>
+  function initMap() {
+    var uluru = {lat: 33.458620, lng: -117.588720};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 16,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRTPI1YM9UBiQ8L_mGq8k2pBjVWme8b30&callback=initMap">
+</script>
+
+<article style="max-width:100%; text-align:left; width:100%" class="container">
+
+  <section class="col col-sm-6 col-sm-offset-3">
+    <form name="contactform" method="post" action="https://getsimpleform.com/messages?form_api_token=a7d2d601ec9c3e16482229a99c3a80b6" enctype="multipart/form-data">
+      <table width="450px">
+      <tr>
+       <td valign="top">
+        <label for="name">Name *</label>
+       </td>
+       <td valign="top">
+        <input  type="text" name="name" maxlength="100" size="50">
+       </td>
+      </tr>
+      <tr>
+       <td valign="top">
+        <label for="email">Email *</label>
+       </td>
+       <td valign="top">
+        <input  type="text" name="email" maxlength="100" size="50">
+       </td>
+      </tr>
+      <tr>
+       <td valign="top">
+        <label for="phone">Phone #</label>
+       </td>
+       <td valign="top">
+        <input  type="text" name="telephone" maxlength="30" size="50">
+       </td>
+      </tr>
+      <tr>
+       <td valign="top">
+        <label for="company">Company</label>
+       </td>
+       <td valign="top">
+        <input  type="text" name="company" maxlength="30" size="50">
+       </td>
+      </tr>
+      <tr>
+        <td valign="top">
+         <label for="subject">Subject *</label>
+        </td>
+        <td valign="top">
+          <select name="subject">
+        		<option value=""></option>
+            <option value="Vista Labs Online Inquiry - General Inquiry - U.S.">General Inquiry</option>
+        		<option value="Vista Labs Online Inquiry - Compliance Testing - U.S.">Compliance Testing</option>
+        		<option value="Vista Labs Online Inquiry - Certification Services - U.S.">Certification Services</option>
+        		<option value="Vista Labs Online Inquiry - Custom Quotation - U.S.">Custom Quotation</option>
+        	</select>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+         <label for="attachment">Attachment</label>
+        </td>
+        <td valign="top">
+          <input type="file" name="attachment">
+        </td>
+      </tr>
+      <tr>
+       <td valign="top">
+        <label for="comments">Message *</label>
+       </td>
+       <td valign="top">
+        <textarea  name="comments" maxlength="1000" cols="50" rows="6"></textarea>
+       </td>
+      </tr>
+      <tr>
+       <td colspan="2" style="text-align:center">
+        <input type="submit" value="Submit">
+       </td>
+     </tr>
+    </form>
+  </section>
+  <!--<section class="container">
+      <div class="row">
+          <div class="col col-md-5 col-md-offset-1">
+              <h2>RF Testing</h2>
+              <p> Vista RF testing labs has enormous experience in radio equipment testing and project management. Our testing capability covers nearly all radio communication equipment with frequency ranging from a few KHz to hundreds GHz. </p>
+              <p> The full sets of microwave preamplifiers and high gain horn antennas ensure we can accurately detect the weak radio signal propagating in the air. </p>
+          </div>
+      </div>
+  </section> -->
 
 </article>
 
