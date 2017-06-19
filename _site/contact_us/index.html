@@ -45,7 +45,7 @@
 </style>
 </head>
 
-<body class="about site">
+<body class="features">
 
 
 <div class="navbar navbar-fixed-top">
@@ -76,7 +76,8 @@
   function initMap() {
     var uluru = {lat: 33.458620, lng: -117.588720};
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 16,
+      zoom: 13,
+      mapTypeId: 'satellite',
       center: uluru
     });
     var marker = new google.maps.Marker({
@@ -89,9 +90,11 @@
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRTPI1YM9UBiQ8L_mGq8k2pBjVWme8b30&callback=initMap">
 </script>
 
-<article style="max-width:100%; text-align:left; width:100%" class="container">
+
+<article class="container">
 
   <section class="col col-sm-6 col-sm-offset-3">
+    <div class="row">
     <form name="contactform" method="post" action="https://getsimpleform.com/messages?form_api_token=a7d2d601ec9c3e16482229a99c3a80b6" enctype="multipart/form-data">
       <table width="450px">
       <tr>
@@ -161,17 +164,30 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRTPI1YM9UBiQ8L_mGq8k2pBj
         <input type="submit" value="Submit">
        </td>
      </tr>
+    </table>
     </form>
+  </div>
   </section>
-  <!--<section class="container">
-      <div class="row">
-          <div class="col col-md-5 col-md-offset-1">
-              <h2>RF Testing</h2>
-              <p> Vista RF testing labs has enormous experience in radio equipment testing and project management. Our testing capability covers nearly all radio communication equipment with frequency ranging from a few KHz to hundreds GHz. </p>
-              <p> The full sets of microwave preamplifiers and high gain horn antennas ensure we can accurately detect the weak radio signal propagating in the air. </p>
-          </div>
-      </div>
-  </section> -->
+
+</article>
+
+
+<article class="container">
+    <section class="col col-sm-6 col-sm-offset-3">
+        <h1> Thank you </h1>
+        <br>
+        <p> Please don't hesitate to reach out with any questions or concerns. Your inquiries are very important to us, so we usually respond within 24 hours. </p>
+        <p> Thank you for your time and hope you choose Vista Labs for all your compliance needs! </p>
+        <hr>
+        <h4> Vista Laboratories, North America </h4>
+        <h5>Address: </h5> <p> 1261 Puerta Del Sol, San Clemente, CA, 92673 </p>
+        <h5>Phone: </h5> <p> (949) 393-1123 </p>
+        <h5>Email: </h5> <p> info@vista-compliance.com </p>
+        <hr>
+        <h4> Business Hours </h4> <p> Monday - Friday, 8:00 am - 5:00 pm </p>
+        <hr>
+        <p>If you have any questions, feel free to <a href="mailto:info@vista-compliance.com">email us!</a></p>
+    </section>
 
 </article>
 
@@ -183,7 +199,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRTPI1YM9UBiQ8L_mGq8k2pBj
                 <span class="site-footer-credits"><a href="/"><img src="/images/2_inch_logo.png" width="42"></a>
                   <!--alt="vista logo"-->
                 <a style="padding:0 40px" href="/about/">About</a>
-                <a href="mailto:info@vista-compliance.com">Contact Us</a>
+                <a href="/contact_us/">Contact Us</a>
                 <div style="padding:0 45px; vertical-align:middle; display:inline-block"><a href="https://twitter.com/vista_labs" class="twitter-follow-button" data-show-count="false">Follow @vista_labs</a>
                 </div></span>
             </div>
