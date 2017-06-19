@@ -2417,7 +2417,7 @@ body.about .navbar .nav-about {
     margin-bottom: 1.5em
 }
 .features .background {
-    background-image: url(/images/dawn.jpg)
+    background: white;
 }
 .features .background h1 {
     background: rgba(0, 0, 0, 0.4)
