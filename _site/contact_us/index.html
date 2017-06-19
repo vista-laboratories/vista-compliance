@@ -69,28 +69,6 @@
 </div>
 
 
-
-<!--<h3>My Google Maps Demo</h3>-->
-<div id="map"></div>
-<script>
-  function initMap() {
-    var uluru = {lat: 33.458620, lng: -117.588720};
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 13,
-      mapTypeId: 'hybrid',
-      center: uluru
-    });
-    var marker = new google.maps.Marker({
-      position: uluru,
-      map: map
-    });
-  }
-</script>
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRTPI1YM9UBiQ8L_mGq8k2pBjVWme8b30&callback=initMap">
-</script>
-
-
 <article class="container">
 
   <section class="col col-sm-6 col-sm-offset-3">
@@ -178,7 +156,30 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRTPI1YM9UBiQ8L_mGq8k2pBj
         <br>
         <p> Please don't hesitate to reach out with any questions or concerns. Your inquiries are very important to us, so we usually respond within 24 hours. </p>
         <p> Thank you for your time and hope you choose Vista Labs for all your compliance needs! </p>
-        <hr>
+      </section>
+  </article>
+  
+  <div id="map"></div>
+  <script>
+    function initMap() {
+      var uluru = {lat: 33.458620, lng: -117.588720};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 13,
+        mapTypeId: 'hybrid',
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRTPI1YM9UBiQ8L_mGq8k2pBjVWme8b30&callback=initMap">
+  </script>
+
+  <article class="container">
+      <section class="col col-sm-6 col-sm-offset-3">
         <h4> Vista Laboratories, North America </h4>
         <h5>Address: </h5> <p> 1261 Puerta Del Sol, San Clemente, CA, 92673 </p>
         <h5>Phone: </h5> <p> (949) 393-1123 </p>
@@ -187,9 +188,8 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRTPI1YM9UBiQ8L_mGq8k2pBj
         <h4> Business Hours </h4> <p> Monday - Friday, 8:00 am - 5:00 pm </p>
         <hr>
         <p>If you have any questions, feel free to <a href="mailto:info@vista-compliance.com">email us!</a></p>
-    </section>
-
-</article>
+      </section>
+  </article>
 
 <footer>
 
