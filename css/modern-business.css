@@ -38,12 +38,15 @@ nav {
   background-color: #657384;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link .nav-item {
   color: #f8f9fa;
 }
 
 footer {
   background-color: #657384;
+}
+.py-5 {
+    padding-bottom: 5rem!important;
 }
 
 /* Style all font awesome icons */
