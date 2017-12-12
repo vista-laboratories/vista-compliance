@@ -91,7 +91,7 @@ footer {
 
 /*tables in services pages*/
 table {
-    font-family: arial, sans-serif;
+    /*font-family: arial, sans-serif;*/
     border-collapse: collapse;
     width: 100%;
 }
