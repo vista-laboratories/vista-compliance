@@ -40,7 +40,17 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-<!------>
+    <!------>
+
+    <!-- for loader -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script>
+      $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+      });
+    </script>
 
   </head>
 
