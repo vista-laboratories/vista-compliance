@@ -194,7 +194,8 @@ td, th {
         transition:all 1s ease;
 }
 
-/* loader */
+/* loader 4 boxes */
+/*
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 .se-pre-con {
@@ -205,9 +206,11 @@ td, th {
 	height: 100%;
 	z-index: 9999;
 	background: url(/images/loader-128x/Preloader_2.gif) center no-repeat #fff;
-}
-/*
-.se-pre-con {
+}*/
+
+/* loader circular */
+/* Center the loader */
+#loader {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -224,7 +227,36 @@ td, th {
   animation: spin 2s linear infinite;
 }
 
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}*/
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}

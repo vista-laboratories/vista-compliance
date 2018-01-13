@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Your Global Certification Team and Test Lab. Vista Labs provides services in the areas of EMC/EMI, RF, SAR, DFS as well as comprehensive certification services.">
+    <meta name="description" content="Vista Lab's global certification team and test lab will help you certify your product obtain FCC/ISED certifications and other global certifications. Vista Labs, based in Orange County, provides comprehensive services in the areas of EMC/EMI, RF, SAR, DFS as well as comprehensive certification services.">
     <meta name="author" content="">
 
     <title>Vista Laboratories - Home</title>
@@ -57,8 +57,23 @@
 
   </head>
 
-  <body>
+  <body onload="myFunction()" style="margin:0;">
   <div class="se-pre-con"></div>
+  <div id="loader"></div>
+  <script>
+  var myVar;
+
+  function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+  }
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
+
+  <div style="display:none;" id="myDiv" class="animate-bottom">
 
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top">
@@ -437,6 +452,7 @@
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
+  </div>
   </body>
 
 </html>
