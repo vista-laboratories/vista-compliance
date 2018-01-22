@@ -35,7 +35,9 @@ body {
 }
 
 nav {
-  background-color: #657384;
+  /*background-color: #657384;*/
+  background: linear-gradient(to bottom right, #657384, #bac2c7);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .navbar-dark .navbar-nav .nav-link .nav-item {
@@ -43,7 +45,8 @@ nav {
 }
 
 footer {
-  background-color: #657384;
+  /*background-color: #657384;*/
+  background: linear-gradient(to bottom right, #bac2c7, #657384);
 }
 .py-5 {
     padding-bottom: 5rem!important;
@@ -259,3 +262,22 @@ td, th {
   display: none;
   text-align: center;
 }*/
+
+/*subscribe feature in footer*/
+input.btn.btn-lg,
+input.btn.btn-lg:focus {
+    outline: none;
+    width: 60%;
+    height: 60px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+button.btn {
+    width: 40%;
+    height: 60px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.promise {
+    color: #999;
+}
