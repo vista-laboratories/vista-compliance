@@ -281,3 +281,51 @@ button.btn {
 .promise {
     color: #999;
 }
+
+/* Hover dropdown */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+
+/*shrink nav on scroll */
+/*https://codepen.io/anon/pen/qxdWBK*/
+/* header large */
+nav.large {
+	height: 115px;
+  font-size: 16px;
+}
+nav.large img {
+  margin-top: 0px;
+}
+nav.large li {
+	margin-top: 0px;
+}
+nav.large a {
+	margin-top: 0px;
+}
+
+/* header small */
+
+nav.small {
+	height: 80px;
+  font-size: 16px;
+}
+nav.small img {
+  margin-top: 0px;
+}
+nav.small li {
+	margin-top: 0px;
+}
+nav.small a {
+	margin-top: 0px;
+}
+
+/* Transitions */
+
+nav, li, a, img {
+	transition: .9s all;
+	-moz-transition: .9s all;
+	-webkit-transition: .9s all;
+	-o-transition: .9s all;
+}

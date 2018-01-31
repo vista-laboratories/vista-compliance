@@ -58,6 +58,23 @@
     <!-- for footer -->
     <link rel="stylesheet" href="css/Footer-with-button-logo.css">
 
+    <link rel="stylesheet" href="dropdown/styles.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="dropdown/script.js"></script>
+
+    <!--shrink nav on scroll -->
+    <script>
+    $(document).on("scroll", function() {
+
+    	if($(document).scrollTop()>10) {
+    		$("nav").removeClass("large").addClass("small");
+    	} else {
+    		$("nav").removeClass("small").addClass("large");
+    	}
+
+    });
+    </script>
+
   </head>
 
   <!-- body tags used if preloading with circular load animation -->
@@ -106,6 +123,16 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Inquire</a>
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="news.html">News Updates</a>
+                <a class="dropdown-item" href="pricingtable.html">Pricing Table</a>
+              </div>
+            </li>
+
             <!--
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
