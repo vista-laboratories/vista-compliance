@@ -51,30 +51,51 @@
     <script>
       $(window).load(function() {
         // Animate loader off screen
-        $(".se-pre-con").fadeOut("slow");;
+        $(".se-pre-con").fadeOut("slow");
       });
     </script>
 
     <!-- for footer -->
     <link rel="stylesheet" href="css/Footer-with-button-logo.css">
 
-    <link rel="stylesheet" href="dropdown/styles.css">
-
-    <script src="dropdown/script.js"></script>
-
     <!--shrink nav on scroll -->
+    <script>
+    var flag = 0;
+    function togglerfnc() {
+      console.log("togglrfnc")
+      if (flag == 0 && scrolled == 0){
+        $("nav").addClass("mobilelarge");
+        flag = 1
+      } else if (flag == 0 && scrolled == 1) {
+        $("nav").removeClass("small").addClass("mobilelarge");
+        flag = 1
+      } else if (flag == 1 && scrolled == 0) {
+        $("nav").removeClass("mobilelarge");
+        flag = 0
+      } else if (flag == 1 && scrolled == 1) {
+        $("nav").removeClass("mobilelarge").addClass("small");
+        flag = 0
+      }
+      /*document.getElementById("demo").innerHTML = "Hello World";*/
+    }
+    </script>
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script>
+    var scrolled = 0;
+    var openclick = 0;
+    var closeclick = 1;
     $(document).on("scroll", function() {
-
     	if($(document).scrollTop()>10) {
+        if (flag == 0) {
     		$("nav").removeClass("large").addClass("small");
+        scrolled = 1;}
     	} else {
     		$("nav").removeClass("small").addClass("large");
+        scrolled = 0;
     	}
-
     });
     </script>
+
 
   </head>
 
@@ -106,7 +127,7 @@
       <div class="container">
         <a href="/index.html"><span><img src="images/2_inch_logo.png" alt="vista logo" width="75"/></span></a>
         <a class="navbar-brand" href="index.html" style="padding-top:0.7em;font-weight: 600;font-size:1.7em;text-align:center;">Vista Labs<p style="font-weight:400; font-size:0.75rem">TEST • CERTIFY • COMPLY</p></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button onclick="togglerfnc()" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">

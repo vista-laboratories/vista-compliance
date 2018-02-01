@@ -294,6 +294,9 @@ button.btn {
 nav.large {
 	height: 115px;
   font-size: 16px;
+  /*
+  height: 100%;
+  font-size: 100%;*/
 }
 nav.large img {
   margin-top: 0px;
@@ -305,11 +308,44 @@ nav.large a {
 	margin-top: 0px;
 }
 
+nav.inherit {
+  height: 115px;
+  font-size: 16px;
+}
+nav.inherit img {
+  margin-top: 0px;
+}
+nav.inherit li {
+  margin-top: 0px;
+}
+nav.inherit a {
+  margin-top: 0px;
+}
+
+nav.mobilelarge {
+	height: 275px;
+  font-size: 16px;
+  /*
+  height: 100%;
+  font-size: 100%;*/
+}
+nav.mobilelarge img {
+  margin-top: 0px;
+}
+nav.mobilelarge li {
+	margin-top: 0px;
+}
+nav.mobilelarge a {
+	margin-top: 0px;
+}
+
 /* header small */
 
 nav.small {
 	height: 80px;
   font-size: 16px;
+  /*height: 15%;
+  font-size: 100%;*/
 }
 nav.small img {
   margin-top: 0px;
