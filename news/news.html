@@ -227,12 +227,15 @@
           console.log(li.length)
           for (i = 0; i < li.length; i++) {
               a = li[i].getElementsByTagName("p")[0];
+              b = li[i].getElementsByTagName("h2")[0];
               console.log(a)
+              console.log(b)
               if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                  li[i].style.display = "";
+                if (b.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                }
               } else {
                   li[i].style.display = "none";
-
               }
           }
       }
