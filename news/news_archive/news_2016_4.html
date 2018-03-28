@@ -202,96 +202,228 @@
     <br>
     <br>
     <br>
-
     <!-- Page Content -->
     <div class="container">
 
       <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">C63.27-2017 - American National Standard for Evaluation of Wireless Coexistence
-        <!--<small>by
-          <a href="#">Start Bootstrap</a>
-        </small>-->
+      <h1 class="mt-4 mb-3">News Updates
+        <!--<small>Subheading</small>-->
       </h1>
 
-      <!--<ol class="breadcrumb">
+      <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="index.html">Home</a>
         </li>
-        <li class="breadcrumb-item active">Blog Home 2</li>
-      </ol>-->
+        <li class="breadcrumb-item active">News Updates</li>
+      </ol>
+      <script>
+      function myFunction() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          console.log(filter)
+          ul = document.getElementById("myUL");
+          li = ul.getElementsByTagName("li");
+          console.log(li.length)
+          for (i = 0; i < li.length; i++) {
+              a = li[i].getElementsByTagName("p")[0];
+              b = li[i].getElementsByTagName("h2")[0];
+              console.log(a)
+              console.log(b)
+              if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+              } else if (b.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+              } else {
+                  li[i].style.display = "none";
+              }
+          }
+      }
+      </script>
 
       <div class="row">
 
-        <!-- Post Content Column -->
-        <div class="col-lg-8">
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+          <ul id="myUL">
+          <!-- Blog Post -->
+          <!--
+          <div class="card mb-4">
+            <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">Post Title</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+              <a href="#" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on January 1, 2017 by
+              <a href="#">Start Bootstrap</a>
+            </div>
+          </div>-->
+          <li>
+          <div class="card mb-4">
+            <img class="card-img-top" src="/news/images/2018/180327.png" alt="Card image cap" style="">
+            <div class="card-body">
+              <h2 class="card-title">Introduction to DO-160, Section 21 Radio Frequency Emission</h2>
+              <p class="card-text">DO-160, Environmental Conditions and Test Procedures for Airborne Equipment published by the RTCA (Radio Technical Commission for Aeronautics) specifies test conditions for the design of electronic hardware in airborne/avionics systems.</p>
+              <a href="/news/newsposts/2018/newspost180327.html" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on March 15, 2018
+              <!--<a href="#">Start Bootstrap</a>-->
+            </div>
+          </div></li>
+          <li>
+          <div class="card mb-4">
+            <img class="card-img-top" src="/news/images/2018/180305.png" alt="Card image cap" style="">
+            <div class="card-body">
+              <h2 class="card-title">Canada ISED New Requirements for 2 GHz Personal Communications Services</h2>
+              <p class="card-text">Notice has been given by the Ministry of Innovation, Science and Economic Development that Radio Standards Specifications RSS-133, Issue 6, (amendment) 2 GHz Personal Communications Services has been updated.</p>
+              <a href="/news/newsposts/2018/newspost180305.html" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on March 5, 2018
+              <!--<a href="#">Start Bootstrap</a>-->
+            </div>
+          </div></li>
+          <li>
+          <div class="card mb-4">
+            <img class="card-img-top" src="/news/images/2018/180210.png" alt="Card image cap" style="">
+            <div class="card-body">
+              <h2 class="card-title">Brazil ANATEL Acts Replace Resolutions</h2>
+              <p class="card-text">Brazil has revoked 36 Resolutions that have been used for years and replaced them with ANATEL Acts.</p>
+              <a href="/news/newsposts/2018/newspost180210.html" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on February 10, 2018
+              <!--<a href="#">Start Bootstrap</a>-->
+            </div>
+          </div></li>
+          <li>
+          <div class="card mb-4">
+            <img class="card-img-top" src="/news/images/2018/180209.png" alt="Card image cap" style="">
+            <div class="card-body">
+              <h2 class="card-title">Brazilian Agency of Telecommunications, ANATEL, Enforcing New Technical Regulations</h2>
+              <p class="card-text">Act 493 and 14448 are enforceable as of January, regarding wireless power transmission and communication equipment.</p>
+              <a href="/news/newsposts/2018/newspost180209.html" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on February 09, 2018
+              <!--<a href="#">Start Bootstrap</a>-->
+            </div>
+          </div></li>
+          <li>
+          <div class="card mb-4">
+            <img class="card-img-top" src="/images/flags/vietnam.png" alt="Card image cap" style="">
+            <div class="card-body">
+              <h2 class="card-title">Vietnam (MIC) Released a New EMC Standard Requirement for Radio Equipment</h2>
+              <p class="card-text">The new standard QCVN 112:2017/BTTTT for radio broadband data transmission equipment is released by the Vietnamese government ministry and is effective July 1st, 2018.</p>
+              <a href="/news/newsposts/2018/newspost2.html" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on January 31, 2018
+              <!--<a href="#">Start Bootstrap</a>-->
+            </div>
+          </div></li>
+          <li>
+          <div class="card mb-4">
+            <img class="card-img-top" src="/news/images/2018/180122.jpg" alt="Card image cap" style="">
+            <div class="card-body">
+              <h2 class="card-title">Newly Published RED Harmonized Standards by EU</h2>
+              <p class="card-text">The Official Journal of the European Union publishes new RED harmonized standards.</p>
+              <a href="/news/newsposts/2018/newspost180122.html" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on January 22, 2018
+              <!--<a href="#">Start Bootstrap</a>-->
+            </div>
+          </div></li>
+          <li>
+          <div class="card mb-4">
+            <img class="card-img-top" src="/news/images/2017/ivory.png" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">Regulatory Updates for Ivory Coast, Brazil, Mexico, Chile</h2>
+              <p class="card-text">The Ivorian regulatory Authority held in November a meeting to inform all the telecommunication sector actors that restrictions are imposed on WI-FI 5GHz frequency band . . .</p>
+              <a href="/news/newsposts/2017/newspost1.html" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on December 10, 2017
+              <!--<a href="#">Start Bootstrap</a>-->
+            </div>
+          </div></li>
 
-          <!-- Preview Image -->
-          <img class="img-fluid rounded" src="/news/images/2017/170515.png" alt="">
+          <!-- Blog Post -->
+          <li>
+          <div class="card mb-4">
+            <img class="card-img-top" src="/news/images/2017/rra.png" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">Korea (RRA) Conformity Assessment Regulatory News Update</h2>
+              <p class="card-text">A newly revised conformity assessment notification from RRA (National Radio Research Agency) in Korea has been published on Dec. 5th, 2017.</p>
+              <a href="/news/newsposts/2017/newspost0.html" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on December 5, 2017
+              <!--<a href="#">Start Bootstrap</a>-->
+            </div>
+          </div></li>
 
-          <hr>
+          <!-- Blog Post -->
+          <li>
+          <div class="card mb-4">
+            <img class="card-img-top" src="/news/images/2017/red.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">Publication of New CE RED Standard</h2>
+              <p class="card-text">The new CE RED standard EN 303 417 v1.1.1 is officially published on Sep 22nd, 2017.  It's the harmonized standard for WPT (Wireless Power Transmission) systems which was previously covered by EN 300 330 standard under R&TTE directive. It was excluded from EN 300 330 in its latest v2.1.1 version to . . .</p>
+              <a href="/news/newsposts/2017/newspost.html" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on October 10, 2017
+              <!--<a href="#">Start Bootstrap</a>-->
+            </div>
+          </div></li>
+          <li>
+          <div class="card mb-4">
+            <img class="card-img-top" src="/news/images/2017/170515.png" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">C63.27-2017 - American National Standard for Evaluation of Wireless Coexistence</h2>
+              <p class="card-text">The new approved standard C63.27-2017 provides an evaluation process and supporting test methods for quantifying the ability of a wireless device to coexist with other wireless services in its intended radio frequency environments.</p>
+              <a href="/news/newsposts/2017/newspost170515.html" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on May 15, 2017
+              <!--<a href="#">Start Bootstrap</a>-->
+            </div>
+          </div></li>
+        </ul>
+          <!-- Pagination -->
+          <!--
+          <ul class="pagination justify-content-center mb-4">
+            <li class="page-item">
+              <a class="page-link" href="#">&larr; Newer</a>
+            </li>
+            <li class="page-item disabled">
+              <a class="page-link" href="#">Older &rarr;</a>
+            </li>
+          </ul>-->
 
-          <!-- Date/Time -->
-          <p>Posted on May 15, 2017 at 7:30 AM</p>
-
-          <hr>
-
-          <!-- Post Content -->
-          <p>The new approved standard C63.27-2017 provides an evaluation process and supporting test methods for quantifying the ability of a wireless device to coexist with other wireless services in its intended radio frequency environments.</p>
-          <p>The standard specifies:</p>
-          <ul>
-            <li type="square"><i>methods</i> for assessing the radio frequency (RF) wireless coexistence of equipment.</li>
-            <li type="square"><i>key performance indicators</i> (KPIs) used to assess ability of the EUT to coexist with other equipment in its intended operational environment.</li>
-          </ul>
-          <p>Traditional EMC vs Coexistence:</p>
-          <ul>
-            <li type="square">Traditional EMC testing is designed to exclude frequency bands where the device under test communicates wirelessly.</li>
-            <li type="square">Coexistence testing examines performance in frequency bands where the device uses wireless communication.</li>
-          </ul>
-          <hr>
-          <p>High-level process flow for coexistence testing:</p>
-          <img style="margin-left: auto;margin-right: auto;display:block;" src="/news/images/2017/170515-1.png"></img>
-          <br>
-          <b>Develop Test Plan</b>
-          <br>
-          <ul>
-            <li type="square">Identify the intended EM environment</li>
-            <li type="square">Specify the FWP (functional wireless performance) of the EUT</li>
-            <li type="square">Specify the evaluation tier to be used for assessing the FWP</li>
-            <li type="square">Choose a test method</li>
-            <li type="square">Specify the intended signal</li>
-            <li type="square">Specify the unintended signals</li>
-          </ul>
-          <b>Perform Testing</b>
-          <ul>
-            <li type="square">Verify the test setup</li>
-            <li type="square">Baseline the FWP of the EUT in the test environment</li>
-            <li type="square">Baseline the performance of the unintended signals in the test environment</li>
-            <li type="square">Test the FWP of the EUT in the presence of the unintended signals</li>
-          </ul>
-          <b>Analysis of Results</b>
-          <ul>
-            <li type="square">Likelihood of coexistence (LoC), an estimation of the EUT’s ability to provide its FWP in the intended use environment.</li>
-            <li type="square">Medical device risk</li>
-          </ul>
-          <b>Analysis of Uncertainties</b>
-          <p>All uncertainty calculations and estimates shall follow the guidance of ISO/IEC guide 98-1 or JCGM 104:2009 and ISO/IEC 98-3 or JCGM 100:2008 (including ISO/IEC 98-3 Supplement 1 and ISO/IEC 98-3 Supplement 2 or JCGM 101:2008 and JCGM 102:2011). * (ANSI 63.27-2017 page 36)</p>
-
-          <p>The complete standard can be found <a href="http://ieeexplore.ieee.org/document/7927764/">here</a>.</p>
-          <br>
         </div>
 
         <!-- Sidebar Widgets Column -->
         <div class="col-md-4">
 
           <!-- Search Widget -->
-          <!--<div class="card mb-4">
+          <div class="card mb-4">
             <h5 class="card-header">Search Filter</h5>
             <div class="card-body">
               <div class="input-group">
+                <!--<input type="text" class="form-control" placeholder="Search for..." id="myInput" onkeyup="myFunction()">
+                <span class="input-group-btn">
+                  <button class="btn btn-secondary" type="button" style="width:100%;">Go!</button>
+                </span>-->
                 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filter by.." title="Type in a keyword">
               </div>
             </div>
-          </div>-->
+          </div>
 
           <!-- Categories Widget -->
           <!--
