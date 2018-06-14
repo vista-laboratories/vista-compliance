@@ -270,13 +270,23 @@
             </div>
             <div class="control-group form-group">
               <label for="attachment">Attachment: </label>
-              <input class="btn" type="file" name="attachment">
+              <input class="btn" type="file" name="attachment" multiple>
             </div>
             <div id="success"></div>
             <!-- For success/fail messages -->
             <input type="submit" class="btn btn-primary" value="Send Message">
             <!--<button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>-->
           </form>
+          <script>
+             $(function(){
+                $("input[type = 'submit']").click(function(){
+                   var $fileUpload = $("input[type='file']");
+                   if (parseInt($fileUpload.get(0).files.length) > 5){
+                      alert("You are only allowed to upload a maximum of 5 files");
+                   }
+                });
+             });
+          </script>
         </div>
 
       </div>
