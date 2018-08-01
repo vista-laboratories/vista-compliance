@@ -17,14 +17,9 @@
     "email": "feedback@startbootstrap.com"
   },
   "license": "MIT",
-  "author": {
-    "name": "Start Bootstrap"
-  },
+  "author": "Start Bootstrap",
   "contributors": [
-    {
-      "name": "David Miller",
-      "url": "http://davidmiller.io/"
-    }
+    "David Miller (http://davidmiller.io/)"
   ],
   "repository": {
     "type": "git",
@@ -37,11 +32,9 @@
     "popper.js": "1.12.3"
   },
   "devDependencies": {
-    "browser-sync": "2.18.13",
+    "browser-sync": "^2.18.13",
     "gulp": "^3.9.1"
   },
-  "gitHead": "33c46ec87f079d9bd7be98c295eb9868426b7b8c",
-  "_id": "startbootstrap-modern-business@4.0.0-beta",
   "scripts": {},
   "_shasum": "08ce72b660cd8e049770f8f5a4952e2ef0925222",
   "_from": "startbootstrap-modern-business@latest",
@@ -56,15 +49,13 @@
     "tarball": "https://registry.npmjs.org/startbootstrap-modern-business/-/startbootstrap-modern-business-4.0.0-beta.tgz"
   },
   "maintainers": [
-    {
-      "name": "startbootstrap",
-      "email": "feedback@startbootstrap.com"
-    }
+    "startbootstrap <feedback@startbootstrap.com>"
   ],
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
     "tmp": "tmp/startbootstrap-modern-business-4.0.0-beta.tgz_1508263252481_0.2424890948459506"
   },
   "directories": {},
-  "_resolved": "https://registry.npmjs.org/startbootstrap-modern-business/-/startbootstrap-modern-business-4.0.0-beta.tgz"
+  "_resolved": "https://registry.npmjs.org/startbootstrap-modern-business/-/startbootstrap-modern-business-4.0.0-beta.tgz",
+  "main": "gulpfile.js"
 }
