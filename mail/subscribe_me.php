@@ -1,4 +1,5 @@
 <?php
+
 // Check for empty fields
 if(empty($_POST['email'])     ||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
