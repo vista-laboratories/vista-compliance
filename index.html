@@ -96,8 +96,19 @@
     });
     </script>
 
-    <!-- recaptcha -->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!--honeypot -->
+    <script type="text/javascript">
+    	function validateMyForm() {
+    		// The field is empty, submit the form.
+    		if(!document.getElementById("honeypot").value) {
+    			return true;
+    		}
+    		 // the field has a value it's a spam bot
+    		else {
+    			return false;
+    		}
+    	}
+    </script>
 
 
   </head>
@@ -264,7 +275,7 @@
       <br>
       <br>
       <h1 class="my-4" style="text-align: center">Enter the Global Marketplace</h1>
-      <p style="text-align: center">Vista Labs is your guide through the maze of product testing and international approval.
+      <p style="text-align: center">Vista Labs is your guide through the maze of regulatory compliance testing, product certifications, and international approval.
       <br>Why <a href="about#whyus">choose us</a>? Take a look at our comprehensive list of <a href="services">services ›</a></p>
       <br>
       <br>
@@ -273,20 +284,20 @@
       <div class="row">
         <div class="swing col-lg-4 mb-4">
           <div class="card h-100">
-            <h4 class="card-header" style="text-align:center"><i class="material-icons">search</i> Product Testing</h4>
+            <h4 class="card-header" style="text-align:center"><i class="material-icons">search</i> Compliance Testing</h4>
             <div class="border card-body">
-              <p class="card-text">Vista Labs performs in house testing in Orange County and manages testing, certification, and renewal projects happening all across the globe.</p>
+              <p class="card-text">Our expansive accredited electrical testing scope allows us recognition as a conformity assessment body for high-in-demand, mutually recognized countries.</p>
             </div>
             <div class="card-footer">
-              <a href="/services#producttesting" class="btn btn-primary">Learn More ›</a>
+              <a href="/services#compliancetesting" class="btn btn-primary">Learn More ›</a>
             </div>
           </div>
         </div>
         <div class="swing col-lg-4 mb-4">
           <div class="card h-100">
-            <h4 class="card-header" style="text-align:center"><i class="material-icons">done_all</i> Certifications</h4>
+            <h4 class="card-header" style="text-align:center"><i class="material-icons">done_all</i> Product Certifications</h4>
             <div class="border card-body">
-              <p class="card-text">With certification experience from around the world, feel confident that your product will receive approval to be sold on a global scale.</p>
+              <p class="card-text">With technical expertise and advanced internal workflow, Vista Labs is able to provide an efficient and cost-effective certification experience.</p>
             </div>
             <div class="card-footer">
               <a href="/services#productcertification" class="btn btn-primary">Learn More ›</a>
@@ -297,10 +308,10 @@
           <div class="card h-100">
             <h4 class="card-header" style="text-align:center"><i class="material-icons">public</i> Global Compliance</h4>
             <div class="border card-body">
-              <p class="card-text">Vista Labs handles all government regulations to bring you the best and broadest view of the world's markets. Contact us today!</p>
+              <p class="card-text">Vista Labs handles all government regulations through agents in over 150 countries to approve your products in all of the world's markets. Contact us today!</p>
             </div>
             <div class="card-footer">
-              <a href="/services#internationalapproval" class="btn btn-primary">Learn More ›</a>
+              <a href="/services#globalmarketaccess" class="btn btn-primary">Learn More ›</a>
             </div>
           </div>
         </div>
@@ -318,45 +329,45 @@
       <div class="row">
         <div class="col-lg-3 col-sm-6 portfolio-item">
           <div class="card h-100" style="border:0px">
-            <img class="fade card-img-top" src="/images/Picture1.png" alt="">
+            <img class="fade card-img-top" src="/images/Picture1.png" alt="" style="width:250px;height:250px;">
             <div class="card-body">
               <h5 class="card-title">
-                <strong style="color:#007bff">Anechoic Chamber</strong>
+                <strong style="color:#007bff">10 Meter Chamber</strong>
               </h5>
-              <p class="card-text">Our laboratory includes a 10m semi-anechoic chamber. This enables us to accurately measure Radiated Emissions (RE) as well as determine a product’s immunity to RF fields.</p>
+              <p class="card-text">Our 10m semi-anechoic chamber allows us to accurately measure radiated emissions (RE), determine a product’s immunity to RF fields, and enables us to perform testing for countries such as Taiwan and South Korea.</p>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-sm-6 portfolio-item">
           <div class="card h-100" style="border:0px">
-            <img class="fade card-img-top" src="/images/Picture2.png" alt="">
+            <img class="fade card-img-top" src="/images/Picture2.png" alt="" style="width:250px;height:250px;">
             <div class="card-body">
               <h5 class="card-title">
-                <strong style="color:#007bff">High Power Lab</strong>
+                <strong style="color:#007bff">Technical Excellence</strong>
               </h5>
-              <p class="card-text">From an isolated control room, we test withstand voltages up to 300kV, ac short circuit currents exceeding 40,000 Amps and impulse voltages of up to 600kV.</p>
+              <p class="card-text">The team prides themselves on handling projects efficiently through sound technical knowledge and powerful processes in order to reduce overhead and provide a quality, cost-effective solution to you.</p>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-sm-6 portfolio-item">
           <div class="card h-100" style="border:0px">
-            <img class="fade card-img-top" src="/images/Picture3.png" alt="">
+            <img class="fade card-img-top" src="/images/Picture3.png" alt="" style="width:250px;height:250px;">
             <div class="card-body">
               <h5 class="card-title">
                 <strong style="color:#007bff">Superior Equipment</strong>
               </h5>
-              <p class="card-text">Vista Laboratories uses high-end testing equipment and performs routine calibrations in order to produce the most accurate results.</p>
+              <p class="card-text">We use high-end testing equipment and perform routine calibrations to maintain our ISO/IEC 17025 and 17065 accreditations and in order to produce the most accurate results, recognized by regulatory authorities globally.</p>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-sm-6 portfolio-item">
           <div class="card h-100" style="border:0px">
-            <img class="fade card-img-top" src="/images/Picture4.png" alt="">
+            <img class="fade card-img-top" src="/images/Picture4.png" alt="" style="width:250px;height:250px;">
             <div class="card-body">
               <h5 class="card-title">
                 <strong style="color:#007bff">Beautiful Location</strong>
               </h5>
-              <p class="card-text">Nestled in the beautiful Spanish city by the sea, Vista Laboratories enjoys beautiful year round weather. Please come visit us!</p>
+              <p class="card-text">Headquartered in Orange County and nestled in the beautiful Spanish city by the sea, Vista Laboratories enjoys beautiful year round weather. Please come visit us!</p>
             </div>
           </div>
         </div>
@@ -572,7 +583,7 @@
                         <a href="https://www.linkedin.com/company/vistalaboratories/" class="fa fa-linkedin"></a>
                     </div>
 
-                    <form name="subscribeform" method="post" action="https://getsimpleform.com/messages?form_api_token=a7d2d601ec9c3e16482229a99c3a80b6" enctype="multipart/form-data">
+                    <form name="subscribeform" method="post" action="https://getsimpleform.com/messages?form_api_token=a7d2d601ec9c3e16482229a99c3a80b6" enctype="multipart/form-data" onsubmit="return validateMyForm();">
                         <div class="input-group">
                           <input class="form-control" style="border-top-left-radius:1.5em;border-bottom-left-radius:1.5em" size="30" id="email" name="email" type="email" placeholder="Email Address" required data-validation-required-message="Please enter your email address."/>
                           <div id="success"></div>
@@ -583,7 +594,12 @@
                             <input type="submit" class="btn btn-primary" value="Subscribe!">
                             <input style="margin-top:0px; width: 100px;border-radius:1.5rem;color:white;border-top-left-radius:0;border-bottom-left-radius:0" class="btn btn-primary" size="10" type="submit" value="Subscribe!">
                           </span>-->
+                          <div style="display:none;">
+                            <label>Keep this field blank</label>
+                            <input type="text" name="honeypot" id="honeypot" />
+                          </div>
                         </div>
+                        <!-- honeypot -->
                         <small class="promise" style="color:#ccc"><em>Regulatory compliance updates ONLY.</em></small>
                     </form>
 
