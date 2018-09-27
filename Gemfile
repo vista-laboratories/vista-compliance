@@ -6,5 +6,6 @@ gem 'maruku'
 gem 'rake'
 gem 'sass'
 gem 'uglifier'
-gem 'github-pages'
+gem 'github-pages', group: :jekyll_plugins
 gem 'jekyll-paginate'
+gem 'json'
