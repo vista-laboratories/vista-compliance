@@ -96,20 +96,29 @@
     });
     </script>
 
-    <!--honeypot -->
+    <!--honeypot and reject list -->
     <script type="text/javascript">
     	function validateMyForm() {
-    		// The field is empty, submit the form.
-    		if(!document.getElementById("honeypot").value) {
-    			return true;
-    		}
-    		 // the field has a value it's a spam bot
-    		else {
-    			return false;
-    		}
-    	}
-    </script>
+        //reject non-corporate domains
+        var rejectList = [ "yahoo.com" , "gmail.com", "aol.com" ];
+        var emailValue = document.getElementById("email").value; // To Get Value (can use getElementById)
+        var splitArray = emailValue.split('@'); // To Get Array
 
+        if(rejectList.indexOf(splitArray[1]) >= 0){
+        // Means it has the rejected domains
+          return false;
+        }
+
+        // The field is empty, submit the form.
+        if(!document.getElementById("honeypot").value) {
+          return true;
+        }
+         // the field has a value it's a spam bot
+        else {
+          return false;
+        }
+      }
+    </script>
 
   </head>
 
