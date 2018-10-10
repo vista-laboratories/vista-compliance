@@ -100,17 +100,17 @@
     <script type="text/javascript">
     	function validateMyForm() {
         //reject non-corporate domains
-        var rejectList = [ "yahoo.com" , "gmail.com", "aol.com" ];
+        /*var rejectList = [ "yahoo.com" , "gmail.com", "aol.com" ];
         var emailValue = document.getElementById("email").value; // To Get Value (can use getElementById)
         var splitArray = emailValue.split('@'); // To Get Array
 
         if(rejectList.indexOf(splitArray[1]) >= 0){
         // Means it has the rejected domains
           return false;
-        }
+        }*/
 
         // The field is empty, submit the form.
-        if(!document.getElementById("honeypot").value) {
+        if(!document.getElementById("poisonpot").value) {
           return true;
         }
          // the field has a value it's a spam bot
@@ -593,27 +593,18 @@
                         <a href="https://www.linkedin.com/company/vistalaboratories/" class="fa fa-linkedin"></a>
                     </div>
 
+
+
                     <form name="subscribeform" method="post" action="https://getsimpleform.com/messages?form_api_token=a7d2d601ec9c3e16482229a99c3a80b6" enctype="multipart/form-data" onsubmit="return validateMyForm();">
                         <div class="input-group">
                           <input class="form-control" style="border-top-left-radius:1.5em;border-bottom-left-radius:1.5em" size="30" id="email" name="email" type="email" placeholder="Email Address" required data-validation-required-message="Please enter your email address."/>
                           <div id="success"></div>
-                          <!--<input type="submit" class="btn btn-primary" value="Subscribe!">-->
                           <input style="margin-top:0px; width: 100px;border-radius:1.5rem;color:white;border-top-left-radius:0;border-bottom-left-radius:0" class="btn btn-primary" size="10" type="submit" value="Subscribe!">
-                          <!--<input style="margin-top:0px; width: 100px;border-radius:1.5rem;color:white;border-top-left-radius:0;border-bottom-left-radius:0; background-color:#007bff; border:#007bff" class="g-recaptcha" data-sitekey="6Lcn7XAUAAAAANGNoan2rMuu6BdooesNRA1xRWOA" data-callback="submit" size="10" type="submit" value="Subscribe!">-->
-                          <!--<span class="input-group-btn">
-                            <input type="submit" class="btn btn-primary" value="Subscribe!">
-                            <input style="margin-top:0px; width: 100px;border-radius:1.5rem;color:white;border-top-left-radius:0;border-bottom-left-radius:0" class="btn btn-primary" size="10" type="submit" value="Subscribe!">
-                          </span>-->
                           <div style="position:absolute; left:-999em;">
                             <label>Keep this field blank</label>
-                            <input type="text" name="honeypot" id="honeypot" />
+                            <input type="text" name="poisonpot" id="poisonpot" />
                           </div>
-                          <!--<div style="display:none;">
-                            <label>Keep this field blank</label>
-                            <input type="text" name="honeypot" id="honeypot" />
-                          </div>-->
                         </div>
-                        <!-- honeypot -->
                         <small class="promise" style="color:#ccc"><em>Regulatory compliance updates ONLY.</em></small>
                     </form>
 
