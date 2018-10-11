@@ -8,6 +8,15 @@ if(empty($_POST['email'])     ||
    return false;
    }
 
+  $honeypot = FALSE;
+ if (!empty($_REQUEST['poisonpot']) && (bool) $_REQUEST['poisonpot'] == TRUE) {
+     $honeypot = TRUE;
+     log_spambot($_REQUEST);
+     # treat as spambot
+ } else {
+     # process as normal
+ }
+
 $email_address = strip_tags(htmlspecialchars($_POST['email']));
 
 // Create the email and send the message
