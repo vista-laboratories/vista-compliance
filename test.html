@@ -129,7 +129,23 @@ function get_action(form)
     });
     </script>
 
-<script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lcn7XAUAAAAANGNoan2rMuu6BdooesNRA1xRWOA"></script>
+    <script>
+    function get_action(form)
+    {
+        var v = grecaptcha.getResponse();
+        if(v.length == 0)
+        {
+            document.getElementById('captcha').innerHTML="You can't leave Captcha Code empty";
+            return false;
+        }
+        else
+        {
+            document.getElementById('captcha').innerHTML="Captcha completed";
+            return true;
+        }
+    }
+    </script>
 
   </head>
 
