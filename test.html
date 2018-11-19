@@ -129,22 +129,14 @@ function get_action(form)
     });
     </script>
 
-    <script src="https://www.google.com/recaptcha/api.js?render=6Lcn7XAUAAAAANGNoan2rMuu6BdooesNRA1xRWOA"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lfb0HsUAAAAAILB_MlKaEYojIIQKfDmsCmoHeNV"></script>
     <script>
-    function get_action(form)
-    {
-        var v = grecaptcha.getResponse();
-        if(v.length == 0)
-        {
-            document.getElementById('captcha').innerHTML="You can't leave Captcha Code empty";
-            return false;
-        }
-        else
-        {
-            document.getElementById('captcha').innerHTML="Captcha completed";
-            return true;
-        }
-    }
+      grecaptcha.ready(function() {
+      grecaptcha.execute('6Lfb0HsUAAAAAILB_MlKaEYojIIQKfDmsCmoHeNV', {action: 'action_name'})
+      .then(function(token) {
+      // Verify the token on the server.
+      });
+    });
     </script>
 
   </head>
@@ -331,7 +323,7 @@ function get_action(form)
             <!-- For success/fail messages -->
             <input type="submit" class="btn btn-primary" value="Send Message">
             <!--<button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>-->
-            <div class="g-recaptcha" data-sitekey="6Lcn7XAUAAAAANGNoan2rMuu6BdooesNRA1xRWOA"></div>
+            <div class="g-recaptcha" data-sitekey="6Lfb0HsUAAAAAILB_MlKaEYojIIQKfDmsCmoHeNV"></div>
           </form>
           <script>
              $(function(){

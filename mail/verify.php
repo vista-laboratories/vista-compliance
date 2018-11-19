@@ -13,7 +13,7 @@ $email;$comment;$captcha;
           echo '<h2>Please check the the captcha form.</h2>';
           exit;
         }
-        $secretKey = "6Ldp8XAUAAAAAFsbL_zOr4i093RmPDhkcsFIhYbG";
+        $secretKey = "6Lfb0HsUAAAAAK2rCP8Q0tKotEDMCwl4QXk7rC32";
         $ip = $_SERVER['REMOTE_ADDR'];
         $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
         $responseKeys = json_decode($response,true);
