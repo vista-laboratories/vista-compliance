@@ -110,11 +110,15 @@
         }*/
 
         // The field is empty, submit the form.
-        if(!document.getElementById("poisonpot").value) {
+        if(!document.getElementById("poisonpot").checked) {
+          //console.log(document.getElementById("poisonpot"));
+          //console.log("real");
           return true;
         }
          // the field has a value it's a spam bot
         else {
+          //console.log(document.getElementById("poisonpot"));
+          //console.log("fake");
           return false;
         }
       }
@@ -599,13 +603,13 @@
                         <div class="input-group">
                           <input class="form-control" style="border-top-left-radius:1.5em;border-bottom-left-radius:1.5em" size="30" id="email" name="email" type="email" placeholder="Email Address" required data-validation-required-message="Please enter your email address."/>
                           <div id="success"></div>
-                          <!--<input style="margin-top:0px; width: 100px;border-radius:1.5rem;color:white;border-top-left-radius:0;border-bottom-left-radius:0" class="btn btn-primary" size="10" type="submit" value="Subscribe!">-->
-                          <input style="margin-top:0px; width: 100px;border-radius:1.5rem;color:white;border-top-left-radius:0;border-bottom-left-radius:0" class="btn btn-primary" size="10" type="button" value="Subscribe!">
+                          <input style="margin-top:0px; width: 100px;border-radius:1.5rem;color:white;border-top-left-radius:0;border-bottom-left-radius:0" class="btn btn-primary" size="10" type="submit" value="Subscribe!">
+                          <!--<input style="margin-top:0px; width: 100px;border-radius:1.5rem;color:white;border-top-left-radius:0;border-bottom-left-radius:0" class="btn btn-primary" size="10" type="button" value="Subscribe!">-->
                           <!--<div style="position:absolute; left:-999em;">
                             <label>Keep this field blank</label>
                             <input type="text" name="poisonpot" id="poisonpot" />
                           </div>-->
-                          <input type="checkbox" name="poisonpot" value="1" style="display:none !important" tabindex="-1" autocomplete="off">
+                          <input type="checkbox" id="poisonpot" value="1" style="display:none !important" tabindex="-1" autocomplete="off">
                         </div>
                         <small class="promise" style="color:#ccc"><em>Regulatory compliance updates ONLY.</em></small>
                     </form>
