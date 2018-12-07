@@ -173,12 +173,26 @@
         }).trigger('change.states');
       });
       </script>
+      <!--show project # input field when response to existing is selected as type of application-->
+      <script>
+          function yesnoCheck(that) {
+              if (that.value == "followup") {
+                  //document.getElementById("pnum").style.display = "block";
+                  div = document.getElementById("pnum");
+                  $(div).slideDown( "slow" );
+              } else {
+                  //document.getElementById("pnum").style.display = "none";
+                  div = document.getElementById("pnum");
+                  $(div).slideUp( "slow" );
+              }
+          }
+      </script>
       <div class="row">
         <div class="col-lg-8 mb-4">
           <h3>Secure Upload Form</h3>
           <br>
           <!--<form name="sentMessage" id="contactForm" novalidate>-->
-          <form name="contactform" method="post" action="https://getsimpleform.com/messages?form_api_token=a7d2d601ec9c3e16482229a99c3a80b6" enctype="multipart/form-data">
+          <form name="contactform" method="post" action="https://getsimpleform.com/messages?form_api_token=b37c34f4f194f7e2020ff184954eb48c" enctype="multipart/form-data">
             <div class="control-group form-group">
               <div class="controls">
                 <label>Full Name <span style="color:#c00000">(required)</span></label>
@@ -186,60 +200,315 @@
                 <p class="help-block"></p>
               </div>
             </div>
+            <br>
             <div class="control-group form-group">
               <div class="controls">
                 <label>Company/Organization <span style="color:#c00000">(required)</span></label>
                 <input type="company" name="company" class="form-control" id="company" required data-validation-required-message="Please enter your company/organization.">
               </div>
             </div>
+            <br>
             <div class="control-group form-group">
               <div class="controls">
                 <label>Email Address <span style="color:#c00000">(required)</span></label>
                 <input type="email" name="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
               </div>
             </div>
+            <br>
             <div class="control-group form-group">
               <div class="controls">
                 <label>Additional Email Addresses</label>
-                <input type="addemail" name="addemail" class="form-control" id="email">
+                <input type="addemail" name="addemail" class="form-control" id="more_emails">
               </div>
             </div>
+            <br>
             <div class="control-group form-group">
-              <label for="sel1">Upload Type:</label>
-              <select name="subject" class="form-control" id="type">
+              <label for="sel1">Upload Type <span style="color:#c00000">(required)</span></label>
+              <select onchange="yesnoCheck(this);" name="upload_type" class="form-control" id="type" required data-validation-required-message="Please select the type of upload.">
                 <option></option>
                 <option value="FCC">New FCC Application (United States of America)</option>
                 <option value="ISED">New ISED Application (Canada)</option>
                 <option value="CE">New CE Application (European Union)</option>
-            		<option value="followup">Reponse to Existing Application</option>
-            		<option value="other">Other</option>
+            		<option value="followup">Response to Existing Application</option>
               </select>
             </div>
+            <br>
+            <div class="control-group form-group" id="pnum" style="display:none">
+              <div class="controls">
+                <label>Existing Project Number <span style="color:#c00000">(required)</span></label>
+                <input placeholder="For example: VL-19052101" type="project_number" name="project_number" class="form-control" id="project_number" required data-validation-required-message="Please enter the project number assigned to this job.">
+              </div>
+              <br>
+            </div>
+            <div class="control-group form-group">
+              <label for="sel2">Equipment Use:</label>
+              <select name="equipment_use" class="form-control" id="use">
+                <option></option>
+                <option value="fixed">Fixed</option>
+                <option value="mobile"> > 20 cm from body (Mobile Use)</option>
+                <option value="portable"> < 20 cm from body (Portable Use)</option>
+              </select>
+            </div>
+            <br>
+            <div class="control-group form-group">
+              <label for="sel3">Equipment Class:</label>
+              <select name="equipment_class" class="form-control" id="class">
+                <option></option>
+                <option value="Other">Other</option>
+                <option value="8CC - Part 18 Consumer Device">8CC - Part 18 Consumer Device</option>
+                <option value="AIS - Automatic Identification Systems">AIS - Automatic Identification Systems</option>
+                <option value="AMP - Amplifier">AMP - Amplifier</option>
+                <option value="CRD - Part 15 Radar Detector">CRD - Part 15 Radar Detector</option>
+                <option value="CRR - Superregenerative Receiver">CRR - Superregenerative Receiver</option>
+                <option value="CSR - Scanning Receiver">CSR - Scanning Receiver</option>
+                <option value="CXX - Communications Rcvr for use w/ licensed Tx and CBs">CXX - Communications Rcvr for use w/ licensed Tx and CBs</option>
+                <option value="CYY - Communications Receiver used w/ Pt 15 Transmitter">CYY - Communications Receiver used w/ Pt 15 Transmitter</option>
+                <option value="DCD - Part 15 Low Power Transmitter Below 1705 kHz">DCD - Part 15 Low Power Transmitter Below 1705 kHz</option>
+                <option value="DSC - Part 15 Security/Remote Control Transmitter">DSC - Part 15 Security/Remote Control Transmitter</option>
+                <option value="DSR - Part 15 Remote Control/Security Device Transceiver">DSR - Part 15 Remote Control/Security Device Transceiver</option>
+                <option value="DSS - Part 15 Spread Spectrum Transmitter">DSS - Part 15 Spread Spectrum Transmitter</option>
+                <option value="DTS - Digital Transmission System">DTS - Digital Transmission System</option>
+                <option value="DXT - Part 15 Low Power Transceiver, Rx Verified">DXT - Part 15 Low Power Transceiver, Rx Verified</option>
+                <option value="DXX - Part 15 Low Power Communication Device Transmitter">DXX - Part 15 Low Power Communication Device Transmitter</option>
+                <option value="EAD - Part 11 Emergency Alert Devices">EAD - Part 11 Emergency Alert Devices</option>
+                <option value="EAV - Part 15 Automatic Vehicle Identification System">EAV - Part 15 Automatic Vehicle Identification System</option>
+                <option value="ETB - Part 15 Cordless Telephone Base Transceiver">ETB - Part 15 Cordless Telephone Base Transceiver</option>
+                <option value="ETR - Part 15 Cordless Telephone Remote Transceiver">ETR - Part 15 Cordless Telephone Remote Transceiver</option>
+                <option value="ETS - Part 15 Cordless Telephone System">ETS - Part 15 Cordless Telephone System</option>
+                <option value="FAP - Part 15 Anti-Pilferage Device">FAP - Part 15 Anti-Pilferage Device</option>
+                <option value="FDS - Part 15 Field Disturbance Sensor">FDS - Part 15 Field Disturbance Sensor</option>
+                <option value="FRB - Part 95 Family Radio Base Transmitter">FRB - Part 95 Family Radio Base Transmitter</option>
+                <option value="FRE - Part 95 Family Radio Ear Held Transmitter">FRE - Part 95 Family Radio Ear Held Transmitter</option>
+                <option value="FRF - Part 95 Family Radio Face Held Transmitter">FRF - Part 95 Family Radio Face Held Transmitter</option>
+                <option value="FRT - Part 95 Family Radio Body Worn Transmitter">FRT - Part 95 Family Radio Body Worn Transmitter</option>
+                <option value="GAT - Part 15 Auditory Assistance Device (Transmitter)">GAT - Part 15 Auditory Assistance Device (Transmitter)</option>
+                <option value="GEP - 406 MHz EPIRB">GEP - 406 MHz EPIRB</option>
+                <option value="GHF - Part 80 HF Transmitter (GMDSS)">GHF - Part 80 HF Transmitter (GMDSS)</option>
+                <option value="GHH - Part 80 VHF Hand Held Transmitter (GMDSS)">GHH - Part 80 VHF Hand Held Transmitter (GMDSS)</option>
+                <option value="GMF - Part 80 MF Transmitter (GMDSS)">GMF - Part 80 MF Transmitter (GMDSS)</option>
+                <option value="GVH - Part 80 VHF Transmitter (GMDSS)">GVH - Part 80 VHF Transmitter (GMDSS)</option>
+                <option value="HID - Part 15 TV Interface Device">HID - Part 15 TV Interface Device</option>
+                <option value="JBC - Part 15 Class B Computing Device/Personal Computer">JBC - Part 15 Class B Computing Device/Personal Computer</option>
+                <option value="JBP - Part 15 Class B Computing Device Peripheral">JBP - Part 15 Class B Computing Device Peripheral</option>
+                <option value="LMS - Part 90 Location &amp; Monitoring Transmitter">LMS - Part 90 Location &amp; Monitoring Transmitter</option>
+                <option value="MRD - Marine Radar">MRD - Marine Radar</option>
+                <option value="MWR - Part 80 Marine Watch Receiver">MWR - Part 80 Marine Watch Receiver</option>
+                <option value="NII - Unlicensed National Information Infrastructure TX">NII - Unlicensed National Information Infrastructure TX</option>
+                <option value="PCB - PCS Licensed Transmitter">PCB - PCS Licensed Transmitter</option>
+                <option value="PCE - PCS Licensed Transmitter held to ear">PCE - PCS Licensed Transmitter held to ear</option>
+                <option value="PCF - PCS Licensed Transmitter held to face">PCF - PCS Licensed Transmitter held to face</option>
+                <option value="PCT - PCS Licensed Transmitter worn on body">PCT - PCS Licensed Transmitter worn on body</option>
+                <option value="PLB - Personal Locator Beacons">PLB - Personal Locator Beacons</option>
+                <option value="PUB - Part 15 Unlicensed PCS Base Station">PUB - Part 15 Unlicensed PCS Base Station</option>
+                <option value="PUE - Part 15 Unlicensed PCS portable Tx held to ear">PUE - Part 15 Unlicensed PCS portable Tx held to ear</option>
+                <option value="PUF - Part 15 Unlicensed PCS portable Tx held to face">PUF - Part 15 Unlicensed PCS portable Tx held to face</option>
+                <option value="PUT - Part 15 Unlicensed PCS portable Tx worn on body">PUT - Part 15 Unlicensed PCS portable Tx worn on body</option>
+                <option value="RNV - Part 80 NAVTEX Receiver">RNV - Part 80 NAVTEX Receiver</option>
+                <option value="SRT - Radar Transponder">SRT - Radar Transponder</option>
+                <option value="TBC - Licensed Broadcast Station Transmitter">TBC - Licensed Broadcast Station Transmitter</option>
+                <option value="TBF - Licensed Broadcast Transmitter Held to Face">TBF - Licensed Broadcast Transmitter Held to Face</option>
+                <option value="TBT - Licensed Broadcast Transmitter Worn on Body">TBT - Licensed Broadcast Transmitter Worn on Body</option>
+                <option value="TDC - Part 80 DSC Controller">TDC - Part 80 DSC Controller</option>
+                <option value="TNB - Licensed Non-Broadcast Station Transmitter">TNB - Licensed Non-Broadcast Station Transmitter</option>
+                <option value="TNE - Licensed Non-Broadcast Transmitter Held to Ear">TNE - Licensed Non-Broadcast Transmitter Held to Ear</option>
+                <option value="TNF - Licensed Non-Broadcast Transmitter Held to Face">TNF - Licensed Non-Broadcast Transmitter Held to Face</option>
+                <option value="TNT - Licensed Non-Broadcast Transmitter Worn on Body">TNT - Licensed Non-Broadcast Transmitter Worn on Body</option>
+                <option value="UWB - Ultra Wideband Transmitter">UWB - Ultra Wideband Transmitter</option>
+              </select>
+            </div>
+            <br>
             <div class="control-group form-group">
               <div class="controls">
-                <label>Message:</label>
-                <textarea name="message" rows="5" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                <label>Rule Part</label>
+                <input placeholder="For example: 15.247" type="rule_part" name="rule_part" class="form-control" id="rule_part">
               </div>
             </div>
+            <br>
             <div class="control-group form-group">
-              <label for="attachment">Attachment: </label>
-              <input class="btn" type="file" name="attachment" multiple>
+              <div class="controls">
+                <label for="sel4">Confidentiality Request</label> (<a href="https://apps.fcc.gov/kdb/GetAttachment.html?id=1aSGhSLWEmi8dHrC8iHppQ%3D%3D&desc=726920%20D01%20Confidentiality%20Request%20Procedures%20v01r02&tracking_number=41731">See Guidance</a>)
+                <select onchange="yesnoCheck(this);" name="upload_type" class="form-control" id="type" required data-validation-required-message="Please select the type of upload.">
+                  <option></option>
+                  <option value="short_term">Short-Term</option>
+                  <option value="permanent">Permanent</option>
+                  <option value="none">None</option>
+                </select>
+              </div>
             </div>
+            <br>
+            <div class="control-group form-group">
+              <label for="attachment">Upload Files: </label>
+              <br>
+              <label class="btn btn-secondary btn-sm">
+                  <input id="my-file-selector" type="file" style="display:none"
+                  onchange="$('#upload-file-info').html(this.files[0].name)">
+                  select file
+              </label>
+              <span class='label label-info' id="upload-file-info"></span>
+              <br>
+              <label class="btn btn-secondary btn-sm">
+                  <input id="my-file-selector" type="file" style="display:none"
+                  onchange="$('#upload-file').html(this.files[0].name)">
+                  select file
+              </label>
+              <span class='label label-info' id="upload-file"></span>
+              <br>
+              <label class="btn btn-secondary btn-sm">
+                  <input id="my-file-selector" type="file" style="display:none"
+                  onchange="$('#upload-file').html(this.files[0].name)">
+                  select file
+              </label>
+              <span class='label label-info' id="upload-file"></span>
+              <br>
+              <label class="btn btn-secondary btn-sm">
+                  <input id="my-file-selector" type="file" style="display:none"
+                  onchange="$('#upload-file').html(this.files[0].name)">
+                  select file
+              </label>
+              <span class='label label-info' id="upload-file"></span>
+              <br>
+              <label class="btn btn-secondary btn-sm">
+                  <input id="my-file-selector" type="file" style="display:none"
+                  onchange="$('#upload-file').html(this.files[0].name)">
+                  select file
+              </label>
+              <span class='label label-info' id="upload-file"></span>
+              <br>
+              <label class="btn btn-secondary btn-sm">
+                  <input id="my-file-selector" type="file" style="display:none"
+                  onchange="$('#upload-file').html(this.files[0].name)">
+                  select file
+              </label>
+              <span class='label label-info' id="upload-file"></span>
+              <br>
+              <label class="btn btn-secondary btn-sm">
+                  <input id="my-file-selector" type="file" style="display:none"
+                  onchange="$('#upload-file').html(this.files[0].name)">
+                  select file
+              </label>
+              <span class='label label-info' id="upload-file"></span>
+              <br>
+              <label class="btn btn-secondary btn-sm">
+                  <input id="my-file-selector" type="file" style="display:none"
+                  onchange="$('#upload-file').html(this.files[0].name)">
+                  select file
+              </label>
+              <span class='label label-info' id="upload-file"></span>
+              <br>
+              <label class="btn btn-secondary btn-sm">
+                  <input id="my-file-selector" type="file" style="display:none"
+                  onchange="$('#upload-file').html(this.files[0].name)">
+                  select file
+              </label>
+              <span class='label label-info' id="upload-file"></span>
+              <br>
+              <label class="btn btn-secondary btn-sm">
+                  <input id="my-file-selector" type="file" style="display:none"
+                  onchange="$('#upload-file').html(this.files[0].name)">
+                  select file
+              </label>
+              <span class='label label-info' id="upload-file"></span>
+              <br>
+              <label class="btn btn-secondary btn-sm">
+                  <input id="my-file-selector" type="file" style="display:none"
+                  onchange="$('#upload-file').html(this.files[0].name)">
+                  select file
+              </label>
+              <span class='label label-info' id="upload-file"></span>
+              <br>
+              <label class="btn btn-secondary btn-sm">
+                  <input id="my-file-selector" type="file" style="display:none"
+                  onchange="$('#upload-file').html(this.files[0].name)">
+                  select file
+              </label>
+              <span class='label label-info' id="upload-file"></span>
+              <br>
+              <label class="btn btn-secondary btn-sm">
+                  <input id="my-file-selector" type="file" style="display:none"
+                  onchange="$('#upload-file').html(this.files[0].name)">
+                  select file
+              </label>
+              <span class='label label-info' id="upload-file"></span>
+              <br>
+              <label class="btn btn-secondary btn-sm">
+                  <input id="my-file-selector" type="file" style="display:none"
+                  onchange="$('#upload-file').html(this.files[0].name)">
+                  select file
+              </label>
+              <span class='label label-info' id="upload-file"></span>
+              <br>
+              <label class="btn btn-secondary btn-sm">
+                  <input id="my-file-selector" type="file" style="display:none"
+                  onchange="$('#upload-file').html(this.files[0].name)">
+                  select file
+              </label>
+              <span class='label label-info' id="upload-file"></span>
+
+            </div>
+            <br>
+            <ul>
+              <li>By submitting this application you are agreeing to Vista Lab's Pricing and Standard Terms and Conditions.</li>
+              <li>This agreement covers this application and all subsequent changes, and indicates that you are the authorized agent for this applicant.</li>
+              <li>All work relating to this project, including handling of samples and application paperwork, will be performed with confidentiality. There will not be any disclosure of information relating to this project, unless authorized. However, all application documents will be submitted to the applicable regulatory body and publically available on the FCC website, unless confidentiality has been requested per sections 0.457 and 0.459.</li>
+              <li>The Certification will be issued based on this agreement.</li>
+              <li>To ensure your application is processed efficiently, please name your files in the following manner (excluding quotation marks).</li>
+            </ul>
+            <br>
+            <table>
+              <tr>
+                <th style="text-align:center">Required Exhibits</th>
+                <th style="text-align:center">Suggested File Name</th>
+              </tr>
+              <tr>
+                <td>Internal Photos</td>
+                <td>"FCC ID" - Internal Photos.pdf</td>
+              </tr>
+              <tr>
+                <td>External Photos</td>
+                <td>"FCC ID" - External Photos.pdf</td>
+              </tr>
+              <tr>
+                <td>Label Location</td>
+                <td>"FCC ID" - Label.pdf</td>
+              </tr>
+              <tr>
+                <td>Test Setup Photos</td>
+                <td>"FCC ID" - Test Setup.pdf</td>
+              </tr>
+              <tr>
+                <td>Block Diagram</td>
+                <td>"FCC ID" - Block Diagram.pdf</td>
+              </tr>
+              <tr>
+                <td>Schematics</td>
+                <td>"FCC ID" - Schematic.pdf</td>
+              </tr>
+              <tr>
+                <td>Parts List</td>
+                <td>"FCC ID" - Parts List.pdf</td>
+              </tr>
+              <tr>
+                <td>Operational Description</td>
+                <td>"FCC ID" - Operational Description.pdf</td>
+              </tr>
+              <tr>
+                <td>User Manual</td>
+                <td>"FCC ID" - User Manual.pdf</td>
+              </tr>
+              <tr>
+                <td>Test Report</td>
+                <td>"FCC ID" - Test Report.pdf</td>
+              </tr>
+
+            </table>
+
+            <br>
+
             <div id="success"></div>
             <!-- For success/fail messages -->
-            <input type="submit" class="btn btn-primary" value="Send Message">
+            <input type="submit" class="btn btn-primary" value="Submit Job">
             <!--<button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>-->
           </form>
-          <script>
-             $(function(){
-                $("input[type = 'submit']").click(function(){
-                   var $fileUpload = $("input[type='file']");
-                   if (parseInt($fileUpload.get(0).files.length) > 5){
-                      alert("You are only allowed to upload a maximum of 5 files");
-                   }
-                });
-             });
-          </script>
         </div>
 
       </div>
