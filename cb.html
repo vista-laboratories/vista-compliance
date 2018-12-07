@@ -180,10 +180,14 @@
                   //document.getElementById("pnum").style.display = "block";
                   div = document.getElementById("pnum");
                   $(div).slideDown( "slow" );
+                  //$('#project_number input, #project_number select').addClass('validate[required]');
+                  req_status = document.getElementById("project_number").required = true;
               } else {
                   //document.getElementById("pnum").style.display = "none";
                   div = document.getElementById("pnum");
                   $(div).slideUp( "slow" );
+                  req_status = document.getElementById("project_number").required = false;
+                  //$("#project_number").removeAttr("required");
               }
           }
       </script>
@@ -192,11 +196,11 @@
           <h3>Secure Upload Form</h3>
           <br>
           <!--<form name="sentMessage" id="contactForm" novalidate>-->
-          <form name="contactform" method="post" action="https://getsimpleform.com/messages?form_api_token=b37c34f4f194f7e2020ff184954eb48c" enctype="multipart/form-data">
+          <form name="certificationform" method="post" action="https://getsimpleform.com/messages?form_api_token=b37c34f4f194f7e2020ff184954eb48c" enctype="multipart/form-data">
             <div class="control-group form-group">
               <div class="controls">
                 <label>Full Name <span style="color:#c00000">(required)</span></label>
-                <input type="text" name="name" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                <input type="name" name="name" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
                 <p class="help-block"></p>
               </div>
             </div>
@@ -224,7 +228,7 @@
             <br>
             <div class="control-group form-group">
               <label for="sel1">Upload Type <span style="color:#c00000">(required)</span></label>
-              <select onchange="yesnoCheck(this);" name="upload_type" class="form-control" id="type" required data-validation-required-message="Please select the type of upload.">
+              <select onchange="yesnoCheck(this);" type="upload_type" name="upload_type" class="form-control" id="type" required data-validation-required-message="Please select the type of upload.">
                 <option></option>
                 <option value="FCC">New FCC Application (United States of America)</option>
                 <option value="ISED">New ISED Application (Canada)</option>
@@ -236,13 +240,13 @@
             <div class="control-group form-group" id="pnum" style="display:none">
               <div class="controls">
                 <label>Existing Project Number <span style="color:#c00000">(required)</span></label>
-                <input placeholder="For example: VL-19052101" type="project_number" name="project_number" class="form-control" id="project_number" required data-validation-required-message="Please enter the project number assigned to this job.">
+                <input placeholder="For example: VL-19052101" type="project_number" name="project_number" class="form-control" id="project_number">
               </div>
               <br>
             </div>
             <div class="control-group form-group">
               <label for="sel2">Equipment Use:</label>
-              <select name="equipment_use" class="form-control" id="use">
+              <select type="equipment_use" name="equipment_use" class="form-control" id="use">
                 <option></option>
                 <option value="fixed">Fixed</option>
                 <option value="mobile"> > 20 cm from body (Mobile Use)</option>
@@ -252,7 +256,7 @@
             <br>
             <div class="control-group form-group">
               <label for="sel3">Equipment Class:</label>
-              <select name="equipment_class" class="form-control" id="class">
+              <select type="equipment_class" name="equipment_class" class="form-control" id="class">
                 <option></option>
                 <option value="Other">Other</option>
                 <option value="8CC - Part 18 Consumer Device">8CC - Part 18 Consumer Device</option>
@@ -327,7 +331,7 @@
             <div class="control-group form-group">
               <div class="controls">
                 <label for="sel4">Confidentiality Request</label> (<a href="https://apps.fcc.gov/kdb/GetAttachment.html?id=1aSGhSLWEmi8dHrC8iHppQ%3D%3D&desc=726920%20D01%20Confidentiality%20Request%20Procedures%20v01r02&tracking_number=41731">See Guidance</a>)
-                <select onchange="yesnoCheck(this);" name="upload_type" class="form-control" id="type" required data-validation-required-message="Please select the type of upload.">
+                <select onchange="yesnoCheck(this);" type="confidentiality" name="confidentiality" class="form-control" id="type">
                   <option></option>
                   <option value="short_term">Short-Term</option>
                   <option value="permanent">Permanent</option>
@@ -340,105 +344,105 @@
               <label for="attachment">Upload Files: </label>
               <br>
               <label class="btn btn-secondary btn-sm">
-                  <input id="my-file-selector" type="file" style="display:none"
+                  <input id="my-file-selector" type="file" name="file1" style="display:none"
                   onchange="$('#upload-file-info').html(this.files[0].name)">
                   select file
               </label>
               <span class='label label-info' id="upload-file-info"></span>
               <br>
               <label class="btn btn-secondary btn-sm">
-                  <input id="my-file-selector" type="file" style="display:none"
+                  <input id="my-file-selector" type="file" name="file2" style="display:none"
                   onchange="$('#upload-file').html(this.files[0].name)">
                   select file
               </label>
               <span class='label label-info' id="upload-file"></span>
               <br>
               <label class="btn btn-secondary btn-sm">
-                  <input id="my-file-selector" type="file" style="display:none"
+                  <input id="my-file-selector" type="file" name="file3" style="display:none"
                   onchange="$('#upload-file').html(this.files[0].name)">
                   select file
               </label>
               <span class='label label-info' id="upload-file"></span>
               <br>
               <label class="btn btn-secondary btn-sm">
-                  <input id="my-file-selector" type="file" style="display:none"
+                  <input id="my-file-selector" type="file" name="file4" style="display:none"
                   onchange="$('#upload-file').html(this.files[0].name)">
                   select file
               </label>
               <span class='label label-info' id="upload-file"></span>
               <br>
               <label class="btn btn-secondary btn-sm">
-                  <input id="my-file-selector" type="file" style="display:none"
+                  <input id="my-file-selector" type="file" name="file5" style="display:none"
                   onchange="$('#upload-file').html(this.files[0].name)">
                   select file
               </label>
               <span class='label label-info' id="upload-file"></span>
               <br>
               <label class="btn btn-secondary btn-sm">
-                  <input id="my-file-selector" type="file" style="display:none"
+                  <input id="my-file-selector" type="file" name="file6" style="display:none"
                   onchange="$('#upload-file').html(this.files[0].name)">
                   select file
               </label>
               <span class='label label-info' id="upload-file"></span>
               <br>
               <label class="btn btn-secondary btn-sm">
-                  <input id="my-file-selector" type="file" style="display:none"
+                  <input id="my-file-selector" type="file" name="file7" style="display:none"
                   onchange="$('#upload-file').html(this.files[0].name)">
                   select file
               </label>
               <span class='label label-info' id="upload-file"></span>
               <br>
               <label class="btn btn-secondary btn-sm">
-                  <input id="my-file-selector" type="file" style="display:none"
+                  <input id="my-file-selector" type="file" name="file8" style="display:none"
                   onchange="$('#upload-file').html(this.files[0].name)">
                   select file
               </label>
               <span class='label label-info' id="upload-file"></span>
               <br>
               <label class="btn btn-secondary btn-sm">
-                  <input id="my-file-selector" type="file" style="display:none"
+                  <input id="my-file-selector" type="file" name="file9" style="display:none"
                   onchange="$('#upload-file').html(this.files[0].name)">
                   select file
               </label>
               <span class='label label-info' id="upload-file"></span>
               <br>
               <label class="btn btn-secondary btn-sm">
-                  <input id="my-file-selector" type="file" style="display:none"
+                  <input id="my-file-selector" type="file" name="file10" style="display:none"
                   onchange="$('#upload-file').html(this.files[0].name)">
                   select file
               </label>
               <span class='label label-info' id="upload-file"></span>
               <br>
               <label class="btn btn-secondary btn-sm">
-                  <input id="my-file-selector" type="file" style="display:none"
+                  <input id="my-file-selector" type="file" name="file11" style="display:none"
                   onchange="$('#upload-file').html(this.files[0].name)">
                   select file
               </label>
               <span class='label label-info' id="upload-file"></span>
               <br>
               <label class="btn btn-secondary btn-sm">
-                  <input id="my-file-selector" type="file" style="display:none"
+                  <input id="my-file-selector" type="file" name="file12" style="display:none"
                   onchange="$('#upload-file').html(this.files[0].name)">
                   select file
               </label>
               <span class='label label-info' id="upload-file"></span>
               <br>
               <label class="btn btn-secondary btn-sm">
-                  <input id="my-file-selector" type="file" style="display:none"
+                  <input id="my-file-selector" type="file" name="file13" style="display:none"
                   onchange="$('#upload-file').html(this.files[0].name)">
                   select file
               </label>
               <span class='label label-info' id="upload-file"></span>
               <br>
               <label class="btn btn-secondary btn-sm">
-                  <input id="my-file-selector" type="file" style="display:none"
+                  <input id="my-file-selector" type="file" name="file14" style="display:none"
                   onchange="$('#upload-file').html(this.files[0].name)">
                   select file
               </label>
               <span class='label label-info' id="upload-file"></span>
               <br>
               <label class="btn btn-secondary btn-sm">
-                  <input id="my-file-selector" type="file" style="display:none"
+                  <input id="my-file-selector" type="file" name="file15" style="display:none"
                   onchange="$('#upload-file').html(this.files[0].name)">
                   select file
               </label>
