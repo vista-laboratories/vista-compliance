@@ -211,7 +211,7 @@ td, th {
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-  background: url(/images/preload.png) center no-repeat #fff;
+  background: url(/images/preloadOLD.png) center no-repeat #fff;
 	/*background: url(/images/loader-128x/Preloader_2.gif) center no-repeat #fff;*/
 }
 
