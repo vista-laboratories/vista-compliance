@@ -294,77 +294,9 @@
 
 					<div class="quote-list col-md-8 res-m-bttm">
 						<div class="quote-group">
-							<h1>Send Us Your Inquiry</h1>
-							<p>We will always be available to help answer your questions and provide regulatory compliance guidance, free of charge. Let us know if you have any inquiries by contacting us today!</p>
-							<form id="quote-request" class="form-quote" method="post" action="https://getsimpleform.com/messages?form_api_token=a7d2d601ec9c3e16482229a99c3a80b6">
-							<!--<form id="quote-request" class="form-quote" action="form/quote-request.php" method="post">-->
-								<!--<input type='hidden' name='redirect_to' value='https://www.vista-compliance.com/'/>-->
-								<input name="quote-request-name" type="text" placeholder="Name *" class="form-control required">
-								<!--<div class="form-group row">
-									<div class="form-field col-md-6 form-m-bttm">
-										<input name="quote-request-name" type="text" placeholder="Name *" class="form-control required">
-									</div>
-									<div class="form-field col-md-6">
-										<input name="quote-request-company" type="text" placeholder="Company *" class="form-control required">
-									</div>
-								</div>
-								<div class="form-group row">
-									<div class="form-field col-md-6 form-m-bttm">
-										<input name="quote-request-email" type="email" placeholder="Email *" class="form-control required email">
-									</div>
-									<div class="form-field col-md-6">
-										<input name="quote-request-phone" type="text" placeholder="Phone *" class="form-control required">
-									</div>
-								</div>
-								<h4>Subject of Inquiry</h4>
-								<div class="form-group row">
-									<ul class="form-field clearfix">
-										<li class="col-sm-4"><input type="checkbox" name="quote-request-interest[]" value="General Inquiry or Question"> <span> General Inquiry or Question</span></li>
-										<li class="col-sm-4"><input type="checkbox" name="quote-request-interest[]" value="Compliance Testing"> <span> Compliance Testing</span></li>
-										<li class="col-sm-4"><input type="checkbox" name="quote-request-interest[]" value="Product Certification"> <span> Product Certification</span></li>
 
-									</ul>
-									<ul class="form-field clearfix">
-										<li class="col-sm-4"><input type="checkbox" name="quote-request-interest[]" value="Global Market Access"> <span> Global Market Access</span></li>
-										<li class="col-sm-4"><input type="checkbox" name="quote-request-interest[]" value="Other"> <span> Other</span></li>
-									</ul>
-								</div>
-								<div class="form-group row">
-									<div class="form-field col-md-6">
-										<p>Best Time to Reach</p>
-										<select name="quote-request-reach">
-											<option value="">Please select</option>
-											<option value="09am-12pm">09 AM - 12 PM</option>
-											<option value="12pm-03pm">12 PM - 03 PM</option>
-											<option value="03pm-06pm">03 PM - 06 PM</option>
-										</select>
-									</div>
-									<div class="form-field col-md-6">
-										<p>How Did You Hear About Us?</p>
-										<select name="quote-request-hear">
-											<option value="">Please select</option>
-											<option value="Friends">Friends</option>
-											<option value="Colleague">Colleague</option>
-											<option value="Facebook">Social Media</option>
-											<option value="Other">Online Search</option>
-											<option value="Other">Other</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-group row">
-									<div class="form-field col-md-12">
-										<textarea name="quote-request-message" placeholder="Message *" class="txtarea form-control required"></textarea>
-									</div>
-								</div>-->
-								<input type="text" class="hidden" name="form-anti-honeypot" value="">
-								<!--<div class="g-recaptcha" data-sitekey="6Ldp8XAUAAAAAGQHT67RZM3ycisRDXds0_w5d45U"></div>-->
-								<div class="g-recaptcha" data-sitekey="6LcY23sUAAAAAHXEzNpOIAZ00V-GLM1q-VnDMbNF"></div>
-								<div class="gaps"></div>
-								<button type="submit" class="btn">Submit</button>
-								<!--<input type="submit" class="btn" value="Send Message"></input>-->
-								<div class="form-results"></div>
-							</form>
-				          <form name="contactform" method="post" action="https://getsimpleform.com/messages?form_api_token=a7d2d601ec9c3e16482229a99c3a80b6" enctype="multipart/form-data">
+<!-- if id exists, then google. else naw-->
+				          <form id="quote-request" class="form-quote" name="contactform" method="post" action="https://getsimpleform.com/messages?form_api_token=a7d2d601ec9c3e16482229a99c3a80b6" enctype="multipart/form-data">
 										<input type='hidden' name='redirect_to' value='https://www.vista-compliance.com/'/>
 										<div class="control-group form-group">
 				              <div class="controls">
@@ -373,49 +305,13 @@
 				                <p class="help-block"></p>
 				              </div>
 				            </div>
-				            <!--<div class="control-group form-group">
-				              <div class="controls">
-				                <label>Phone Number:</label>
-				                <input type="tel" name="phone" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
-				              </div>
-				            </div>
-				            <div class="control-group form-group">
-				              <div class="controls">
-				                <label>Email Address:</label>
-				                <input type="email" name="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
-				              </div>
-				            </div>
-				            <div class="control-group form-group">
-				              <div class="controls">
-				                <label>Company/Organization:</label>
-				                <input type="company" name="company" class="form-control" id="company" required data-validation-required-message="Please enter your company/organization.">
-				              </div>
-				            </div>
-				            <div class="control-group form-group">
-				              <label for="sel1">Subject:</label>
-				              <select name="subject" class="form-control" id="subject">
-				                <option></option>
-				                <option>General Inquiry</option>
-				            		<option>Compliance Testing</option>
-				            		<option>Product Certification</option>
-				            		<option>Global Market Access</option>
-				                <option>Careers at Vista Labs</option>
-				              </select>
-				            </div>
-				            <div class="control-group form-group">
-				              <div class="controls">
-				                <label>Message:</label>
-				                <textarea name="message" rows="5" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
-				              </div>
-				            </div>
-				            <div class="control-group form-group">
-				              <label for="attachment">Attachment: </label>
-				              <input class="btn" type="file" name="attachment" multiple>
-				            </div>-->
-										<div class="control-group form-group g-recaptcha" data-sitekey="6LcY23sUAAAAAHXEzNpOIAZ00V-GLM1q-VnDMbNF" required></div>
+
+										<div class="g-recaptcha" data-sitekey="6LcY23sUAAAAAHXEzNpOIAZ00V-GLM1q-VnDMbNF"></div>
 				            <div id="success"></div>
 				            <!-- For success/fail messages -->
+										<button type="submit" class="btn">Submit</button>
 				            <input type="submit" class="btn btn-primary" value="Send Message">
+										<div class="form-results"></div>
 				            <!--<button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>-->
 				          </form>
 
