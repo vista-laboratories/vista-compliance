@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Vista Lab's global certification team and test lab will help you certify your product obtain FCC/ISED certifications and other global certifications. Vista Labs, based in Orange County, provides comprehensive services in the areas of EMC/EMI, RF, SAR, DFS as well as comprehensive certification services.">
+    <meta name="author" content="">
+
+    <title>Vista Laboratories - Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <!-- for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!------>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- favicon for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps -->
+    <link rel="icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+<!------>
+
+    <!-- for loader -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script>
+      $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");
+      });
+    </script>
+
+    <!-- for footer -->
+    <link rel="stylesheet" href="css/Footer-with-button-logo.css">
+
+    <!--shrink nav on scroll -->
+    <script>
+    var flag = 0;
+    function togglerfnc() {
+      console.log("togglrfnc")
+      if (flag == 0 && scrolled == 0){
+        $("nav").addClass("mobilelarge");
+        flag = 1
+      } else if (flag == 0 && scrolled == 1) {
+        $("nav").removeClass("small").addClass("mobilelarge");
+        flag = 1
+      } else if (flag == 1 && scrolled == 0) {
+        $("nav").removeClass("mobilelarge");
+        flag = 0
+      } else if (flag == 1 && scrolled == 1) {
+        $("nav").removeClass("mobilelarge").addClass("small");
+        flag = 0
+      }
+      /*document.getElementById("demo").innerHTML = "Hello World";*/
+    }
+    </script>
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script>
+    var scrolled = 0;
+    var openclick = 0;
+    var closeclick = 1;
+    $(document).on("scroll", function() {
+    	if($(document).scrollTop()>10) {
+        if (flag == 0) {
+    		$("nav").removeClass("large").addClass("small");
+        scrolled = 1;}
+    	} else {
+    		$("nav").removeClass("small").addClass("large");
+        scrolled = 0;
+    	}
+    });
+    </script>
+
+    <!--honeypot and reject list -->
+    <script type="text/javascript">
+    	function validateMyForm() {
+        //reject non-corporate domains
+        /*var rejectList = [ "yahoo.com" , "gmail.com", "aol.com" ];
+        var emailValue = document.getElementById("email").value; // To Get Value (can use getElementById)
+        var splitArray = emailValue.split('@'); // To Get Array
+
+        if(rejectList.indexOf(splitArray[1]) >= 0){
+        // Means it has the rejected domains
+          return false;
+        }*/
+
+        // The field is empty, submit the form.
+        if(!document.getElementById("poisonpot").checked) {
+          //console.log(document.getElementById("poisonpot"));
+          //console.log("real");
+          return true;
+        }
+         // the field has a value it's a spam bot
+        else {
+          //console.log(document.getElementById("poisonpot"));
+          //console.log("fake");
+          return false;
+        }
+      }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137022429-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-137022429-1');
+    </script>
+
+  </head>
+
+  <!-- body tags used if preloading with circular load animation -->
+  <!--<body onload="myFunction()" style="margin:0;">-->
+  <body>
+  <div class="se-pre-con"></div>
+
+  <!--preloading with circular load animation -->
+  <!--<div id="loader"></div>
+  <script>
+  var myVar;
+
+  function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+  }
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script> -->
+
+  <!-- outer div for loading content, if preloading with circular load animation -->
+  <!--<div style="display:none;" id="myDiv" class="animate-bottom">-->
+
+  <!--monthly webinar link -->
+  <a class="btn btn-lg btn-info" style="position:fixed;bottom: 30px;right: 30px;z-index:999;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);" href="webinars">May Webinar 🇺🇸<br>United States (FCC): Sign-Up</a>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a href="/index"><span><img src="images/2_inch_logo.png" alt="vista logo" width="75"/></span></a>
+        <a class="navbar-brand" href="/index" style="padding-top:0.7em;font-weight: 600;font-size:1.7em;text-align:center;">Vista Labs<p style="font-weight:400; font-size:0.75rem">TEST • CERTIFY • COMPLY</p></a>
+        <button onclick="togglerfnc()" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <!--<ul class="navbar-nav ml-auto">-->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about">Company</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="accreditation">Accreditation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact">Inquire</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/news/news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cn"><i class="material-icons">translate</i></a>
+            </li>
+            <!--
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="news">News Updates</a>
+                <a class="dropdown-item" href="pricingtable">Pricing Table</a>
+              </div>
+            </li>-->
+
+            <!--
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Portfolio
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="portfolio-1-col">1 Column Portfolio</a>
+                <a class="dropdown-item" href="portfolio-2-col">2 Column Portfolio</a>
+                <a class="dropdown-item" href="portfolio-3-col">3 Column Portfolio</a>
+                <a class="dropdown-item" href="portfolio-4-col">4 Column Portfolio</a>
+                <a class="dropdown-item" href="portfolio-item">Single Portfolio Item</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Blog
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="blog-home-1">Blog Home 1</a>
+                <a class="dropdown-item" href="blog-home-2">Blog Home 2</a>
+                <a class="dropdown-item" href="blog-post">Blog Post</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other Pages
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="full-width">Full Width Page</a>
+                <a class="dropdown-item" href="sidebar">Sidebar Page</a>
+                <a class="dropdown-item" href="faq">FAQ</a>
+                <a class="dropdown-item" href="404">404</a>
+                <a class="dropdown-item" href="pricing">Pricing Table</a>
+              </div>
+            </li>-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <br>
+      <br>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url(/images/chamber00.jpg)">
+            <div class="carousel-caption d-none d-md-block">
+
+              <a href="#" style="float:middle;-webkit-filter: drop-shadow(4px 4px 4px #fff); filter: drop-shadow(4px 4px 4px #fff);"><span><img src="/images/2_inch_logo.png" alt="vista logo" width="200"/></span></a>
+              <br>
+              <br>
+              <h3 style="font-weight: 600;text-shadow: 1px 1px #000000;">Vista Compliance Laboratories</h3>
+              <p style="text-shadow: 1px 1px #000000;">Your partner in global regulatory compliance</p>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <!--<div class="carousel-item" style="background-image: url('/images/SAR testingfront.jpeg')">-->
+          <div class="carousel-item" style="background-image: url('/images/absorber00.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 style="font-weight: 600;text-shadow: 1px 1px #000000;">The Vista Compliance Guarantee</h3>
+              <!--<h3>Second Slide</h3>-->
+              <p style="text-shadow: 1px 1px #000000;">Vista Laboratories provides comprehensive certification services and ensures your products are in compliance</p>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('/images/RF testingfront.jpeg')">
+            <div class="carousel-caption d-none d-md-block">
+              <!--<h3>Third Slide</h3>-->
+              <h3 style="font-weight: 600; text-shadow: 1px 1px #000000;">World class laboratory, world class personnel</h3>
+              <p style="text-shadow: 1px 1px #000000;">Our state of the art laboratory is situated in the quaint and beautiful city by the sea</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+      <br>
+      <br>
+      <h1 class="my-4" style="text-align: center">Enter the Global Marketplace</h1>
+      <p style="text-align: center">Vista Labs is your guide through the maze of regulatory compliance testing, product certifications, and international approval.
+      <br>Why <a href="about#whyus">choose us</a>? Take a look at our comprehensive list of <a href="services">services ›</a></p>
+      <br>
+      <br>
+
+      <!-- Marketing Icons Section -->
+      <div class="row">
+        <div class="swing col-lg-4 mb-4">
+          <div class="card h-100">
+            <h4 class="card-header" style="text-align:center"><i class="material-icons">search</i> Compliance Testing</h4>
+            <div class="border card-body">
+              <p class="card-text">Our expansive accredited electrical testing scope allows us recognition as a conformity assessment body for high-in-demand, mutually recognized countries.</p>
+            </div>
+            <div class="card-footer">
+              <a href="/services#compliancetesting" class="btn btn-primary">Learn More ›</a>
+            </div>
+          </div>
+        </div>
+        <div class="swing col-lg-4 mb-4">
+          <div class="card h-100">
+            <h4 class="card-header" style="text-align:center"><i class="material-icons">done_all</i> Product Certifications</h4>
+            <div class="border card-body">
+              <p class="card-text">With technical expertise and advanced internal workflow, Vista Labs is able to provide an efficient and cost-effective certification experience.</p>
+            </div>
+            <div class="card-footer">
+              <a href="/services#productcertification" class="btn btn-primary">Learn More ›</a>
+            </div>
+          </div>
+        </div>
+        <div class="swing col-lg-4 mb-4">
+          <div class="card h-100">
+            <h4 class="card-header" style="text-align:center"><i class="material-icons">public</i> Global Compliance</h4>
+            <div class="border card-body">
+              <p class="card-text">Vista Labs handles all government regulations through agents in over 150 countries to approve your products in all of the world's markets. Contact us today!</p>
+            </div>
+            <div class="card-footer">
+              <a href="/services#globalmarketaccess" class="btn btn-primary">Learn More ›</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <br>
+      <hr>
+
+      <!--capabilities section-->
+      <br>
+      <br>
+      <h2 style="text-align: center">Our Facilities and Capabilities</h2>
+      <br>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 portfolio-item">
+          <div class="card h-100" style="border:0px">
+            <img class="fade card-img-top" src="/images/Picture1.png" alt="" style="width:250px;height:250px;margin-left:auto;margin-right:auto;">
+            <div class="card-body">
+              <h5 class="card-title">
+                <strong style="color:#007bff">10 Meter Chamber</strong>
+              </h5>
+              <p class="card-text">Our 10m semi-anechoic chamber allows us to accurately measure radiated emissions (RE), determine a product’s immunity to RF fields, and enables us to perform testing for countries such as Taiwan and South Korea.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 portfolio-item">
+          <div class="card h-100" style="border:0px">
+            <img class="fade card-img-top" src="/images/Picture2.png" alt="" style="width:250px;height:250px;margin-left:auto;margin-right:auto;">
+            <div class="card-body">
+              <h5 class="card-title">
+                <strong style="color:#007bff">Technical Excellence</strong>
+              </h5>
+              <p class="card-text">The team prides themselves on handling projects efficiently through sound technical knowledge and powerful processes in order to reduce overhead and provide a quality, cost-effective solution to you.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 portfolio-item">
+          <div class="card h-100" style="border:0px">
+            <img class="fade card-img-top" src="/images/Picture3.png" alt="" style="width:250px;height:250px;margin-left:auto;margin-right:auto;">
+            <div class="card-body">
+              <h5 class="card-title">
+                <strong style="color:#007bff">Superior Equipment</strong>
+              </h5>
+              <p class="card-text">We use high-end testing equipment and perform routine calibrations to maintain our ISO/IEC 17025 and 17065 accreditations and in order to produce the most accurate results, recognized by regulatory authorities globally.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 portfolio-item">
+          <div class="card h-100" style="border:0px">
+            <img class="fade card-img-top" src="/images/Picture4.png" alt="" style="width:250px;height:250px;margin-left:auto;margin-right:auto;">
+            <div class="card-body">
+              <h5 class="card-title">
+                <strong style="color:#007bff">Beautiful Location</strong>
+              </h5>
+              <p class="card-text">Headquartered in Orange County and nestled in the beautiful Spanish city by the sea, Vista Laboratories enjoys beautiful year round weather. Please come visit us!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <br>
+      <hr>
+      <!-- Trusted by companies worldwire Section -->
+
+      <br>
+      <br>
+      <h2 style="text-align: center">Trusted by Companies Worldwide</h2>
+
+      <div class="row">
+        <div style="text-align: center">
+          <div class="col-lg-2 col-sm-6 portfolio-item" style="display:inline-block;">
+              <img class="card-img-top" src="/images/companies/huawei.png" alt="">
+          </div>
+          <div class="col-lg-2 col-sm-6 portfolio-item" style="display:inline-block;">
+              <img class="card-img-top" src="/images/companies/extreme.png" alt="">
+          </div>
+          <div class="col-lg-2 col-sm-6 portfolio-item" style="display:inline-block;">
+              <img class="card-img-top" src="/images/companies/dlink.png" alt="">
+          </div>
+          <div class="col-lg-2 col-sm-6 portfolio-item" style="display:inline-block;">
+              <img class="card-img-top" src="/images/companies/acer.png" alt="">
+          </div>
+          <div class="col-lg-2 col-sm-6 portfolio-item" style="display:inline-block;">
+              <img class="card-img-top" src="/images/companies/sonova.png" alt="">
+          </div>
+        </div>
+
+      </div>
+        <!--
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="https://placehold.it/700x400" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Project One</a>
+              </h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="https://placehold.it/700x400" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Project Two</a>
+              </h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="https://placehold.it/700x400" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Project Three</a>
+              </h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="https://placehold.it/700x400" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Project Four</a>
+              </h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="https://placehold.it/700x400" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Project Five</a>
+              </h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="https://placehold.it/700x400" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Project Six</a>
+              </h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
+            </div>
+          </div>
+        </div>
+      </div>-->
+      <!-- /.row -->
+
+      <!-- Features Section -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 style="text-align:center">Let us handle compliance and regulations</h2>
+          <p style="text-align:center">while you focus on building your product.</p>
+          <ul>
+            <li>
+              <!--<strong>Bootstrap v4</strong>-->
+              <!--<i class="material-icons">alarm</i> -->
+              Round the clock support
+            </li>
+            <li>Personal commitment to your success</li>
+            <li>Testing expertise</li>
+            <li>State of the art facilities</li>
+            <li>On time and on target solutions</li>
+          </ul>
+          <p>Vista Laboratories is your one-stop shop for all of your regulatory compliance needs. Whether you need your device tested
+             and certified, or approved internationally, Vista is your partner throughout the process
+             and handles all aspects product compliance on your behalf.</p>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid rounded" src="/images/chamber.jpg" alt="">
+        </div>
+      </div>
+      <!-- /.row -->
+      <br>
+      <hr>
+      <br>
+
+      <!-- Call to Action Section -->
+      <div class="row mb-4">
+        <div class="col-md-8">
+          <p>Please don't hesitate to contact us for any general inquiries, compliance testing questions, certification requests,
+            or any customized quotation for your product. We're here to help!</p>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-lg btn-primary btn-block" href="contact">Contact us today!</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4" style="margin-top:-15px">
+                    <br>
+                    <a href="/index"><img src="images/2_inch_logo.png" alt="vista logo" width="75" style="padding-bottom:15px"/></a>
+                    <p style="display:inline;font-weight: 600;font-size:1.6em;text-align:center;">Vista Labs</p>
+                    <ul>
+                        <li><a href="mailto:info@vista-compliance.com"><i class="material-icons" style="color: #495057; vertical-align:middle">mail</i></a>&nbsp;info@vista-compliance.com</li>
+                        <li><a href="tel:+1-949-393-1123"><i class="material-icons" style="color: #495057; vertical-align:middle">call</i></a>&nbsp;(949) 393-1123</li>
+                        <li><a href="https://www.google.com/maps/place/Vista+Laboratories,+Inc./@33.458629,-117.5976271,3110m/data=!3m1!1e3!4m8!1m2!2m1!1svista+laboratories!3m4!1s0x80dcf3711e797f4b:0x4b303dd1bc21b737!8m2!3d33.458629!4d-117.588859"><i class="material-icons" style="color: #495057; vertical-align:middle">pin_drop</i></a>&nbsp;1261 Puerta Del Sol</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;San Clemente, CA 92673</li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="about">About</a></li>
+                        <li><a href="services">Services</a></li>
+                        <li><a href="contact">Contact us</a></li>
+                        <li><a href="privacy">Privacy</a></li>
+                        <li><a href="terms">Terms of Service</a></li>
+                        <!--<li><a href="#">Legal</a></li>-->
+                        <!--<li><a href="#">Reviews</a></li>-->
+                    </ul>
+                    <!--
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="index">Home</a></li>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>-->
+                </div>
+                <div class="col-sm-2">
+                    <h5>Certification</h5>
+                    <ul>
+                        <li><a href="/services#productcertification">Product Certifications</a></li>
+                        <li><a href="/services#internationalapproval">International Approvals</a></li>
+                        <li><a href="/accreditation#cb">Accreditation</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-1">
+                    <h5>Testing</h5>
+                    <ul>
+                        <li><a href="/services#producttesting">EMC/EMI</a></li>
+                        <li><a href="/services#rf">RF</a></li>
+                        <li><a href="/services#dfs">DFS</a></li>
+                        <li><a href="/services#sar">SAR</a></li>
+                        <li><a href="/accreditation">Accreditation</a></li>
+                        <!--<li><a href="#">Reviews</a></li>-->
+                    </ul>
+                    <!--<h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="contact">Contact us</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>-->
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="https://twitter.com/Vista_Labs_USA" class="fa fa-twitter"></a>
+                        <a href="https://www.facebook.com/VistaLaboratories/" class="fa fa-facebook"></a>
+                        <!--<a href="#" class="google"><i class="fa fa-google-plus"></i></a>-->
+                        <!--<a href="https://www.linkedin.com/company/18094885/" class="fa fa-linkedin"></a>-->
+                        <a href="https://www.linkedin.com/company/vistalaboratories/" class="fa fa-linkedin"></a>
+                    </div>
+
+
+
+
+
+                    <!--<link href="https://snatchbot.me/sdk/webchat.css" rel="stylesheet" type="text/css"><script src="https://snatchbot.me/sdk/webchat.min.js"></script><script> Init('?botID=41312&appID=webchat', 600, 600, 'https://dvgpba5hywmpo.cloudfront.net/media/image/aqHx4rbpkbJ2aHILhZygqeAGY', 'bubble', '#00AFF0', 90, 90, 62.99999999999999, '', '1', '#FFFFFF', '#FFFFFF', 0); /* for authentication of its users, you can define your userID (add &userID={login}) */ </script>
+-->
+
+
+
+
+                </div>
+            </div>
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm-10" style="margin-left:auto;margin-right:auto;">
+                <p style="margin-left:auto;margin-right:auto;"> Vista Compliance Laboratories and Vista Laboratories, Inc. &copy; Copyright 2016 - 2019. All rights reserved.</p>
+                <!--<p class="m-0 text-right text-white" style="display:inline-block; float:right">Vista Compliance Laboratories and Vista Laboratories, Inc. &copy; Copyright 2016 - 2019. All rights reserved.</p>-->
+            </div>
+            <div class="col-sm-1">
+            </div>
+        </div>
+    </footer>
+
+    <!--<footer class="py-5">
+      <div class="container">
+        <a href="https://www.facebook.com/VistaLaboratories/" class="fa fa-facebook" target="_blank"></a>
+        <a href="https://twitter.com/vista_labs" class="fa fa-twitter" target="_blank"></a>
+        <a href="https://www.linkedin.com/company/18094885/" class="fa fa-linkedin" target="_blank"></a>
+        <p class="m-0 text-right text-white" style="display:inline-block; float:right">Vista Compliance Laboratories and Vista Laboratories, Inc. &copy; Copyright 2016 - 2019. All rights reserved.</p>
+      </div>
+    </footer>-->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- outer div for loading content, if preloading with circular load animation -->
+  <!--</div>-->
+  </body>
+
+</html>

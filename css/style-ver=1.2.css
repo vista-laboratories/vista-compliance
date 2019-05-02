@@ -1,8 +1,7 @@
 /*!
-Template Name: Industrial - HTML Template
-Author: Softnio
-Version: 1.2.2
-Update: 01.15.2018
+#ca0001
+#973c3c
+#b12323
 */
 
 @font-face {
@@ -149,7 +148,7 @@ h4,
 h5,
 .h5 {
 	font-size: 1.125em;
-	font-weight: 700;
+	font-weight: 200; /*to make newsletter sidebar look better700;*/
 	color: #353a42
 }
 
@@ -4342,7 +4341,7 @@ h2+.row-quotes {
 .wgs-box .wgs-heading {
 	font-size: 1.5em;
 	font-weight: 500;
-	color: #973c3c /*#1863AB*/;
+	color: #ca0001 /*#973c3c*/ /*#1863AB*/;
 	text-transform: uppercase
 }
 
@@ -4934,7 +4933,7 @@ div[class*="box-flat"].box-flat-alt hr {
 
 .post .post-entry h2 a,
 .post .post-entry h1 a {
-	color: #973c3c /*#1863AB*/
+	color: #ca0001 /*#973c3c*/ /*#1863AB*/
 }
 
 .post .post-entry h2 a:hover,

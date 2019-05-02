@@ -219,7 +219,7 @@
 		if (!e().validate || !e().ajaxSubmit) return console.log("quoteForm: jQuery Form or Form Validate not Defined."), !0;
 		var z = P.length > 0,
 		H = "Please confirm captcha to proceed.";
-		//Hh = "We have successfully received your request and will get back to you soon.";
+
 		if (U.length > 0) {
 			var q = U.find(".form-results");
 			U.validate({
@@ -227,17 +227,18 @@
 				invalidHandler: function() {
 					q.slideUp(400)
 				},
-				submitHandler: function(a) {
+				//having issues with captcha success message
+				/*submitHandler: function(a) {
 					!0 !== z || grecaptcha.getResponse() ? (q.slideUp(400), e(a).ajaxSubmit({
 						target: q,
 						dataType: "json",
 						success: function(s) {
 							var t = "error" === s.result ? "alert-danger" : "alert-success";
 							q.removeClass("alert-danger alert-success").addClass("alert " + t).html(s.message).slideDown(400), "error" !== s.result && (e(a).clearForm(), !0 === z && grecaptcha.reset())
-							//q.removeClass("alert-danger alert-success").addClass("alert " + t).html(Hh).slideDown(400), "error" !== s.result && (e(a).clearForm(), !0 === z && grecaptcha.reset())
+
 						}
-					})) : q.removeClass("alert-danger alert-success").addClass("alert alert-danger").html(H).slideDown(400
-				}
+					})) : q.removeClass("alert-danger alert-success").addClass("alert alert-danger").html(H).slideDown(400)
+				}*/
 			})
 		}
 		if (S.length > 0) {
