@@ -1,30 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="预估国际认证定价信息。">
-    <meta name="author" content="">
-
-    <title>威士达实验室 - 认证</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- google icons -->
-    <link rel="stylesheet" href="/css/googlefonts_materialicons.css">
-
-    <!-- Custom styles for this template -->
-    <link href="/css/modern-business.css" rel="stylesheet">
-    <!-- for social media icons -->
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-
-    <!------>
-    <link href='/css/googlefonts_opensans.css' rel='stylesheet' type='text/css'>
-
-    <!-- favicon for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps -->
+<html lang="zxx">
+<head>
+	<title>Vista Laboratories - Accreditation</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Vista Laboratories is ISO/IEC 17025 accredited as an electrical testing laboratory and is ISO/IEC 17065 accredited as a product certification body. We are also designated by NIST as a conformity assessment body.">
+	<!-- favicon for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps -->
     <link rel="icon" href="/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
@@ -43,872 +24,2038 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-<!------>
-
-    <!-- for loader -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/modernizr.js"></script>
-    <script>
-      $(window).load(function() {
-        // Animate loader off screen
-        $(".se-pre-con").fadeOut("slow");
-      });
-    </script>
-
-    <!-- for footer -->
-    <link rel="stylesheet" href="/css/Footer-with-button-logo.css">
-
-    <!--shrink nav on scroll -->
-    <script>
-    var flag = 0;
-    function togglerfnc() {
-      console.log("togglrfnc")
-      if (flag == 0 && scrolled == 0){
-        $("nav").addClass("mobilelarge");
-        flag = 1
-      } else if (flag == 0 && scrolled == 1) {
-        $("nav").removeClass("small").addClass("mobilelarge");
-        flag = 1
-      } else if (flag == 1 && scrolled == 0) {
-        $("nav").removeClass("mobilelarge");
-        flag = 0
-      } else if (flag == 1 && scrolled == 1) {
-        $("nav").removeClass("mobilelarge").addClass("small");
-        flag = 0
-      }
-      /*document.getElementById("demo").innerHTML = "Hello World";*/
-    }
-    </script>
-    <script src="/js/jquery-latest.min.js" type="text/javascript"></script>
-    <script>
-    var scrolled = 0;
-    var openclick = 0;
-    var closeclick = 1;
-    $(document).on("scroll", function() {
-    	if($(document).scrollTop()>10) {
-        if (flag == 0) {
-    		$("nav").removeClass("large").addClass("small");
-        scrolled = 1;}
-    	} else {
-    		$("nav").removeClass("small").addClass("large");
-        scrolled = 0;
-    	}
-    });
-    </script>
-
-    <!--honeypot and reject list -->
-    <script type="text/javascript">
-    	function validateMyForm() {
-        //reject non-corporate domains
-        /*var rejectList = [ "yahoo.com" , "gmail.com", "aol.com" ];
-        var emailValue = document.getElementById("email").value; // To Get Value (can use getElementById)
-        var splitArray = emailValue.split('@'); // To Get Array
-
-        if(rejectList.indexOf(splitArray[1]) >= 0){
-        // Means it has the rejected domains
-          return false;
-        }*/
-
-        // The field is empty, submit the form.
-        if(!document.getElementById("poisonpot").checked) {
-          //console.log(document.getElementById("poisonpot"));
-          //console.log("real");
-          return true;
-        }
-         // the field has a value it's a spam bot
-        else {
-          //console.log(document.getElementById("poisonpot"));
-          //console.log("fake");
-          return false;
-        }
-      }
-    </script>
-
-  </head>
-
-  <!-- body tags used if preloading with circular load animation -->
-  <!--<body onload="myFunction()" style="margin:0;">-->
-  <body>
-  <div class="se-pre-con"></div>
-
-  <!--preloading with circular load animation -->
-  <!--<div id="loader"></div>
+	<!------>
+	<link rel="stylesheet" type="text/css" href="/css/vendor.bundle.css">
+	<link id="style-css" rel="stylesheet" type="text/css" href="/css/style-ver=1.2.css">
+	<!--<style type="text/css">
+		/* Only Demo Purpose, this is the choose color*/
+		.colorPanel {margin: 0px;padding: 5px;position: fixed;z-index: 100;min-width: 20px; border-radius: 4px 0 0 4px; background-color: #4b00a0;right:0;top: 33%;} .colorPanel ul {margin:0px;padding:0px;list-style: none;display:none;} .colorPanel ul li {display: block;margin-top: 10px;} .colorPanel ul a {display: block;width: 20px;height: 20px;border: #fff 1px solid;} .colorPanel a.cart {border-bottom: 1px solid rgba(255,255,255,.3); margin-bottom: 6px; padding-bottom: 8px;display: block;} #cpToggle{display:block;height:30px; width:20px; line-height:30px; background-size:cover;}.cp-custom{padding: 12px;}.cp-custom #cpToggle{background: none;}.cp-custom i{font-size: 15px;color:#fff;}
+	</style>-->
   <script>
-  var myVar;
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
-  function myFunction() {
-      myVar = setTimeout(showPage, 3000);
-  }
+	ga('create', 'UA-91615293-2', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+<body class="site-body style-v1">
+	<!-- Header -->
+	<header class="site-header header-s1 is-sticky">
+		<!-- Topbar -->
+		<div class="topbar">
+			<div class="container">
+				<div class="row">
+					<!--<div class="top-aside top-left">
+						<ul class="top-nav">
+							<li><a href="resources">Knowledge Center</a></li>
+							<li><a href="news">News</a></li>
+							<li><a href="contact">Contact</a></li>
+							<li><a href="careers">Careers</a></li>
+						</ul>
+					</div>-->
+					<div class="top-aside top-right clearfix">
+						<ul class="top-contact clearfix">
+							<li class="t-email t-email1">
+								<em class="fa fa-envelope-o" aria-hidden="true"></em>
+								<span><a href="mailto:info@vista-compliance.com">info@vista-compliance.com</a></span>
+							</li>
+							<li class="t-phone t-phone1">
+								<em class="fa fa-phone" aria-hidden="true"></em>
+								<span><a href="tel:+1-949-393-1123">+1 (949) 393-1123</a></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- #end Topbar -->
+		<!-- Navbar -->
+		<div class="navbar navbar-primary">
+			<div class="container">
+				<!-- Logo -->
+				<a class="navbar-brand" href="/index">
+					<img class="logo logo-dark" alt="" src="/image/logo.png" srcset="/image/logo.png 2x">
+					<img class="logo logo-light" alt="" src="/image/logotest.png" srcset="/image/logotest.png 2x">
+				</a>
+				<!-- #end Logo -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainnav" aria-expanded="false">
+						<span class="sr-only">Menu</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Q-Button for Mobile -->
+					<div class="quote-btn"><a class="btn" href="/inquire">Inquire Today!</a></div>
+				</div>
+				<!-- MainNav -->
+				<nav class="navbar-collapse collapse" id="mainnav">
+					<ul class="nav navbar-nav">
+						<li><a href="/index">Home</a></li>
+						<!--<li class="dropdown megamenu megamenu-short"><a href="index.html">Home</a>
+							<ul class="dropdown-menu dropdown-megamenu">
+								<li class="dropdown megamenu-container">
+									<div class="row">
+										<div class="col-sm-6">
+											<ul>
+												<li><a href="index.html">Home - Default</a></li>
+												<li><a href="index-energy.html">Home - Energy &amp; Power</a></li>
+												<li><a href="index-oil.html">Home - Oil &amp; Gas</a></li>
+												<li><a href="index-mining.html">Home - Mining</a></li>
+												<li><a href="index-welding.html">Home - Welding</a></li>
+												<li><a href="index-civil.html">Home - Civil</a></li>
+												<li><a href="index-static.html">Home - Static Image</a></li>
+											</ul>
+										</div>
+										<div class="col-sm-6">
+											<ul>
+												<li class="megamenu-header">New Home Pages <span class="label label-danger">Hot</span></li>
+												<li><a href="index-simple.html">Home - Simple</a></li>
+												<li><a href="index-fullscreen.html">Home - Fullscreen</a></li>
+												<li><a href="index-construction.html">Home - Construction</a></li>
+												<li><a href="index-bitcoin.html">Home - Bitcoin Mining</a></li>
+												<li><a href="index-onepage-industry.html">One Page - Industry</a></li>
+												<li><a href="index-onepage-bitcoin.html">One Page - Bitcoin Mining</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>-->
+						<!--<li class="dropdown">
+							<a href="index-fullscreen.html#">Pages</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown"><a href="index-fullscreen.html#">About Pages</a>
+									<ul class="dropdown-menu">
+										<li><a href="about-us.html">About Us</a></li>
+										<li><a href="about-us-alter.html">About - Alter</a></li>
+										<li><a href="teams.html">Teams</a></li>
+										<li><a href="teams-alter.html">Teams- Alter</a></li>
+										<li><a href="history.html">History</a></li>
+										<li><a href="clients.html">Clients</a></li>
+										<li><a href="testimonial.html">Testimonial</a></li>
+										<li><a href="testimonial-alter.html">Testimonial - Alter <span class="label label-danger">New</span></a></li>
+										<li><a href="careers.html">Career / Jobs <span class="label label-danger">New</span></a></li>
+									</ul>
+								</li>
+								<li class="dropdown"><a href="index-fullscreen.html#">Service/Solution Pages</a>
+									<ul class="dropdown-menu">
+										<li><a href="solutions.html">Solutions List</a></li>
+										<li><a href="solutions-alter.html">Solutions List - Alter</a></li>
+										<li><a href="solutions-extend.html">Solutions List - Extend</a></li>
+										<li><a href="solution-single.html">Solution Single</a></li>
+										<li><a href="solution-single-alter.html">Solution Single - Alter</a></li>
+										<li><a href="solution-single-extend.html">Solution Single - Extend</a></li>
+									</ul>
+								</li>
+								<li class="dropdown"><a href="index-fullscreen.html#">Project Pages</a>
+									<ul class="dropdown-menu">
+										<li><a href="projects.html">Projects List</a></li>
+										<li><a href="projects-alter.html">Projects List - Alter</a></li>
+										<li><a href="projects-extend.html">Projects List - Extend <span class="label label-danger">New</span></a></li>
+										<li><a href="project-single.html">Project Details</a></li>
+									</ul>
+								</li>
+								<li class="dropdown"><a href="index-fullscreen.html#">Product Pages</a>
+									<ul class="dropdown-menu">
+										<li><a href="products.html">Products List</a></li>
+										<li><a href="products-alter.html">Products List - Alter</a></li>
+										<li><a href="product-single.html">Product Details</a></li>
+									</ul>
+								</li>
+								<li class="dropdown"><a href="index-fullscreen.html#">Case Studies Pages <span class="label label-danger">New</span></a>
+									<ul class="dropdown-menu">
+										<li><a href="case-study-lists.html">Case Study - Lists</a></li>
+										<li><a href="case-study-detials.html">Case Study - Details</a></li>
+									</ul>
+								</li>
+								<li class="dropdown"><a href="index-fullscreen.html#">Pricing Pages <span class="label label-danger">New</span></a>
+									<ul class="dropdown-menu">
+										<li><a href="pricing.html">Pricing - Classic</a></li>
+										<li><a href="pricing-alter.html">Pricing - Alter</a></li>
+									</ul>
+								</li>
+								<li class="dropdown"><a href="index-fullscreen.html#">Bitcoing Pages <span class="label label-warning">New</span></a>
+									<ul class="dropdown-menu">
+										<li><a href="bitcoin.html">Bitcoin - What/Why</a></li>
+										<li><a href="bitcoin-datacenter.html">Bitcoin - Datacenter</a></li>
+										<li><a href="bitcoin-signup.html">Bitcoin - Signup</a></li>
+										<li><a href="bitcoin-pricing.html">Bitcoin - Pricing</a></li>
+									</ul>
+								</li>
+								<li class="dropdown"><a href="index-fullscreen.html#">Miscellaneous Pages</a>
+									<ul class="dropdown-menu">
+										<li><a href="carousel.html">Carousel Slide <span class="label label-danger">New</span></a></li>
+										<li><a href="resources.html">Resources</a></li>
+										<li><a href="responsibility.html">Responsibility</a></li>
+										<li><a href="investors.html">Investors</a></li>
+										<li><a href="faqs.html">FAQ's</a></li>
+										<li><a href="error-404.html">Error 404</a></li>
+									</ul>
+								</li>
+								<li class="dropdown"><a href="index-fullscreen.html#">Contact Pages</a>
+									<ul class="dropdown-menu">
+										<li><a href="contact.html">Contact Us</a></li>
+										<li><a href="contact-extend.html">Contact Us - Extend <span class="label label-danger">New</span></a></li>
+										<li><a href="get-a-quote.html">Get a Quote</a></li>
+									</ul>
+								</li>
+								<li class="dropdown"><a href="index-fullscreen.html#">News/Blog Pages</a>
+									<ul class="dropdown-menu">
+										<li><a href="news.html">News/Blog List</a></li>
+										<li><a href="news-details.html">News Details/Single Post</a></li>
+									</ul>
+								</li>
+								<li><a href="megamenu.html">Megamenu Example <span class="label label-danger">New</span></a></li>
+								<li><a href="gallery.html">Gallery Page</a></li>
+								<li><a href="typography.html">Typography</a></li>
+							</ul>
+						</li>-->
+						<li class="dropdown">
+							<a href="/about">Company</a>
+							<ul class="dropdown-menu">
+								<li><a href="/about">About Us</a></li>
+								<li><a href="/accreditation">Accreditation</a></li>
+								<!--<li><a href="solution-single-extend.html">Material Science and Engineering</a></li>
+								<li><a href="solution-single.html">Mechanical Engineering</a></li>
+								<li><a href="solution-single-alter.html">Oil and Gas</a></li>
+								<li><a href="solution-single-extend.html">Power and Energy</a></li>-->
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="/services">Services</a>
+							<ul class="dropdown-menu">
+								<li><a href="/compliancetesting">Compliance Testing</a></li>
+								<!--<li class="dropdown"><a href="index-fullscreen.html#">Compliance Testing</a>
+									<ul class="dropdown-menu">
+										<li><a href="/solution-single">EMC</a></li>
+										<li><a href="/solution-single">EMI</a></li>
+										<li><a href="/solution-single">RF</a></li>
+										<li><a href="/solution-single">DFS</a></li>
+										<li><a href="/solution-single">SAR</a></li>
+										<li><a href="/solution-single">2G/3G/4G/5G</a></li>
+									</ul>
+								</li>-->
+								<li><a href="/productcertification">Product Certification</a></li>
+								<!--<li class="dropdown"><a href="index-fullscreen.html#">Product Certification</a>
+									<ul class="dropdown-menu">
+										<li><a href="/solution-single">FCC TCB 🇺🇸</a></li>
+										<li><a href="/solution-single">ISED FCB 🇨🇦</a></li>
+										<li><a href="/solution-single">EU NB 🇪🇺</a></li>
+										<li><a href="/solution-single">IMDA CAB 🇸🇬</a></li>
+										<li><a href="/solution-single">OFCA CB 🇭🇰</a></li>
+										<li><a href="/solution-single">MIC RCB 🇯🇵</a></li>
+									</ul>
+								</li>-->
+								<li><a href="/globalmarketaccess">Global Market Access</a></li>
+								<!--<li><a href="solution-single.html">Mechanical Engineering</a></li>
+								<li><a href="solution-single-alter.html">Oil and Gas</a></li>
+								<li><a href="solution-single-extend.html">Power and Energy</a></li>-->
+							</ul>
+						</li>
+						<li><a href="/news/news">News</a></li>
+						<!--<li><a href="products.html">Products</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="resources.html">Resources</a></li>-->
+						<li class="quote-btn"><a class="btn" href="/inquire">Inquire Now</a></li>
+					</ul>
+				</nav>
+				<!-- #end MainNav -->
+			</div>
+		</div>
+		<!-- #end Navbar -->
+		<!-- Banner -->
+		<div class="banner banner-static">
+			<div class="container">
+				<div class="content row">
 
-  function showPage() {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("myDiv").style.display = "block";
-  }
-  </script> -->
+					<div class="imagebg">
+						<img src="/image/about-0.jpg" alt="">
+					</div>
 
-  <!-- outer div for loading content, if preloading with circular load animation -->
-  <!--<div style="display:none;" id="myDiv" class="animate-bottom">-->
+				</div>
+			</div>
+		</div>
+		<!-- End Banner -->
+	</header>
+	<!-- End Header -->
 
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top">
-      <div class="container">
-        <a href="/cn/index"><span><img src="/images/2_inch_logo.png" alt="vista logo" width="75"/></span></a>
-        <a class="navbar-brand" href="/cn/index" style="padding-top:0.7em;font-weight: 600;font-size:1.7em;text-align:center;">Vista Labs<p style="font-weight:400; font-size:0.75rem">TEST • CERTIFY • COMPLY</p></a>
-        <button onclick="togglerfnc()" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <!--<ul class="navbar-nav ml-auto">-->
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/cn/index">主页</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/cn/about">公司</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/cn/services">服务</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/cn/accreditation">认证</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/cn/contact">咨询</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/cn/news/news">新闻</a>
-            </li>
+	<!-- Content -->
+	<!-- Contents -->
+	<div class="section section-contents section-pad">
+		<div class="container">
+			<div class="content row">
 
-            <!--
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Portfolio
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="/portfolio-1-col">1 Column Portfolio</a>
-                <a class="dropdown-item" href="/portfolio-2-col">2 Column Portfolio</a>
-                <a class="dropdown-item" href="/portfolio-3-col">3 Column Portfolio</a>
-                <a class="dropdown-item" href="/portfolio-4-col">4 Column Portfolio</a>
-                <a class="dropdown-item" href="/portfolio-item">Single Portfolio Item</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Blog
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="/blog-home-1">Blog Home 1</a>
-                <a class="dropdown-item" href="/blog-home-2">Blog Home 2</a>
-                <a class="dropdown-item" href="/blog-post">Blog Post</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Other Pages
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="/full-width">Full Width Page</a>
-                <a class="dropdown-item" href="/sidebar">Sidebar Page</a>
-                <a class="dropdown-item" href="/faq">FAQ</a>
-                <a class="dropdown-item" href="/404">404</a>
-                <a class="dropdown-item" href="/pricing">Pricing Table</a>
-              </div>
-            </li>-->
-          </ul>
-        </div>
-      </div>
-    </nav>
+				<div class="row">
+					<div class="col-md-8">
 
-    <br>
-    <br>
-    <br>
-    <!-- Page Content -->
-    <div class="container">
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">认证
-        <small>实验室测试 (ISO/IEC 17025)</small>
-      </h1>
+						<h1>Accreditation</h1>
+						<p><strong>We specialize in EMC/RF compliance testing and product certification for electrical equipment, electronic devices, and wireless communication products.</strong></p>
+						<p>Vista Laboratories is ISO/IEC 17025 accredited as an electrical testing laboratory and is ISO/IEC 17065 accredited as a product certification body. We are also designated by NIST as a conformity assessment body for countries all over the world.</p>
+						<p>As a leader in this field, we provide comprehensive testing and certifications for radio frequency equipment, telecommunications terminal equipment (TTE), network equipment, information technology equipment (ITE), medical electrical equipment, household appliances, consumer electronic products, and audio / video products.</p>
 
-      <embed src="/resources/accreditation/4848-01.pdf" width="100%" height="800px" />
+						<div class="gallery gallery-filter gallery-project gallery-filled project-morden with-caption hover-zoom">
+							<div class="photos-list col-x4 loop has-carousel" data-items="2" data-navs="true" data-margin="1">
 
-      <h1 class="mt-4 mb-3">范围
-        <small>实验室测试 (ISO/IEC 17025)</small>
-      </h1>
+								<div class="gallery-item">
+									<div class="photo">
+										<img src="/image/accred-1.png" alt="">
+										<div class="photo-item-link">
+											<span class="link-block">
+												<!--<a class="link link-more" href="project-single.html"><em class="fa fa-external-link"></em></a>-->
+												<a class="scroll-to" href="#testing"><em class="fa fa-arrow-down"></em></a>
+											</span>
+										</div>
+										<div class="photo-item-caption caption-modern light">
+											<p class="item-cat">ISO/IEC 17025</p>
+											<h4 class="item-title">Laboratory Testing</h4>
+										</div>
+									</div>
+								</div>
 
-      <div class="col col-md-12" style="overflow-x:auto;">
-        <table>
-          <tr>
-            <th colspan="2">测试能力</th>
-            <th>检测方法</th>
-          </tr>
-          <tr>
-            <td colspan="2">传导和辐射发射-高达40 GHz</td>
-            <td>CISPR 11; EN 55011; CISPR 13; EN 55013; CISPR 22; EN 55022; CISPR 32; EN 55032; AS/NZS CISPR 11; AS/NZS CISPR 14.1; AS/NZS CISPR 22; AS/NZS CISPR 32;
-              47CFR FCC Part 18 (using MP-5: 1986); 47 CFR FCC Part 11;
-47CFR FCC Part 15, Subpart B (using ANSI C63.4: 2014);
-ICES-001; ICES-003; ICES-005; ICES-006;
-JEITA IT-3001; VCCI-V-3 (up to 6 GHz);
-CNS 13438 (up to 6 GHz); CNS 13783-1; CNS 13803; CNS 13439; IMDA TS EMC; CISPR 22; SI 961 Part 6.1;
-TCVN 7189:2009 (CISPR 22:2006); GB9254; KN13; KN 22; Annex 2 (KN 11); Annex 3 (KN 41); Annex 4 (KN 14-1);
-Annex 5 (KN 15); Annex 11 (KN 32); Annex 13 (KN 12015)</td>
-          </tr>
-          <tr>
-            <td colspan="2">谐波和闪烁</td>
-            <td>IEC 61000-3-2; EN 61000-3-2; IEC 61000-3-3; EN 61000-3-3; AS/NZS 61000.3.2; AS/NZS 61000.3.3; GB17625.1;
-Annex 1-11 (KN 61000-3-2, KN 61000-3-12);
-Annex 1-12 (KN 61000-3-3, KN 61000-3-11)</td>
-          </tr>
-          <tr>
-            <td colspan="2">辐射抗干扰<</td>
-            <td>IEC 61000-4-3; EN 61000-4-3; Annex 1-14 (KN 61000-4-3)</td>
-          </tr>
-          <tr>
-            <td colspan="2">传导抗干扰</td>
-            <td>IEC 61000-4-6; EN 61000-4-6; Annex 1-17 (KN 61000-4-6)</td>
-          </tr>
-          <tr>
-            <td colspan="2">静电放电</td>
-            <td>IEC 61000-4-2; EN 61000-4-2; Annex 1-13 (KN 61000-4-2)</td>
-          </tr>
-          <tr>
-            <td colspan="2">电快速顺变脉冲群抗扰度试验</td>
-            <td>IEC 61000-4-4; EN 61000-4-4; Annex 1-15 (KN 61000-4-4)</td>
-          </tr>
-          <tr>
-            <td colspan="2">电涌抗扰度</td>
-            <td>IEC 61000-4-5; EN 61000-4-5; Annex 1-16 (KN 61000-4-5)</td>
-          </tr>
-          <tr>
-            <td colspan="2">电压骤降, 短暂中断, 和变动</td>
-            <td>IEC 61000-4-11; EN 61000-4-11; Annex 1-19 (KN 61000-4-11)</td>
-          </tr>
-          <tr>
-            <td colspan="2">通用，产品系列和行业特定标准</td>
-            <td>AS/NZS 1044; AS/NZS 2279.3; AS/NZS 3548;
-AS/NZS 4251.1; AS/NZS 4251.2; AS/NZS CISPR 24; AS/NZS 61000.6.3; AS/NZS 61000.6.4;
-EN 50121-3-2; EN 12184; EN 50083-2;
-EN 50090-2-2; EN 50091-2; EN 50121-4; EN 50130-4;
-EN 50130-4 + A12; EN 50412-2-1; EN 50491-5-1;
-EN 50491-5-2; EN 50491-5-3; EN 55015; EN 55024;
-EN 60601-1-2; EN 302 480; EN 61000-6-1; EN 61000-6-2;
-EN 61000-6-3; EN 61000-6-4; EN 61204-3; EN 61326-1; EN 61326-2-1; EN 61326-2-2; EN 61326-2-3;
-EN 61326-2-4; EN 61326-2-5; EN 61547;
-ETSI EN 301 489-01; ETSI EN 301 489-02;
-ETSI EN 301 489-03; ETSI EN 301 489-04;
-ETSI EN 301 489-05; ETSI EN 301 489-06;
-ETSI EN 301 489-07; ETSI EN 301 489-08;
-ETSI EN 301 489-09; ETSI EN 301 489-10;
-ETSI EN 301 489-11; ETSI EN 301 489-12;
-ETSI EN 301 489-13; ETSI EN 301 489-14;
-ETSI EN 301 489-15; ETSI EN 301 489-16;
-ETSI EN 301 489-17; ETSI EN 301 489-18;
-ETSI EN 301 489-19; ETSI EN 301 489-20;
-ETSI EN 301 489-22; ETSI EN 301 489-23;
-ETSI EN 301 489-24; ETSI EN 301 489-25;
-ETSI EN 301 489-26; ETSI EN 301 489-27;
-ETSI EN 301 489-28; ETSI EN 301 489-31;
-ETSI EN 301 489-32; ETSI EN 301 489-33;
-ETSI EN 301 489-50; CISPR 24; IEC 60601-1-2;
-IEC 60945; Annex 2-2 (KN 60601-1-2); KN 60601-1-2;
-TCVN 7317:2003 (CISPR 24:1997);
-SI961 Part 6.2;
-AS/NZS 61000.6.3; AS/NZS 61000.6.4;
-KN 20; KN 24;
-Annex 1-1 (KN 16-1-1); Annex 1-2 (KN 16-1-2);
-Annex 1-3 (KN 16-1-3); Annex 1-4 (KN 16-1-4);
-Annex 1-5 (KN 16-1-5); Annex 1-6 (KN 16-2-1);
-Annex 1-7 (KN 16-2-2); Annex 1-8 (KN 16-2-3);
-Annex 1-9 (KN 16-2-4); Annex 1-21 (KN 61000-2-2);
-Annex 1-22 (KN 61000-2-4); Annex 4-2 (KN 14-2);
-Annex 6 (KN 50); Annex 6-2 (KN 51); Annex 7 (KN 60); Annex 8-1 (KN 301-489-01); Annex 8-2 (KN 301-489-07); Annex 8-3 (KN 301-489-17); Annex 8-4 (KN 301-489-24); Annex 8-5 (KN 301-489-06); Annex 8-6 (KN 301-489-13); Annex 8-7 (KN 301-489-05); Annex 8-8 (KN 301-489-03); Annex 8-9 (KN 301-489-09); Annex 8-10 (KN 301-489-26); Annex 8-11 (KN 301-489-18);
-Annex 8-12 (KN 301-489-15);
-Annex 8-13 (KN 301-489-02); Annex 8-14 (KN 301-489-27);
-Annex 8-15 (KN 301-489-32);
-Annex 8-16 (KN 301-489-20);
-Annex 9 (KN 62040-2); Annex 10 (KN 60947); Annex 11-2 (KN 35); Annex 12 (KN 61800-3); Annex 13-2 (KN 12016); Annex 14 (KN 60945/60533); Annex 15 (KN 19); Annex 16 (KN 17);
-Annex 17 (KN 61000-6-3); Annex 17-2 (KN 61000-6-1); Annex 18 (KN 61000-6-4); Annex 18-2 (KN 61000-6-2)</td>
-          </tr>
-          <tr>
-            <td colspan="2">射频 (RF) – 欧盟</td>
-            <td>ETSI EN 300 086-1; ETSI EN 300 224-1; ETSI EN 300 224-2; ETSI EN 300 279; ETSI EN 300 339; ETSI EN 300 385;
-ETSI EN 301 166-1; ETSI EN 301 166-2; ETSI EN 301 357-1; ETSI EN 301 357-2; ETSI EN 301 390; ETSI EN 301 406; ETSI EN 301 502; ETSI EN 301 511; ETSI EN 301 751;
-ETSI EN 301 753; ETSI EN 301 783-2; ETSI EN 301 796;
-ETSI EN 301 797; ETSI EN 301 839-1; ETSI EN 301 839-2; ETSI EN 301 840-2; ETSI EN 301 843-1; ETSI EN 301 843-2; ETSI EN 301 843-3; ETSI EN 301 843-4; ETSI EN 301 843-5; ETSI EN 301 843-6; ETSI EN 301 893; ETSI EN 301 908-01; ETSI EN 301 908-02; ETSI EN 301 908-03;
-ETSI EN 301 908-04; ETSI EN 301 908-05;
-ETSI EN 301 908-06; ETSI EN 301 908-07;
-ETSI EN 301 908-08; ETSI EN 301 908-09;
-ETSI EN 301 908-10; ETSI EN 301 908-11;
-ETSI EN 301 908-13; ETSI EN 301 929-2; ETSI EN 302 017-1; ETSI EN 302 017-2; ETSI EN 302 018-2; ETSI EN 302 054-2; ETSI EN 302 064-2; ETSI EN 302 065-1; ETSI EN 302 066-2; ETSI EN 302 077-2; ETSI EN 302 195-2; ETSI EN 302 208-1; ETSI EN 302 208-2; ETSI EN 302 217-1; ETSI EN 302 217-2-1; ETSI EN 302 217-2-2; ETSI EN 302 217-3;
-ETSI EN 302 217-4-1; ETSI EN 302 217-4-2;
-ETSI EN 302 245-2; ETSI EN 302 288-1; ETSI EN 302 288-2; ETSI EN 302 291-1; ETSI EN 302 291-2; ETSI EN 302 296; ETSI EN 302 297; ETSI EN 302 326-1; ETSI EN 302 326-2; ETSI EN 302 326-3; ETSI EN 302 372-2; ETSI EN 302 426; ETSI EN 302 454-2; ETSI EN 302 480; ETSI EN 302 500-1; ETSI EN 302 500-2; ETSI EN 302 502; ETSI EN 302 510-2; ETSI EN 302 567; ETSI EN 302 625; ETSI EN 303 883;
-ETSI EN 303 413; ETSI EN 300 086-2; ETSI EN 300 113-1; ETSI EN 300 113-2; ETSI EN 300 197; ETSI EN 300 198;
-ETSI EN 300 220-1; ETSI EN 300 220-2; ETSI EN 300 220-3; ETSI EN 300 296-1; ETSI EN 300 296-2; ETSI EN 300 328; ETSI EN 300 330-1; ETSI EN 300 330-2; ETSI EN 300 390-1; ETSI EN 300 390-2; ETSI EN 300 422-1; ETSI EN 300 422-2; ETSI EN 300 440-1; ETSI EN 300 440-2; ETSI EN 300 454-1; ETSI EN 300 454-2; ETSI EN 300 718-2; ETSI TS 102 883; ETSI TS 103 361</td>
-          </tr>
-          <tr>
-            <td colspan="2">射频 (RF) - 美国</td>
-            <td>47 CFR FCC Part 15, Subparts C, D, E, F, H
+								<div class="gallery-item">
+									<div class="photo">
+										<img src="/image/accred-2.png" alt="">
+										<div class="photo-item-link">
+											<span class="link-block">
+												<!--<a class="link link-more" href="#general"><em class="fa fa-external-link"></em></a>-->
+												<a class="scroll-to" href="#certify"><em class="fa fa-arrow-down"></em></a>
+											</span>
+										</div>
+										<div class="photo-item-caption caption-modern light">
+											<p class="item-cat">ISO/IEC 17065</p>
+											<h4 class="item-title">Product Certifications</h4>
+										</div>
+									</div>
+								</div>
+
+								</div>
+
+							</div>
+							<br>
+							<!--<div class="gallery gallery-filter gallery-project gallery-filled project-morden with-caption hover-zoom">
+								<div class="photos-list col-x4" data-items="1" data-navs="true" data-margin="1">
+
+									<div class="gallery-item">
+										<div class="photo">
+											<img src="/image/accred-3.png" alt="">
+											<div class="photo-item-link">
+												<span class="link-block">
+													<a class="scroll-to" href="#general"><em class="fa fa-arrow-down"></em></a>
+												</span>
+											</div>
+											<div class="photo-item-caption caption-modern light">
+												<h4 class="item-title">Conformity Assessment Body</h4>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+							</div>-->
+
+						<!-- Project Gallery #end -->
+
+						<!--<div class="col-list space-top-md">
+							<div class="row">
+								<div class="col-sm-6 res-m-bttm">
+									<img src="image/photo-sm-energy-b.jpg" alt="" class="aligncenter">
+									<h3 class="color-primary">Laboratory Testing <br> ISO/IEC 17025</h3>
+									<p>Leverage agile frameworks sit amet enim ad minim veniam, quis nostrud exercation ullamco laboris nisi ution aliquip exon commodo conquat. Duis aute irure dolor nostrud ullamco. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+								<div class="col-sm-6">
+									<img src="image/photo-sm-energy-e.jpg" alt="" class="aligncenter">
+									<h3 class="color-primary">Product Certification Body (ISO/IEC 17065)</h3>
+									<p>Bring to the table dolor sit amet enim ad minim veniam, quis nostrud exercation ullamco laboris nisi ution aliquip exon commodo conquat. Duis aute irure dolor nostrud ullamco. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+						</div>-->
+						<br id="capabilities">
+						<br>
+						<hr>
+						<div id="testing" class="clear"></div>
+						<div class="gaps size-lg"></div>
+						<h2>Laboratory Testing</h2>
+
+						<h3>Capabilities:</h3>
+
+						<div class="panel-group accordion" id="general" role="tablist" aria-multiselectable="true">
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i1">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i1" aria-expanded="false">
+											Conducted and Radiated Emissions
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i1">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇪🇺 CISPR 11, EN 55011, CISPR 13, EN 55013, CISPR 22, EN 55022, CISPR 32, EN 55032</td></tr>
+													<tr><td>🇦🇺 🇳🇿 AS/NZS CISPR 11, AS/NZS CISPR 14.1, AS/NZS CISPR 22, AS/NZS CISPR 32</td></tr>
+													<tr><td>🇺🇸 47CFR FCC Part 18 (using MP-5: 1986), 47 CFR FCC Part 11, 47CFR FCC Part 15 Subpart B (using ANSI C63.4: 2014)</td></tr>
+													<tr><td>🇨🇦 ICES-001, ICES-003, ICES-005, ICES-006</td></tr>
+													<tr><td>🇯🇵 JEITA IT-3001, VCCI-V-3 (up to 6 GHz)</td></tr>
+													<tr><td>🇹🇼 CNS 13438 (up to 6 GHz), CNS 13783-1, CNS 13803, CNS 13439</td></tr>
+													<tr><td>🇸🇬 IMDA TS EMC</td></tr>
+													<tr><td>🇮🇱 SI 961 Part 6.1</td></tr>
+													<tr><td>🇻🇳 TCVN 7189:2009 (CISPR 22:2006)</td></tr>
+													<tr><td>🇨🇳 GB9254</td></tr>
+													<tr><td>🇰🇷 KN13, KN 22, Annex 2 (KN 11), Annex 3 (KN 41), Annex 4 (KN 14-1), Annex 5 (KN 15), Annex 11 (KN 32), Annex 13 (KN 12015)</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i2">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i2" aria-expanded="false">
+											Harmonics and Flickers
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i2">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇪🇺 IEC 61000-3-2, EN 61000-3-2, IEC 61000-3-3, EN 61000-3-3</td></tr>
+													<tr><td>🇦🇺 🇳🇿 AS/NZS 61000.3.2, AS/NZS 61000.3.3</td></tr>
+													<tr><td>🇨🇳 GB17625.1</td></tr>
+													<tr><td>🇰🇷 Annex 1-11 (KN 61000-3-2, KN 61000-3-12), Annex 1-12 (KN 61000-3-3, KN 61000-3-11)</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i3">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i3" aria-expanded="false">
+											Electrostatic Discharge (ESD)
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i3">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇪🇺 IEC 61000-4-2, EN 61000-4-2</td></tr>
+													<tr><td>🇰🇷 Annex 1-13 (KN 61000-4-2)</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i4">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i4" aria-expanded="false">
+											Radiated Immunity (RI)
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i4">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇪🇺 IEC 61000-4-3, EN 61000-4-3</td></tr>
+													<tr><td>🇰🇷 Annex 1-14 (KN 61000-4-3)</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i5">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i5" aria-expanded="false">
+											Electrical Fast Transient/Burst (EFT/B)
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i5">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇪🇺 IEC 61000-4-4, EN 61000-4-4</td></tr>
+													<tr><td>🇰🇷 Annex 1-15 (KN 61000-4-4)</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i6">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i6" aria-expanded="false">
+											Surge
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i6">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇪🇺 IEC 61000-4-5, EN 61000-4-5</td></tr>
+													<tr><td>🇰🇷 Annex 1-16 (KN 61000-4-5)</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i7">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i7" aria-expanded="false">
+											Conducted Immunity (CI)
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i7">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇪🇺 IEC 61000-4-6, EN 61000-4-6</td></tr>
+													<tr><td>🇰🇷 Annex 1-17 (KN 61000-4-6)</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i8">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i8" aria-expanded="false">
+											Dips, Short Interrupts, Voltage Variations
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i8">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇪🇺 IEC 61000-4-11, EN 61000-4-11</td></tr>
+													<tr><td>🇰🇷 Annex 1-19 (KN 61000-4-11)</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i9">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i9" aria-expanded="false">
+											Generic, Product Family, and Industry Specific Standards
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i9">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇦🇺 🇳🇿 AS/NZS 1044, AS/NZS 2279.3, AS/NZS 3548,
+													AS/NZS 4251.1, AS/NZS 4251.2, AS/NZS CISPR 24,
+													AS/NZS 61000.6.3, AS/NZS 61000.6.4</td></tr>
+													<tr><td>🇪🇺 EN 50121-3-2, EN 12184, EN 50083-2,
+													EN 50090-2-2, EN 50091-2, EN 50121-4, EN 50130-4,
+													EN 50130-4 + A12, EN 50412-2-1, EN 50491-5-1,
+													EN 50491-5-2, EN 50491-5-3, EN 55015, EN 55024,
+													EN 60601-1-2, EN 302 480, EN 61000-6-1, EN 61000-6-2,
+													EN 61000-6-3, EN 61000-6-4, EN 61204-3, EN 61326-1,
+													EN 61326-2-1, EN 61326-2-2, EN 61326-2-3,
+													EN 61326-2-4, EN 61326-2-5, EN 61547,
+													ETSI EN 301 489-01, ETSI EN 301 489-02,
+													ETSI EN 301 489-03, ETSI EN 301 489-04,
+													ETSI EN 301 489-05, ETSI EN 301 489-06,
+													ETSI EN 301 489-07, ETSI EN 301 489-08,
+													ETSI EN 301 489-09, ETSI EN 301 489-10,
+													ETSI EN 301 489-11, ETSI EN 301 489-12,
+													ETSI EN 301 489-13, ETSI EN 301 489-14,
+													ETSI EN 301 489-15, ETSI EN 301 489-16,
+													ETSI EN 301 489-17, ETSI EN 301 489-18,
+													ETSI EN 301 489-19, ETSI EN 301 489-20,
+													ETSI EN 301 489-22, ETSI EN 301 489-23,
+													ETSI EN 301 489-24, ETSI EN 301 489-25,
+													ETSI EN 301 489-26, ETSI EN 301 489-27,
+													ETSI EN 301 489-28, ETSI EN 301 489-31,
+													ETSI EN 301 489-32, ETSI EN 301 489-33,
+													ETSI EN 301 489-50, CISPR 24, IEC 60601-1-2,
+													IEC 60945, Annex 2-2 (KN 60601-1-2), KN 60601-1-2</td></tr>
+													<tr><td>🇻🇳 TCVN 7317:2003 (CISPR 24:1997)</td></tr>
+													<tr><td>🇮🇱 SI961 Part 6.2</td></tr>
+													<tr><td>🇰🇷 KN 61547, KN 20, KN 24,
+													Annex 1-1 (KN 16-1-1), Annex 1-2 (KN 16-1-2),
+													Annex 1-3 (KN 16-1-3), Annex 1-4 (KN 16-1-4),
+													Annex 1-5 (KN 16-1-5), Annex 1-6 (KN 16-2-1),
+													Annex 1-7 (KN 16-2-2), Annex 1-8 (KN 16-2-3),
+													Annex 1-9 (KN 16-2-4), Annex 1-21 (KN 61000-2-2),
+													Annex 1-22 (KN 61000-2-4), Annex 4-2 (KN 14-2),
+													Annex 6 (KN 50), Annex 6-2 (KN 51), Annex 7 (KN 60),
+													Annex 8-1 (KN 301-489-01), Annex 8-2 (KN 301-489-07),
+													Annex 8-3 (KN 301-489-17), Annex 8-4 (KN 301-489-24),
+													Annex 8-5 (KN 301-489-06), Annex 8-6 (KN 301-489-13),
+													Annex 8-7 (KN 301-489-05), Annex 8-8 (KN 301-489-03),
+													Annex 8-9 (KN 301-489-09), Annex 8-10 (KN 301-489-26),
+													Annex 8-11 (KN 301-489-18), Annex 8-12 (KN 301-489-15),
+													Annex 8-13 (KN 301-489-02), Annex 8-14 (KN 301-489-27),
+													Annex 8-15 (KN 301-489-32), Annex 8-16 (KN 301-489-20),
+													Annex 9 (KN 62040-2), Annex 10 (KN 60947),
+													Annex 11-2 (KN 35), Annex 12 (KN 61800-3),
+													Annex 13-2 (KN 12016), Annex 14 (KN 60945/60533),
+													Annex 15 (KN 19), Annex 16 (KN 17),
+													Annex 17 (KN 61000-6-3), Annex 17-2 (KN 61000-6-1),
+													Annex 18 (KN 61000-6-4), Annex 18-2 (KN 61000-6-2)</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i10">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i10" aria-expanded="false">
+											Radio Frequency (RF) – CE
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i10">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇪🇺 ETSI EN 300 086-1, ETSI EN 300 224-1, ETSI EN 300 224-2,
+													ETSI EN 300 279, ETSI EN 300 339, ETSI EN 300 385,
+													ETSI EN 301 166-1, ETSI EN 301 166-2, ETSI EN 301 357-1,
+													ETSI EN 301 357-2, ETSI EN 301 390, ETSI EN 301 406,
+													ETSI EN 301 502, ETSI EN 301 511, ETSI EN 301 751,
+													ETSI EN 301 753, ETSI EN 301 783-2, ETSI EN 301 796,
+													ETSI EN 301 797, ETSI EN 301 839-1, ETSI EN 301 839-2,
+													ETSI EN 301 840-2, ETSI EN 301 843-1, ETSI EN 301 843-2,
+													ETSI EN 301 843-3, ETSI EN 301 843-4, ETSI EN 301 843-5,
+													ETSI EN 301 843-6, ETSI EN 301 893, ETSI EN 301 908-01,
+													ETSI EN 301 908-02, ETSI EN 301 908-03,
+													ETSI EN 301 908-04, ETSI EN 301 908-05,
+													ETSI EN 301 908-06, ETSI EN 301 908-07,
+													ETSI EN 301 908-08, ETSI EN 301 908-09,
+													ETSI EN 301 908-10, ETSI EN 301 908-11,
+													ETSI EN 301 908-13, ETSI EN 301 929-2, ETSI EN 302 017-1,
+													ETSI EN 302 017-2, ETSI EN 302 018-2, ETSI EN 302 054-2,
+													ETSI EN 302 064-2, ETSI EN 302 065-1, ETSI EN 302 066-2,
+													ETSI EN 302 077-2, ETSI EN 302 195-2, ETSI EN 302 208-1,
+													ETSI EN 302 208-2, ETSI EN 302 217-1, ETSI EN 302 217-2-1,
+													ETSI EN 302 217-2-2, ETSI EN 302 217-3,
+													ETSI EN 302 217-4-1, ETSI EN 302 217-4-2,
+													ETSI EN 302 245-2, ETSI EN 302 288-1, ETSI EN 302 288-2,
+													ETSI EN 302 291-1, ETSI EN 302 291-2, ETSI EN 302 296,
+													ETSI EN 302 297, ETSI EN 302 326-1, ETSI EN 302 326-2,
+													ETSI EN 302 326-3, ETSI EN 302 372-2, ETSI EN 302 426,
+													ETSI EN 302 454-2, ETSI EN 302 480, ETSI EN 302 500-1,
+													ETSI EN 302 500-2, ETSI EN 302 502, ETSI EN 302 510-2,
+													ETSI EN 302 567, ETSI EN 302 625, ETSI EN 303 883,
+													ETSI EN 303 413, ETSI EN 300 086-2, ETSI EN 300 113-1,
+													ETSI EN 300 113-2, ETSI EN 300 197, ETSI EN 300 198,
+													ETSI EN 300 220-1, ETSI EN 300 220-2, ETSI EN 300 220-3,
+													ETSI EN 300 296-1, ETSI EN 300 296-2, ETSI EN 300 328,
+													ETSI EN 300 330-1, ETSI EN 300 330-2, ETSI EN 300 390-1,
+													ETSI EN 300 390-2, ETSI EN 300 422-1, ETSI EN 300 422-2,
+													ETSI EN 300 440-1, ETSI EN 300 440-2, ETSI EN 300 454-1,
+													ETSI EN 300 454-2, ETSI EN 300 718-2, ETSI TS 102 883,
+													ETSI TS 103 361</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i11">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i11" aria-expanded="false">
+											Radio Frequency (RF) - FCC
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i11">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇺🇸 IEC 47 CFR FCC Part 15, Subparts C, D, E, F, G, H
 (using ANSI C63.10-2013, ANSI C63.17-2013, KDB 905462);
-47 CFR FCC Parts 20, 22, 24, 25, 27, 73, 74, 80, 87, 90, 95, 96, 97, 101 (using TIA-603-E, ANSI C63.26:2015, FCC KDB 935210 D03 (v04), D04 (v02), D05 (v01r01))</td>
-          </tr>
-          <tr>
-            <td colspan="2">射频 (RF) - 加拿大</td>
-            <td>RSS 111; RSS 127; RSS 135; RSS 181; RSS 196; RSS 213; RSS 244; RSS Gen
-RSS 112; RSS 117; RSS 119; RSS 123; RSS 125; RSS 130; RSS 131; RSS 132; RSS 133; RSS 134; RSS 137; RSS 139; RSS 141; RSS 142; RSS 170; RSS 182; RSS 191; RSS 192; RSS 194; RSS 195; RSS 197; RSS 199; RSS 210; RSS 211; RSS 220; RSS 215; RSS 216; RSS 236; RSS 238; RSS 243; RSS 247; RSS 251; RSS 287; RSS 288; RSS 310; RSS Gen</td>
-          </tr>
-          <tr>
-            <td colspan="2">射频 (RF) - 以色列</td>
-            <td>Wireless Telegraph Ordinance (Ordinance Non-Application Directive), 1984;
-Frequencies for GSM and UMTS networks;
-Checklist for Conformance Approval for DECT equipment in the Spectrum Division, July 2010;
-Type Approval – Licensed Frequencies;
-Type Approval – Licensed Exempt Frequencies</td>
-          </tr>
-          <tr>
-            <td colspan="2">射频 (RF) - 新加坡</td>
-            <td>IMDA TS DSRC; IMDA TS DVB-T2 IRD; IMDA TS SRD;
-IMDA TS GMPCS; IMDA TS CBS;
-IMDA TS WBA;
-IMDA TS WSD; IMDA TS CT-CTS;
-IMDA TS AR; IMDA TS CMT; IMDA TS UWB; IMDA TS LMR</td>
-          </tr>
-          <tr>
-            <td colspan="2">射频 (RF) - 越南</td>
-            <td>QCVN 10:2010/BTTTT; QCVN 11:2010/BTTTT; QCVN 12:2015/BTTTT; QCVN 13:2010/BTTTT; QCVN 14:2010/BTTTT; QCVN 15:2015/BTTTT; QCVN 16:2010/BTTTT; QCVN 17:2010/BTTTT; QCVN 18:2014/BTTTT; QCVN 19:2010/BTTTT; QCVN 20:2010/BTTTT; QCVN 21:2010/BTTTT; QCVN 29:2011/BTTTT; QCVN 30:2011/BTTTT; QCVN 31:2011/BTTTT; QCVN 37:2011/BTTTT; QCVN 41:2011/BTTTT; QCVN 42:2011/BTTTT; QCVN 43:2011/BTTTT; QCVN 44:2011/BTTTT; QCVN 45:2011/BTTTT; QCVN 47:2015/BTTTT; QCVN 53:2011/BTTTT; QCVN 54:2011/BTTTT; QCVN 55:2011/BTTTT; QCVN 56:2011/BTTTT; QCVN 65:2013/BTTTT; QCVN 66:2013/BTTTT; QCVN 73:2013/BTTTT; QCVN 74:2013/BTTTT; QCVN 77:2013/BTTTT; QCVN 86:2015/BTTTT; QCVN 88:2015/BTTTT; QCVN 91:2015/BTTTT; QCVN 92:2015/BTTTT; QCVN 93:2015/BTTTT; QCVN 94:2015/BTTTT; QCVN 95:2015/BTTTT; QCVN 96:2015/BTTTT; QCVN 103:2016/BTTTT</td>
-          </tr>
-          <tr>
-            <td colspan="2">射频 (RF) - 台湾</td>
-            <td>LP0002; PLMN07; PLMN01; PLMN08; PLMN10</td>
-          </tr>
-          <tr>
-            <td colspan="2">射频 (RF) - 香港</td>
-            <td>HKCA 1001; HKCA 1002; HKCA 1003; HKCA 1004; HKCA 1006; HKCA 1007; HKCA 1008; HKCA 1010; HKCA 1015; HKCA 1016; HKCA 1019; HKCA 1020; HKCA 1022; HKCA 1026; HKCA 1027; HKCA 1033; HKCA 1034; HKCA 1035; HKCA 1036; HKCA 1037; HKCA 1039; HKCA 1041; HKCA 1042; HKCA 1043; HKCA 1044; HKCA 1045; HKCA 1046; HKCA 1047; HKCA 1048; HKCA 1049; HKCA 1050; HKCA 1052; HKCA 1053; HKCA 1054; HKCA 1056; HKCA 1057; HKCA 1061; HKCA 1063; HKCA 1064; HKCA 1065; HKCA 1066; HKCA 1067; HKCA 1068; HKCA 1069; HKCA 1070; HKCA 1071; HKCA 1072; HKCA 1073; HKCA 1076</td>
-          </tr>
-          <tr>
-            <td colspan="2">射频 (RF) - 澳大利亚和新西兰</td>
-            <td>AS 2772.2; AS/NZS 4281; AS/NZS 4771; AR IB RCR STD-28; Radiocommunications (Short range devices) Standard 2014 (AS/NZS 4268, AS/NZS 4268.1, AS/NZS 4268.2); Radiocommunications (406 MHz Satellite Distress Beacons) Standard 2014
-(AS/NZS 4280, AS/NZS 4280.1:2003, AS/NZS 4280.2:2003); Radiocommunications (Cordless Telephone) Standard 2008 (AS/NZS 4281:2007);
-Radiocommunications (Analogue Speech (Angle Modulated Equipment) Standard 2014
-(AS/NZS 4295:2015);
-Radiocommunications (121.5 MHz and 243.0 MHz Emergency Position Indicating Radio Beacons) Standard 2014
-(AS/NZS 4330:2006);
-Radiocommunications (UHF CB Radio Equipment) Standard 2011 (No.1)
-(AS/NZS 4365:2011);
-Radiocommunications (VHF Radiotelephone Equipment - Maritime Mobile Service) Standard 2014
-(AS/NZS 4415.1:2003, AS/NZS 4415.2:2003); Radiocommunications (MF and HF Radiotelephone Equipment - International Maritime Mobile Service) Standard 2014
-(AS/NZS 4582:2004);
-Radiocommunications (118 MHz to 137 MHz Amplitude Modulated Equipment - Aeronautical Radio Service) Standard 2012
-(AS/NZS 4583:2016);
-Radiocommunications (Paging Service Equipment) Standard 2014 (AS/NZS 4769.1:2000, AS/NZS 4769.2:2000); Radiocommunications (MF and HF equipment - Land Mobile Service) Standard 2014
-(AS/NZS 4770:2000);
-Radiocommunications (Digital Cordless Communications Devices - DECT Devices) Standard 2017;
-Radiocommunications (Digital Cordless Communications Devices - PHS Devices) Standard 2007</td>
-          </tr>
-          <tr>
-            <td colspan="2">射频 (RF) - 韩国</td>
-            <td>Regulations on Radio Equipment
-(Enforcement Decree of MSIT NO. 1);
-Unlicensed Radio Equipment Established Without Notice
-(MSIT Public Notification 2018-38);
-Technical Requirements for Radio Equipment for Maritime Services (RRA Public Notification 2018-8);
-Technical Requirements for Radio Equipment for Aeronautical Services (RRA Public Notification 2018-9);
-Technical Requirements for Radio Equipment for Telecommunication Services (RRA Public Notification 2016-11); Technical Requirements of the Other Service Radio Equipment for Simple radio station, Space station and Earth station
-(RRA Public Notification 2016-21);
-Technical Requirements of the Other Service Radio Equipment for Simple radio station, Space station and Earth station
-(RRA Public Notification 2016-21);
-Technical Requirements of Radio Wave Application
-(RRA Public Notification 2016-20);
-Measurements of the high-frequency output of radio wave application equipment and antenna power calculation methods (RRA Public Notification 2016-2);
-Technical Requirements for Radio Equipment of Standard of Safety Facility (RRA Public Notification 2016-20);
-Technical Requirements for the Human Protection against Electromagnetic Waves (MSIT Public Notification 2017-7); Technical Requirements for Measurement and Test Procedure of Specific Absorption Rate (RRA Public Notification 2017-8); Technical Requirements for Measurement of Electromagnetic Field Strength (RRA Public Notification 2017-7);
-Equipment to be subject of Test Procedure for Electromagnetic Field Strength and Specific Absorption Rate (MSIT Public Notification 2017-7);
-Conformity Assessment Procedure for Telecommunications Terminal Equipment (RRA Announce 2015-135); KS X 3123</td>
-          </tr>
-          <tr>
-            <td colspan="2">射频 (RF) - 日本</td>
-            <td>ARIB STD-T66; ARIB STD-T81;
-ARIB STD-T89; ARIB STD-T90;
-ARIB STD-T94 Fascicle 1;
-RCR STD-1; RCR STD-29; RCR STD-33</td>
-          </tr>
-          <tr>
-            <td colspan="2">日本 – 2004年 MIC 88号通知</td>
-            <td>
+47 CFR FCC Parts 20, 22, 24, 25, 27, 30, 73, 74, 80, 87, 90, 95, 96,
+97, 101 (using TIA-603-E, ANSI C63.26:2015, FCC KDB 935210
+D03 (v04), D04 (v02), D05 (v01r01))</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i12">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i12" aria-expanded="false">
+											Radio Frequency (RF) - Canada
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i12">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇨🇦 RSS 111, RSS 112, RSS 117, RSS 119, RSS 123, RSS 125,
+													RSS 127, RSS 130, RSS 131, RSS 132, RSS 133, RSS 134,
+													RSS 135, RSS 137, RSS 139, RSS 141, RSS 142, RSS 170,
+													RSS 181, RSS 182, RSS 191, RSS 192, RSS 194, RSS 195,
+													RSS 196, RSS 197, RSS 199, RSS 210, RSS 211,
+													RSS 220 (Issue 1, Amendment 1, July 2018),
+													RSS 213, RSS 215, RSS 216, RSS 236, RSS 238, RSS 243,
+													RSS 244, RSS 247, RSS 251 (Issue 2, July 2018),
+													RSS 287, RSS 288, RSS 310, RSS Gen</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i13">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i13" aria-expanded="false">
+											Radio Frequency (RF) – Israel
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i13">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇮🇱 Wireless Telegraph Ordinance (Ordinance Non-Application
+													Directive), 1984,
+													Frequencies for GSM and UMTS networks,
+													Checklist for Conformance Approval for DECT equipment in the
+													Spectrum Division, July 2010,
+													Type Approval – Licensed Frequencies,
+													Type Approval – Licensed Exempt Frequencies</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i13">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i13" aria-expanded="false">
+											Radio Frequency (RF) – Singapore
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i13">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇸🇬 IMDA TS DSRC, IMDA TS WSD,
+													IMDA TS DVB-T2 IRD, IMDA TS CT-CTS,
+													IMDA TS SRD, IMDA TS AR,
+													IMDA TS GMPCS, IMDA TS CMT,
+													IMDA TS CBS, IMDA TS UWB,
+													IMDA TS WBA, IMDA TS LMR</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i14">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i14" aria-expanded="false">
+											Radio Frequency (RF) – Vietnam
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i14">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇻🇳 QCVN 10:2010/BTTTT, QCVN 11:2010/BTTTT,
+													QCVN 12:2015/BTTTT, QCVN 13:2010/BTTTT,
+													QCVN 14:2010/BTTTT, QCVN 15:2015/BTTTT,
+													QCVN 16:2010/BTTTT, QCVN 17:2010/BTTTT,
+													QCVN 18:2014/BTTTT, QCVN 19:2010/BTTTT,
+													QCVN 20:2010/BTTTT, QCVN 21:2010/BTTTT,
+													QCVN 29:2011/BTTTT, QCVN 30:2011/BTTTT,
+													QCVN 31:2011/BTTTT, QCVN 37:2011/BTTTT,
+													QCVN 41:2011/BTTTT, QCVN 42:2011/BTTTT,
+													QCVN 43:2011/BTTTT, QCVN 44:2011/BTTTT,
+													QCVN 45:2011/BTTTT, QCVN 47:2015/BTTTT,
+													QCVN 53:2011/BTTTT, QCVN 54:2011/BTTTT,
+													QCVN 55:2011/BTTTT, QCVN 56:2011/BTTTT,
+													QCVN 65:2013/BTTTT, QCVN 66:2013/BTTTT,
+													QCVN 73:2013/BTTTT, QCVN 74:2013/BTTTT,
+													QCVN 77:2013/BTTTT, QCVN 86:2015/BTTTT,
+													QCVN 88:2015/BTTTT, QCVN 91:2015/BTTTT,
+													QCVN 92:2015/BTTTT, QCVN 93:2015/BTTTT,
+													QCVN 94:2015/BTTTT, QCVN 95:2015/BTTTT,
+													QCVN 96:2015/BTTTT, QCVN 103:2016/BTTTT</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i15">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i15" aria-expanded="false">
+											Radio Frequency (RF) – Taiwan
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i15">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇹🇼 LP0002, PLMN07, PLMN01, PLMN08, PLMN10</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i16">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i16" aria-expanded="false">
+											Radio Frequency (RF) – Hong Kong
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i16">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇭🇰 HKCA 1001, HKCA 1002, HKCA 1003, HKCA 1004, HKCA 1005,
+													HKCA 1006, HKCA 1007, HKCA 1008, HKCA 1010, HKCA 1015,
+													HKCA 1016, HKCA 1019, HKCA 1020, HKCA 1022, HKCA 1026,
+													HKCA 1033, HKCA 1034, HKCA 1035, HKCA 1036, HKCA 1037,
+													HKCA 1039, HKCA 1041, HKCA 1042, HKCA 1043, HKCA 1044,
+													HKCA 1045, HKCA 1046, HKCA 1047, HKCA 1048, HKCA 1049,
+													HKCA 1050, HKCA 1052, HKCA 1053, HKCA 1054, HKCA 1056,
+													HKCA 1057, HKCA 1061, HKCA 1063, HKCA 1064, HKCA 1065,
+													HKCA 1066, HKCA 1067, HKCA 1068, HKCA 1069, HKCA 1070,
+													HKCA 1071, HKCA 1072, HKCA 1073, HKCA 1074, HKCA 1076</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i17">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i17" aria-expanded="false">
+											Radio Frequency (RF) – Australia & New Zealand
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i17">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇦🇺 🇳🇿 AS 2772.2, AS/NZS 4281, AS/NZS 4771, AR IB RCR STD-28,
+													Radiocommunications (Short range devices) Standard 2014
+													(AS/NZS 4268, AS/NZS 4268.1, AS/NZS 4268.2),
+													Radiocommunications (406 MHz Satellite Distress Beacons)
+													Standard 2014
+													(AS/NZS 4280, AS/NZS 4280.1:2003, AS/NZS 4280.2:2003),
+													Radiocommunications (Cordless Telephone) Standard 2008
+													(AS/NZS 4281:2007),
+													Radiocommunications (Analogue Speech (Angle Modulated
+													Equipment) Standard 2014
+													(AS/NZS 4295:2015),
+													Radiocommunications (121.5 MHz and 243.0 MHz Emergency
+													Position Indicating Radio Beacons) Standard 2014
+													(AS/NZS 4330:2006),
+													Radiocommunications (UHF CB Radio Equipment) Standard 2011
+													(No.1)
+													(AS/NZS 4365:2011),
+													Radiocommunications (VHF Radiotelephone Equipment - Maritime
+													Mobile Service) Standard 2014
+													(AS/NZS 4415.1:2003, AS/NZS 4415.2:2003),
+													Radiocommunications (MF and HF Radiotelephone Equipment -
+													International Maritime Mobile Service) Standard 2014
+													(AS/NZS 4582:2004),
+													Radiocommunications (118 MHz to 137 MHz Amplitude Modulated
+													Equipment - Aeronautical Radio Service) Standard 2012
+													(AS/NZS 4583:2016),
+													Radiocommunications (Paging Service Equipment) Standard 2014
+													(AS/NZS 4769.1:2000, AS/NZS 4769.2:2000),
+													Radiocommunications (MF and HF equipment - Land Mobile
+													Service) Standard 2014
+													(AS/NZS 4770:2000),
+													Radiocommunications (Digital Cordless Communications Devices -
+													DECT Devices) Standard 2017,
+													Radiocommunications (Digital Cordless Communications Devices -
+													PHS Devices) Standard 2007</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i18">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i18" aria-expanded="false">
+											Radio Frequency (RF) – Korea
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i18">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇰🇷 Regulations on Radio Equipment
+													(Enforcement Decree of MSIT NO. 1, Jul. 26, 2017),
+													Unlicensed Radio Equipment Established Without Notice
+													(MSIT Public Notification 2018-71, Oct. 16, 2018),
+													Technical Requirements for Radio Equipment for Maritime Services
+													(RRA Public Notification 2018-8, Jul. 2, 2018),
+													Technical Requirements for Radio Equipment for Aeronautical
+													Services (RRA Public Notification 2018-9, Jul 2, 2018),
+													Technical Requirements for Radio Equipment for
+													Telecommunication Services (RRA Public Notification 2018-20,
+													Oct 22, 2018),
+													Technical Requirements of the Other Service Radio Equipment for
+													Simple radio station, Space station and Earth station
+													(RRA Public Notification 2018-26, Nov 13, 2018),
+													Technical Requirements of the Other Service Radio Equipment for
+													Simple radio station, Space station and Earth station
+													(RRA Public Notification 2016-21),
+													Technical Requirements of Radio Wave Application
+													(RRA Public Notification 2016-20, Sep 27, 2016),
+													Measurements of the high-frequency output of radio wave
+													application equipment and antenna power calculation methods
+													(RRA Public Notification 2016-2, Apr 4, 2016),
+													Technical Requirements for Radio Equipment of Standard of Safety
+													Facility (RRA Public Notification 2016-20),
+													Technical Requirements for the Human Protection against
+													Electromagnetic Waves (MSIT Public Notification 2017-7,
+													Aug 24, 2017),
+													Technical Requirements for Measurement and Test Procedure of
+													Specific Absorption Rate (RRA Public Notification 2017-8,
+													Aug 28, 2017),
+													Technical Requirements for Measurement of Electromagnetic Field
+													Strength (RRA Public Notification 2017-7, Aug 4, 2017),
+													Equipment to be subject of Test Procedure for Electromagnetic Field
+													Strength and Specific Absorption Rate (MSIT Public Notification
+													2017-7, Aug 24, 2017),
+													Conformity Assessment Procedure for Telecommunications
+													Terminal Equipment (RRA Announce 2015-135), KS X 3123</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i19">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i19" aria-expanded="false">
+											Radio Frequency (RF) – Japan
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i19">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇯🇵 ARIB STD-T66, ARIB STD-T81, ARIB STD-T89,
+													ARIB STD-T90, ARIB STD-T94 Fascicle 1,
+													RCR STD-1, RCR STD-29, RCR STD-33</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i20">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i20" aria-expanded="false">
+											Radio Frequency (RF) – Japan
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i20" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i20">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>🇯🇵 Scope B1 - Specified Radio Equipment specified in Article
+													38-2-2, paragraph 1, item 1 of the Radio Law,
+													Scope B2 - Specified Radio Equipment specified in Article
+													38-2-2, paragraph 1, item 2 of the Radio Law,
+													Scope B3 - Specified Radio Equipment specified in Article
+													38-2-2, paragraph 1, item 3 of the Radio Law</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i21">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i21" aria-expanded="false">
+											Specific Absorption Rate (SAR) and Hearing Aid Compatibility (HAC)
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i21">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>ANSI C63.19:2011, ANSI C95,
+													EN 50371, EN 50383, EN 62233, EN 62311, EN 62479, EN 50360,
+													EN 50361, EN 50364,
+													IEC 62209-1, IEC 62209-2,
+													FCC OET Bulletin 65 Supplement C,
+													FCC OET Bulletin 65, FCC 47 CFR 20.19, H46-2/99-273E,
+													IEEE 1528a:2013, NZS 2772.1, Resolution N 533,
+													AS/NZS 2772.2:2011, CNS 14958-1, CNS 14959,
+													MSIP Public Notification 2015-17,
+													MSIP Public Notification 2015-18,
+													RRA Public Notification 2015-23,
+													RSS-102 (Issue 5, April 2018) (excluding SPR-002 nerve
+													stimulation testing)</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i22">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general" href="#ques-ans-i22" aria-expanded="false">
+											Citizen Band Radio Service (CBRS)
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i22">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th></tr></thead>
+						            <tbody>
+													<tr><td>CBRS Alliance Certification Test Plan CBRSA-TS-9001 v1.0.0
+WInnForum Conformance and Performance Test Technical
+Standards WINNF-TS-0122 V1.0.0</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+						</div>
 
-Table No 13
-CB Radio;
+						<br>
+						<br id="rules">
+						<div class="clear"></div>
+						<div class="gaps size-lg"></div>
 
-Table No 21
-Cordless Telephone;
+						<h3>Rule Parts / Technologies:</h3>
 
-Table No 22-1 thru 22-17
-Low Power Radio Equipment;
+						<div class="panel-group accordion" id="general2" role="tablist" aria-multiselectable="true">
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i23">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general2" href="#ques-ans-i23" aria-expanded="false">
+											Part 15B: Unintentional Radiators
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i23" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i23">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th><th>Maximum Frequency (MHz)</th></tr></thead>
+						            <tbody>
+													<tr><td>ANSI C63.4:2014</td><td>40000</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i24">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general2" href="#ques-ans-i24" aria-expanded="false">
+											Part 18: Industrial, Scientific, and Medical Equipment
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i24" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i24">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th><th>Maximum Frequency (MHz)</th></tr></thead>
+						            <tbody>
+													<tr><td>FCC MP-5 (February 1986)</td><td>40000</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i24-1">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general2" href="#ques-ans-i24-1" aria-expanded="false">
+											Part 15C: Intentional Radiators
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i24-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i24-1">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th><th>Maximum Frequency (MHz)</th></tr></thead>
+						            <tbody>
+													<tr><td>ANSI C63.10:2013 </td><td>40000</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i25">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general2" href="#ques-ans-i25" aria-expanded="false">
+											Part 15D: Unlicensed Personal CommunicationSystems Devices
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i25" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i25">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th><th>Maximum Frequency (MHz)</th></tr></thead>
+						            <tbody>
+													<tr><td>ANSI C63.17:2013</td><td>40000</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i26">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general2" href="#ques-ans-i26" aria-expanded="false">
+											Part 15E: U-NIII without DFS Intentional Radiators
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i26" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i26">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th><th>Maximum Frequency (MHz)</th></tr></thead>
+						            <tbody>
+													<tr><td>ANSI C63.10:2013 </td><td>40000</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i27">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general2" href="#ques-ans-i27" aria-expanded="false">
+											Part 15E: U-NIII with DFS Intentional Radiators
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i27" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i27">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th><th>Maximum Frequency (MHz)</th></tr></thead>
+						            <tbody>
+													<tr><td>FCC KDB 905462 D02 (v02)</td><td>40000</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i28">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general2" href="#ques-ans-i28" aria-expanded="false">
+											Part 15F: UWB Intentional Radiators
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i28" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i28">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th><th>Maximum Frequency (MHz)</th></tr></thead>
+						            <tbody>
+													<tr><td>ANSI C63.10:2013 </td><td>40000</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i29">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general2" href="#ques-ans-i29" aria-expanded="false">
+											Part 15G: BPL Intentional Radiators
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i29" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i29">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th><th>Maximum Frequency (MHz)</th></tr></thead>
+						            <tbody>
+													<tr><td>ANSI C63.10:2013 </td><td>40000</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i30">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general2" href="#ques-ans-i30" aria-expanded="false">
+											Part 15H: White Space Device Intentional Radiators
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i30" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i30">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th><th>Maximum Frequency (MHz)</th></tr></thead>
+						            <tbody>
+													<tr><td>ANSI C63.10:2013 </td><td>40000</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i31">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general2" href="#ques-ans-i31" aria-expanded="false">
+											Parts 22 (cellular), 24, 25 (below 3 GHz), and 27: Commercial Mobile Services (FCC Licensed Radio Service Equipment)
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i31" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i31">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th><th>Maximum Frequency (MHz)</th></tr></thead>
+						            <tbody>
+													<tr><td>ANSI C63.26:2015, ANSI/TIA-603-E</td><td>40000</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i32">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general2" href="#ques-ans-i32" aria-expanded="false">
+											Parts 22 (non-cellular), 90 (below 3 GHz), 95, 97 (below 3 GHz), and 101 (below 3 GHz): General Mobile Radio Services (FCC Licensed Radio Service Equipment)
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i32" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i32">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th><th>Maximum Frequency (MHz)</th></tr></thead>
+						            <tbody>
+													<tr><td>ANSI C63.26:2015, ANSI/TIA-603-E</td><td>40000</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i33">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general2" href="#ques-ans-i33" aria-expanded="false">
+											Part 96: Citizens Broadband Radio Services (FCC Licensed Radio Service Equipment)
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i33" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i33">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th><th>Maximum Frequency (MHz)</th></tr></thead>
+						            <tbody>
+													<tr><td>ANSI C63.26:2015, ANSI/TIA-603-E</td><td>40000</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i34">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general2" href="#ques-ans-i34" aria-expanded="false">
+											Parts 80 and 87: Maritime and Aviation Radio Services
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i34" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i34">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th><th>Maximum Frequency (MHz)</th></tr></thead>
+						            <tbody>
+													<tr><td>ANSI C63.26:2015, ANSI/TIA-603-E</td><td>40000</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i35">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general2" href="#ques-ans-i35" aria-expanded="false">
+											Parts 25, 30, 74, 90 (M DSRC, Y, Z), 95 (M and L) and 101: Microwave and Millimeter Bands Radio Services
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i35" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i35">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th><th>Maximum Frequency (MHz)</th></tr></thead>
+						            <tbody>
+													<tr><td>ANSI C63.26:2015, ANSI/TIA-603-E</td><td>40000</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i36">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general2" href="#ques-ans-i36" aria-expanded="false">
+											Parts 73 and 74 (below 3 GHz): Broadcast Radio Services
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i36" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i36">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th><th>Maximum Frequency (MHz)</th></tr></thead>
+						            <tbody>
+													<tr><td>ANSI C63.26:2015, ANSI/TIA-603-E</td><td>40000</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i37">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general2" href="#ques-ans-i37" aria-expanded="false">
+											Part 20 (Wideband Consumer Signal Boosters, Provider-specific signal boosters, and Industrial Signal Boosters): Signal Boosters
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i37" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i37">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th><th>Maximum Frequency (MHz)</th></tr></thead>
+						            <tbody>
+													<tr><td>ANSI C63.26:2015</td><td>40000</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i38">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general2" href="#ques-ans-i38" aria-expanded="false">
+											Devices subject to SAR requirements: RF Exposure
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i38" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i38">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th><th>Maximum Frequency (MHz)</th></tr></thead>
+						            <tbody>
+													<tr><td>IEEE Std 1528™-2013,
+													KDB Publication 865664,
+													KDB Publication 447498, </td><td>6000</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i39">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general2" href="#ques-ans-i39" aria-expanded="false">
+											HAC for Commercial mobile services: Hearing Aid Compatibility
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i39" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i39">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+						            <thead><tr><th>Test Method</th><th>Maximum Frequency (MHz)</th></tr></thead>
+						            <tbody>
+													<tr><td>ANSI C63.19-2011</td><td>2500</td></tr>
+												</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<br>
+							<p>Vista Laboratories is accredited by A2LA in accordance with the recognized International Standard ISO/IEC 17025:2005, General requirements for the competence of testing and calibration laboratories. This accreditation demonstrates technical competence for a defined scope and the operation of a laboratory quality management system (refer to joint ISO-ILAC-IAF Communiqué dated April 2017).</p>
 
-Table No 36
-Low Power Security System;
+							<div class="feature-imagebox border download-action">
+								<div class="block">
+									<h3>Download PDF Scope</h3>
+									<p>Please refer to this link for our most updated testing scope.</p>
+									<a href="https://portal.a2la.org/scopepdf/4848-01.pdf" target="_blank" class="btn">Download PDF <i class="fa fa-file-pdf-o"></i> </a>
+								</div>
+							</div>
+						</div>
 
-Table No 43
-Low Power Data Communication in the 2.4 GHz Band;
 
-Table No 44
-Low Power Data Communication in the 2.4 GHz Band;
+						<br id="cb">
+						<br>
+						<hr>
+						<div id="certify" class="clear"></div>
+						<div class="gaps size-lg"></div>
+						<h2>Product Certifications</h2>
 
-Table No 45
-Low Power Data Communication in the 5.2, 5.3, 5.6 GHz Bands;
-Table No 46
-Low Power Data Communication in the 25 and 27 GHz Bands;
-Table No 47
-Base Station for 5 GHz Band Wireless Access System;
-Table No 47
-Base Station for 5 GHz Band Wireless Access System (low spurious type);
-Table No 47
-Land Mobile Relay for 5 GHz Band Wireless Access System (limited for use in special zones);
-Table No 47
-Land Mobile Relay for 5 GHz Band Wireless Access System (limited for use in special zones, low spurious type);
-Table No 47
-Land Mobile Relay for 5 GHz Band Wireless Access System;
-Table No 47
-Land Mobile Relay for 5 GHz Band Wireless Access System (low spurious type);
-Table No 47
-Land Mobile Relay for 5 GHz Band Wireless Access System (low power type);
-Table No 50
-Digital Cordless Telephone;
-Table No 50
-PHS Base Station;
-Table No 50
-PHS Land Mobile Station;
-Table No 50
-PHS Relay Station;
-Table No 50
-PHS Test Station;
-Table No 64
-Mobile Station for Dedicated Short Range Communication Systems;
-Table No 64
-Base Station for Dedicated Short Range Communication Systems;
-Table No 64
-Test Station for Dedicated Short Range Communication Systems;
-Table No 70
-UWB (Ultra Wide Band) Radio System</td>
-          </tr>
-          <tr>
-            <td colspan="2">比吸收率（SAR）和助听器兼容性（HAC）</td>
-            <td>ANSI C63.19:2011; ANSI C95;
-EN 50371; EN 50383; EN 62233; EN 62311; EN 62479; EN 50360; EN 50361; EN 50364;
-IEC 62209-1; IEC 62209-2;
-FCC OET Bulletin 65 Supplement C;
-FCC OET Bulletin 65; FCC 47 CFR 20.19; H46-2/99-273E;
-IEEE 1528a:2013; NZS 2772.1; Resolution N 533;
-AS/NZS 2772.2:2011; CNS 14958-1; CNS 14959;
-MSIP Public Notification 2015-17;
-MSIP Public Notification 2015-18;
-RRA Public Notification 2015-23;
-RSS-102 (excluding SPR-002 nerve stimulation testing)</td>
-          </tr>
-        </table>
-      <!-- /.row -->
+						<h3>Certification Schemes:</h3>
 
-      <table>
-        <tr>
-          <th>规则子部分/技术</th>
-          <th>测试方法</th>
-          <th>最高频率(MHz)</th>
-        </tr>
-        <tr>
-          <td>Part 15B: Unintentional Radiators</td>
-          <td>ANSI C63.4:2014</td>
-          <td>40000</td>
-        </tr>
-        <tr>
-          <td>Part 18: Industrial, Scientific, and Medical Equipment</td>
-          <td>FCC MP-5 (February 1986)</td>
-          <td>40000</td>
-        </tr>
-        <tr>
-          <td>Part 15C: Intentional Radiators</td>
-          <td>ANSI C63.10:2013</td>
-          <td>40000</td>
-        </tr>
-        <tr>
-          <td>Part 15D: Unlicensed Personal Communication Systems Devices</td>
-          <td>ANSI C63.17:2013</td>
-          <td>40000</td>
-        </tr>
-        <tr>
-          <td>Part 15E: U-NIII without DFS Intentional Radiators</td>
-          <td>ANSI C63.10:2013</td>
-          <td>40000</td>
-        </tr>
-        <tr>
-          <td>Part 15E: U-NIII with DFS Intentional Radiators</td>
-          <td>FCC KDB 905462 D02 (v02)</td>
-          <td>40000</td>
-        </tr>
-        <tr>
-          <td>Part 15F: UWB Intentional Radiators</td>
-          <td>ANSI C63.10:2013</td>
-          <td>40000</td>
-        </tr>
-        <tr>
-          <td>Part 15G: BPL Intentional Radiators</td>
-          <td>ANSI C63.10:2013</td>
-          <td>40000</td>
-        </tr>
-        <tr>
-          <td>Part 15H: White Space Device Intentional Radiators</td>
-          <td>ANSI C63.10:2013</td>
-          <td>40000</td>
-        </tr>
-          <td>Parts 22 (cellular), 24, 25 (below 3 GHz), and 27: Commercial Mobile Services (FCC Licensed Radio Service Equipment)</td>
-          <td>ANSI C63.26:2015; ANSI/TIA-603-E</td>
-          <td>40000</td>
-        </tr>
-        </tr>
-          <td>Parts 22 (non-cellular), 90 (95, 97 (below 3 GHz), and 101 GHz): General Mobile Radio Services (FCC Licensed Radio Service Equipment)</td>
-          <td>ANSI C63.26:2015; ANSI/TIA-603-E</td>
-          <td>40000</td>
-        </tr>
-        </tr>
-          <td>Part 96: Citizens Broadband Radio Services (FCC Licensed Radio Service Equipment)</td>
-          <td>ANSI C63.26:2015; ANSI/TIA-603-E</td>
-          <td>40000</td>
-        </tr>
-        </tr>
-          <td>Parts 80 and 87: Maritime and Aviation Radio Services</td>
-          <td>ANSI C63.26:2015; ANSI/TIA-603-E</td>
-          <td>40000</td>
-        </tr>
-        </tr>
-          <td>Parts 25, 30, 74, 90 (M DSRC, Y, Z), 95 (M and L) and 101: Microwave and Millimeter Bands Radio Services</td>
-          <td>ANSI C63.26:2015; ANSI/TIA-603-E</td>
-          <td>40000</td>
-        </tr>
-        </tr>
-          <td>Parts 73 and 74 (below 3 GHz): Broadcast Radio Services</td>
-          <td>ANSI C63.26:2015; ANSI/TIA-603-E</td>
-          <td>40000</td>
-        </tr>
-        </tr>
-          <td>Part 20 (Wideband Consumer Signal Boosters, Provider-specific signal boosters, and Industrial Signal Boosters): Signal Boosters</td>
-          <td>ANSI C63.26:2015</td>
-          <td>40000</td>
-        </tr>
-        </tr>
-          <td>Devices subject to SAR requirements: RF Exposure</td>
-          <td>IEEE Std 1528 TM - 2013; KDB Publication 865664; KDB Publication 447498</td>
-          <td>6000</td>
-        </tr>
-      </tr>
-        <td>HAC for Commercial mobile services: Hearing Aid Compatibility</td>
-        <td>ANSI C63.19-2011</td>
-        <td>2500</td>
-      </tr>
-      </table>
-      <br>
-    </div>
+						<div class="panel-group accordion" id="general3" role="tablist" aria-multiselectable="true">
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i40">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general3" href="#ques-ans-i40" aria-expanded="false">
+											Federal Communication Commission (FCC) - TCB Roles and Responsibilities
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i40" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i40">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+								            <thead><tr><th>Product Type / Category</th><th>Standards / Requirements</th></tr></thead>
+								            <tbody>
+															<tr><td>Unlicensed Radio Frequency Devices (Scope A)</td><td>Scope A1, A2, A3, A4 of the FCC TCB Roles and Responsibilities</td></tr>
+															<tr><td>Licensed Radio Frequency Devices (Scope B)</td><td>Scope B1, B2, B3, B4 of the FCC TCB Roles and Responsibilities</td></tr>
+														</tbody>
+						          </table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i41">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general3" href="#ques-ans-i41" aria-expanded="false">
+											Innovation Science and Economic Development Canada (ISED)
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i41" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i41">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+														<thead><tr><th>Product Type / Category</th><th>Standards / Requirements</th></tr></thead>
+														<tbody>
+															<tr><td>License-Exempt Radio Frequency Devices (Radio Scope 1)</td><td>Radio Scope 1 of the Radiocommunication and Broadcasting Equipment Scopes of Accreditation for Certification Bodies</td></tr>
+															<tr><td>Licensed Personal Mobile Radio Services (Radio Scope 2)</td><td>Radio Scope 2 of the Radiocommunication and Broadcasting Equipment Scopes of Accreditation for Certification Bodies</td></tr>
+															<tr><td>Licensed General Mobile & Fixed Radio Services (Radio Scope 3)</td><td>Radio Scope 3 of the Radiocommunication and Broadcasting Equipment Scopes of Accreditation for Certification Bodies</td></tr>
+															<tr><td>Licensed Maritime & Aviation Radio Services (Radio Scope 4)</td><td>Radio Scope 4 of the Radiocommunication and Broadcasting Equipment Scopes of Accreditation for Certification Bodies</td></tr>
+															<tr><td>Licensed Fixed Microwave Radio Services (Radio Scope 5)</td><td>Radio Scope 5 of the Radiocommunication and Broadcasting Equipment Scopes of Accreditation for Certification Bodies</td></tr>
+														</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i42">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general3" href="#ques-ans-i42" aria-expanded="false">
+											IMDA – Singapore
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i42" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i42">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+														<thead><tr><th>Product Type / Category</th><th>Standards / Requirements</th></tr></thead>
+														<tbody>
+															<tr><td>Radio-Communication Equipment</td><td>All Technical Specifications for RadioCommunication Equipment – Table 2 of
+IMDA MRA Recognition Scheme:
+Issue 1 Rev 2, January 2018 (excluding IMDA
+TS IOT)</td></tr>
+															</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i43">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general3" href="#ques-ans-i43" aria-expanded="false">
+											OFCA – Hong Kong
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i43" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i43">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+														<thead><tr><th>Product Type / Category</th><th>Standards / Requirements</th></tr></thead>
+														<tbody>
+															<tr><td>Radio Equipment</td><td>HKCA 1001, HKCA 1002, HKCA 1003, HKCA 1004, HKCA 1005, HKCA 1006,
+															1007, HKCA 1008, HKCA 1010, HKCA 1015, HKCA 1016, HKCA 1019, HKCA 1020,
+															1022, HKCA 1026, HKCA 1033, HKCA 1034, HKCA 1035, HKCA 1036, HKCA 1037,
+															1039, HKCA 1041, HKCA 1042, HKCA 1043, HKCA 1044, HKCA 1045, HKCA 1046,
+															1047, HKCA 1048, HKCA 1049, HKCA 1050, HKCA 1052, HKCA 1053, HKCA 1054,
+															1056, HKCA 1057, HKCA 1061, HKCA 1063, HKCA 1064, HKCA 1065, HKCA 1066,
+															1067, HKCA 1068, HKCA 1069, HKCA 1070, HKCA 1071, HKCA 1072, HKCA 1073,
+															1074, HKCA 1076</td></tr>
+														</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i44">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general3" href="#ques-ans-i44" aria-expanded="false">
+											MIC – Japan
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i44" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i44">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+														<thead><tr><th>Product Type / Category</th><th>Standards / Requirements</th></tr></thead>
+														<tbody>
+															<tr><td>Radio Law (Radio Equipment)</td><td>Scope B1 - Specified Radio Equipment specified in Article 38-2-2, paragraph 1, item 1 of the Radio Law,
+																<br>Scope B2 - Specified Radio Equipment specified in Article 38-2-2, paragraph 1, item 2 of the Radio Law,
+																<br>Scope B3 - Specified Radio Equipment specified in Article 38-2-2, paragraph 1, item 3 of the Radio Law</td></tr>
+															</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i45">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general3" href="#ques-ans-i45" aria-expanded="false">
+											Radio Equipment Directive (RED) 2014/53/EU
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i45" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i45">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+														<thead><tr><th>Product Type / Category</th><th>Standards / Requirements</th></tr></thead>
+														<tbody>
+															<tr><td>Base Station for Mobile Network,
+															Citizens’ Band, Cordless Telephone,
+															Fixed Links, Mobile (Cellular) Telephone
+															Handsets, Cellular Base Station, UE, and
+															Repeaters, Private and Professional Mobile
+															Radio, Short Range Devices,
+															Wireless Microphones, Onsite Pagers,
+															BRAN – 5GHz High Performance RLAN,
+															Maritime Mobile Radio, Ultra-Wide Band
+															Devices, Repeaters, Dedicated Short Range
+															Communication (DSRC) Transmission
+															Equipment, Aeronautical Mobile Radio,
+															Cordless Audio Devices,
+															Satellite Earth Stations and Systems, White
+															Space Devices, VHF Air ground Digital
+															Link, Meteorological Aids, Wireless Video
+															Links, Navigation Radars, Ultra Low Power
+															Active Medical Implants, RFIDs, Digital
+															Radio Mondiale (DRM) Broadcasting
+															Devices, Television Broadcast Devices,
+															Radio Equipment for Ultra Low Power
+															Active Medical Membrane Implants and
+															Accessories, Broadband Wireless Access
+															Devices, Road Transport and Traffic
+															Telematics Devices, Transmitting Equipment
+															for Terrestrial Mobile TV, Terrestrial
+															Trunked Radio, Maritime Low Power
+															Personal Locating Devices</td><td>Radio Equipment Directive
+															(RED) 2014/53/EU, Annex
+															III, Module B</td></tr>
+														</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="ques-i46">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#general3" href="#ques-ans-i46" aria-expanded="false">
+											Electromagnetic Compatibility (EMC) Directive 2014/30/EU
+											<span class="plus-minus"><span></span></span>
+										</a>
+									</h4>
+								</div>
+								<div id="ques-ans-i46" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ques-i46">
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table">
+														<thead><tr><th>Product Type / Category</th><th>Standards / Requirements</th></tr></thead>
+														<tbody>
+															<tr><td>Household Appliances and Portable Tools,
+															Lighting Equipment, Professional Audio,
+															Video, and Entertainment Lighting Control
+															Equipment, IT Equipment, ISM Equipment,
+															Industrial Equipment, Marine Navigational
+															Equipment, Programmable Controllers
+															(Industry), Alarm Systems, Equipment for
+															Measurement, Control, and Laboratory Use,
+															Railroad Equipment (Train Control and/or
+															Track-side Apparatus), Wireless Equipment,
+															Road Traffic Signaling Systems</td><td>Electromagnetic Compatibility (EMC) Directive 2014/30/EU, Annex III, Part A, Module B</td></tr>
+														</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- each panel of faq as accordion -->
+							<br>
+							<p>Vista Compliance Laboratories is accredited in accordance with the recognized International Standard ISO/IEC 17065:2012 Requirements for bodies certifying products, processes and services. We also meet the A2LA R308 – Specific Requirements – ISO-IEC 17065 – Telecommunication Certification Body Accreditation Program and R322 – Specific Requirements – Notified Body Accreditation Requirements. This accreditation demonstrates technical competence for a defined scope and the operation of a management system.</p>
+							<div class="feature-imagebox border download-action">
+								<div class="block">
+									<h3>Download PDF Scope</h3>
+									<p>Please refer to this link for our most updated certification scope.</p>
+									<a href="https://portal.a2la.org/scopepdf/4848-02.pdf" target="_blank" class="btn">Download PDF <i class="fa fa-file-pdf-o"></i> </a>
+								</div>
+							</div>
 
-    <h1 class="mt-4 mb-3">CAB
-      <small>符合性评鉴机构</small>
-    </h1>
 
-    <embed src="/resources/accreditation/CAB.pdf" width="100%" height="700px" />
+						</div>
+						<p>If you have any questions regarding our services, please <a href="/inquire"><strong>contact us</strong></a> or call at <strong>+1 (949) 393-1123</strong>.</p>
 
-    <br>
-    <br>
-    <h4>威士达实验室已被以下权威机构所评定和认可为符合以下标准的测试实验室:</h4>
-    <br>
-    <div class="col col-md-12">
-      <table>
-        <tr>
-          <th>权威</th>
-          <th>认可范围</th>
-        </tr>
-        <tr>
-          <td>澳大利亚通信和媒体管理局(ACMA)</td>
-          <td>AS/NZS CISPR 32, Radiocommunications (Short range devices) Standard 2014 with AS/NZS 4268, Radiocommunications (406 MHz Satellite Distress Beacons) Standard 2014 with AS/NZS 4280, Radiocommunications (Analogue Speech (Angle Modulated) Equipment) Standard 2014 with AS/NZS 4295:2015
-              Radiocommunications (121.5 MHz and 243.0 MHz Emergency Position Indicating Radio Beacons) Standard 2014 with AS/NZS 4330:2006, Radiocommunications (UHF CB Radio Equipment) Standard 2011 (No.1) with AS/NZS 4365:2011, Radiocommunications (VHF Radiotelephone Equipment - Maritime Mobile Service) Standard 2014 with AS/NZS 4415.1:2003 and AS/NZS 4415.2:2003,
-              Radiocommunications (MF and HF Radiotelephone Equipment - International Maritime Mobile Service) Standard 2014 with AS/NZS 4582:2004, Radiocommunications (118 MHz to 137 MHz Amplitude Modulated Equipment - Aeronautical Radio Service) Standard 2012 with AS/NZS 4583:2016,
-              Radiocommunications (Paging Service Equipment) Standard 2014 with AS/NZS 4769.1:2000 and AS/NZS 4769.2:2000, Radiocommunications (MF and HF equipment - Land Mobile Service) Standard 2014 with AS/NZS 4770:2000, Radiocommunications (Digital Cordless Communications Devices - DECT Devices) Standard 2017 with ETSI EN 301 406</td>
-        </tr>
-        <tr>
-          <td>以色列经济部(MOE)</td>
-          <td>EMC/Safety: CISPR 32 (equivalent to SI 961 Part 32 does not include Israeli national deviations), SI 961 Part 6.2; Wireless: Wireless Telegraph Ordinance (Ordinance Non-Application Directive), 1984</td>
-        </tr>
-        <tr>
-          <td>台湾国家通信委员会 (NCC)</td>
-          <td>LP0002, PLMN01, PLMN07, PLMN08, PLMN10</td>
-        </tr>
-        <tr>
-          <td>台湾经济部标准检验局 (BSMI)</td>
-          <td>CNS 13438 (up to 6 GHz)</td>
-        </tr>
-        <tr>
-          <td>新加坡资讯通信媒体发展局(IMDA)</td>
-          <td>IMDA TS DSRC, IMDA TS WSD, IMDA TS DVB-T2 IRD, IMDA TS CT-CTS, IMDA TS SRD, IMDA TS AR, IMDA TS GMPCS, IMDA TS CMT, IMDA TS CBS, IMDA TS UWB, IMDA TS WBA, IMDA TS LMR</td>
-        </tr>
-        <tr>
-          <td>香港通讯事务管理局(OFCA)</td>
-          <td>HKCA 1001, HKCA 1002, HKCA 1003, HKCA 1004, HKCA 1005, HKCA 1006, HKCA 1007, HKCA 1008, HKCA 1010, HKCA 1015, HKCA 1016, HKCA 1019, HKCA 1020, HKCA 1022, HKCA 1026, HKCA 1033, HKCA 1034, HKCA 1035, HKCA 1036, HKCA 1037, HKCA 1039, HKCA 1041, HKCA 1042, HKCA 1043, HKCA 1044, HKCA 1045, HKCA 1046, HKCA 1047, HKCA 1048, HKCA 1049, HKCA 1050, HKCA 1052, HKCA 1053, HKCA 1054, HKCA 1056, HKCA 1057, HKCA 1061, HKCA 1063, HKCA 1064, HKCA 1065, HKCA 1066, HKCA 1067, HKCA 1068, HKCA 1069, HKCA 1070, HKCA 1071, HKCA 1072, HKCA 1073, HKCA 1074, HKCA 1076</td>
-        </tr>
-        <tr>
-          <td>韩国通信委员会(RRA)</td>
-          <td>Regulations on Radio Equipment (Enforcement Decree of MSIT NO. 1), Unlicensed Radio Equipment Established Without Notice (MSIT Public Notification 2018-38), Technical Requirements for Radio Equipment for Maritime Services (RRA Public Notification 2018-8), Technical Requirements for Radio Equipment for Aeronautical Services (RRA Public Notification 2018-9), Technical Requirements for Radio Equipment for Telecommunication Services (RRA Public Notification 2017-3), Technical Requirements of the Other Service Radio Equipment for Simple radio station, Space station and Earth station (RRA Public Notification 2017-8), Technical Requirements of Radio Wave Application (RRA Public Notification 2016-20), Measurements of the high-frequency output of radio wave application equipment and antenna power calculation methods (RRA Public Notification 2016-2), Technical Requirements for the Human Protection against Electromagnetic Waves MSIT Public Notification 2017-7), Technical Requirements for Measurement of Electromagnetic Field Strength (RRA Public Notification 2017-7), KS X 3123, Technical Requirements for Measurement and Test Procedure of Specific Absorption Rate (RRA Public Notification 2017-8), Equipment to be subject of Test Procedure for Electromagnetic Field Strength and Specific Absorption Rate (MSIT Public Notification 2017-7), KN 11, KN 14-1, KN 14-2, KN 15, KN 17, KN 19, KN 32, KN 35, KN 41, KN 50, KN 51, KN 60, KN 301-489-01, KN 301-489-02, KN 301-489-03, KN 301-489-05, KN 301-489-06, KN 301-489-07, KN 301-489-09, KN 301-489-13, KN 301-489-15, KN 301-489-17, KN 301-489-18, KN 301-489-20, KN 301-489-24, KN 301-489-26, KN 301-489-27, KN 301-489-32, KN 60601-1-2, KN 60945/60533, KN 60947, KN 61000-6-1, KN 61000-6-2, KN 61000-6-3, KN 61000-6-4, KN 61800-3, KN 62040-2, KN 12015, KN 12016
-          </td>
-        </tr>
-        <tr>
-          <td>加拿大创新，科学和经济发展部 (ISED)</td>
-          <td>RSS Gen, RSS 102 (SAR), RSS 102 (RF Exp.), RSS 111, RSS 112, RSS 117, RSS 119, RSS 123, RSS 125, RSS 127, RSS 130, RSS 131, RSS 132, RSS 133, RSS 134, RSS 135, RSS 137, RSS 139, RSS 141, RSS 142, RSS 170, RSS 181, RSS 182, RSS 191, RSS 192, RSS 194, RSS 195, RSS 196, RSS 197, RSS 199, RSS 210, RSS 211, RSS 213, RSS 215, RSS 216, RSS 220, RSS 236, RSS 238, RSS 243, RSS 244, RSS 247, RSS 251, RSS 287, RSS 288</td>
-        </tr>
-      </table>
+					</div>
+					<!-- Sidebar -->
+					<div class="col-md-4">
+						<div class="sidebar-right">
 
-    </div>
+							<div class="wgs-box wgs-menus">
+								<div class="wgs-content">
+									<ul class="list list-grouped">
+										<li class="list-heading">
+											<span>Scope</span>
+											<ul>
+												<li><a class="scroll-to" href="#capabilities">Testing Capabilities</a></li>
+												<li><a class="scroll-to" href="#rules">Rule Subparts / Technologies</a></li>
+												<li><a class="scroll-to" href="#certify">Certification Schemes</a></li>
+												<!--<li><a class="scroll-to" href="#cab">Conformity Assessment Recognitions</a></li>-->
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
 
-    <section class="container" id="cb">
-      <br>
-    </section>
-    <hr>
-    <br>
-    <br>
+							<div class="wgs-box wgs-quoteform">
+								<h3 class="wgs-heading">Get in Touch</h3>
+								<div class="wgs-content">
+									<p>If you have any questions or would like to schedule a time to discuss further, you may contact us.</p>
+									<form id="quote-request" class="form-quote" action="https://getsimpleform.com/messages?form_api_token=a7d2d601ec9c3e16482229a99c3a80b6" method="post">
+										<input type='hidden' name='redirect_to' value='http://www.vista-compliance.com/'/>
+										<div class="form-results"></div>
+										<div class="form-group">
+											<div class="form-field">
+												<input name="contact-name" type="text" placeholder="Name *" class="form-control required">
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="form-field">
+												<input name="contact-email" type="email" placeholder="Email *" class="form-control required email">
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="form-field form-m-bttm">
+												<input name="contact-phone" type="text" placeholder="Phone" class="form-control">
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="form-field">
+												<input name="contact-service" type="text" placeholder="Interest of Service" class="form-control">
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="form-field">
+												<textarea name="contact-message" placeholder="Messages *" class="txtarea form-control required"></textarea>
+											</div>
+										</div>
+										<input type="text" class="hidden" name="form-anti-honeypot" value="">
+										<button type="submit" class="btn btn-alt sb-h">Submit</button>
+									</form>
+								</div>
+							</div>
 
-    <h1 class="mt-4 mb-3">认证
-        <small>产品认证机构 (ISO/IEC 17065)</small>
-      </h1>
+						</div>
+					</div>
+					<!-- Sidebar #end -->
+				</div>
 
-      <embed src="/resources/accreditation/4848-02.pdf" width="100%" height="800px" />
+			</div>
+		</div>
+	</div>
+	<!-- End Section -->
 
-      <h1 class="mt-4 mb-3">范围
-        <small>产品认证机构 (ISO/IEC 17065)</small>
-      </h1>
+	<!-- Call Action -->
+	<div class="call-action bg-primary">
+		<div class="cta-block">
+			<div class="container">
+				<div class="content row">
 
-      <div class="col col-md-12" style="overflow-x:auto;">
-        <table>
-          <tr>
-            <th colspan="3">认证体制</th>
-            <th>产品类型 / 种类</th>
-            <th>标准 / 要求</th>
-          </tr>
-          <tr>
-            <td colspan="3" rowspan="2">美国联邦通信委员会 (FCC)</td>
-            <td>未经许可的射频设备(范围 A)</td>
-            <td>FCC TCB的职责范围A1，A2，A3，A4</td>
-          </tr>
-          <tr>
-            <td>经过许可的射频设备（范围B）</td>
-            <td>FCC TCB的职责范围B1，B2，B3，B4</td>
-          </tr>
-          <tr>
-            <td colspan="3" rowspan="5">加拿大创新，科学和经济发展部 (ISED)</td>
-            <td>免许可证射频设备（无线电范围1）</td>
-            <td>无线电通信和广播设备在无线电范围1所在的认证机构的认可范围</td>
-          </tr>
-          <tr>
-            <td>持执照的个人移动无线电服务（无线电范围2）</td>
-            <td>无线电通信和广播设备在无线电范围2所在的认证机构的认可范围</td>
-          </tr>
-          <tr>
-            <td>持执照一般流动及固定无线电服务（无线电范围3）</td>
-            <td>无线电通信和广播设备在无线电范围3所在的认证机构认可范围</td>
-          </tr>
-          <tr>
-            <td>持执照海事及航空无线电服务（无线电范围4）</td>
-            <td>无线电通信和广播设备在无线电范围4ß所在的认证机构认可范围</td>
-          </tr>
-          <tr>
-            <td>持执照固定微波无线电服务（无线电范围5） </td>
-            <td>无线电通信和广播设备在无线电范围5所在的认证机构认可范围</td>
-          </tr>
-          <tr>
-            <td colspan="3" rowspan="2">IMDA - 新加坡</td>
-            <td>线路终端设备</td>
-            <td>线路终端设备的所有技术规范 - IMDA MRA认可计划表1：2016，附件2</td>
-          </tr>
-          <tr>
-            <td>无线电通信设备</td>
-            <td>无线电通信设备的所有技术规范 - IMDA MRA认可计划表2：2016年，附件2</td>
-          </tr>
-          <tr>
-            <td colspan="3" rowspan="3">OFCA - 香港</td>
-            <td>无线电设备</td>
-            <td>HKCA 1001, 1002, 1003, 1004, 1005, 1006,
-  1007, 1008, 1010, 1015, 1016, 1020, 1022,
-  1026, 1027, 1033, 1034, 1035, 1036, 1037,
-  1039, 1041, 1042, 1043, 1044, 1045, 1046,
-  1047, 1048, 1049, 1050, 1052, 1053, 1054,
-  1056, 1057, 1061, 1063, 1064, 1065 </td>
-          <tr>
-            <td>海洋无线电设备</td>
-            <td>HKCA 1218, 1223, 1224, 1225, 1257, 1258,
-  1259, 1260, 1261, 1262, 1263, 1264, 1265,
-  1266, 1277, 1281, 1282 </td>
-          </tr>
-          <tr>
-            <td>固定网络设备</td>
-            <td>HKCA 2001, 2011, 2012, 2013, 2014, 2015,
-  2016, 2017, 2018, 2019, 2020, 2021, 2022,
-  2023, 2024, 2026, 2027, 2028, 2029, 2030,
-  2031, 2032, 2033, 2034, 2035, 2036, 2037,
-  2038, 2039, 2201, 2202 </td>
-          </tr>
-          <tr>
-            <td colspan="3" rowspan="2">MIC - 日本</td>
-            <td>电信商业法（终端设备） </td>
-            <td>范围A1  - 呼叫目的终端设备；
-            <br>
-  范围A2  - 其他终端设备 </td>
-          </tr>
-          <tr>
-            <td>无线电法（无线电设备）</td>
-            <td>范围B1  - 指定的无线电设备
-  第38-2-2条第1款中规定的项目
-  “无线电法”第1条; <br>
-  范围B2  - 指定的无线电设备
-  第38-2-2条第1款中规定的项目
-  “无线电法”第2条; <br>
-  范围B3  - 指定的无线电设备
-  第38-2-2条第1款中规定的项目
-  “无线电法”第3条</td>
-          </tr>
-          <tr>
-            <td colspan="3" rowspan="1">无线电设备指令 (RED) 2014/53/EU6</td>
-            <td>移动网络基站；电话；
-  固定链接； 移动电话<br>
-  手机； 蜂窝基站，UE和中继器；短程设备；<br>
-  无线麦克风;现场寻呼器;
-  BRAN - 5GHz <br>BRAN - 5GHz高性能RLAN；
-  海上移动无线电<br> 宽带器件；中继器；专用短程通信（DSRC）传输设备 <br>
-  通信(简称DSRC)传播设备；航空移动无线电；<br>无绳音频设备；
-  卫星地球站和系统；白色空间设备；<br>VHF空气地面数字链接；气象辅助；无线视频<br>
-  链接；导航雷达；超低功耗有源医疗电源植入物；<br> RFIDs；数字广播Mondiale(DRM)广播设备；
-  <br> 电视广播设备；超低功耗无线电设备有源 <br>医用膜植入物和配件；宽带无线接入设备；
-  <br> 运输和交通远程信息处理设备；<br>地面移动电视传输设备；陆地无线电台；
-  <br> 海上低功率个人定位装置；
-  </td>
-            <td>无线电设备指令
-  (RED) 2014/53/EU，附件三，模块B.</td>
-          </tr>
-          <tr>
-            <td colspan="3" rowspan="1">电磁兼容性（EMC）指令2014/30 / EU</td>
-            <td>家用电器和便携式工具；灯光设备；
-  专业音频，视频，和娱乐照明控制设备；IT 设备；ISM 设备；
-  <br>工业设备；海洋导航设备，可编程控制器(工业)；报警系统；测量设备，控制和实验室使用；
-  铁路<br>设备（列车制和/或轨道侧设备); <br>无线设备;
-  道路交通信号系统；</td>
-            <td>电磁兼容性（EMC）指令2014/30 / EU，附件III，A部分，模块B。 </td>
-          </tr>
-        </table>
+					<div class="cta-sameline">
+						<h3>Looking for a Solution to Regulatory Compliance for your Company?</h3>
+						<p>Contact us today for free consultation or for more information.</p>
+						<a class="btn btn-outline" href="/inquire">Get In Touch</a>
+					</div>
 
-        <br>
-        <br>
-      </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Section -->
 
-    </div>
+	<!-- Footer Widget-->
+	<div class="footer-widget section-pad">
+		<div class="container">
+			<div class="row">
 
-    <!-- /.container -->
+				<div class="widget-row row">
+					<div class="footer-col col-md-5 col-sm-6 res-m-bttm">
+						<!-- Each Widget -->
+						<div class="wgs wgs-footer wgs-menu">
+							<h5 class="wgs-title">Services</h5>
+							<div class="wgs-content">
+								<ul class="menu col-md-6 npl">
+									<li><a href="/testing/emc">EMC/EMI Testing</a></li>
+									<li><a href="/testing/rf">RF Testing</a></li>
+									<li><a href="/testing/dfs">DFS Testing</a></li>
+									<li><a href="/testing/sar">SAR Testing</a></li>
+									<li><a href="/accreditation#capabilities">Accreditation</a></li>
+								</ul>
+								<ul class="menu col-md-6">
+									<li><a href="/productcertification">Product Certification</a></li>
+									<li><a href="/globalmarketaccess">Global Market Access</a></li>
+									<li><a href="/accreditation#cb">Accreditation</a></li>
+									<!--<li><a href="index-fullscreen.html#">Research &amp; Development</a></li>-->
+								</ul>
+							</div>
+						</div>
+						<!-- End Widget -->
+					</div>
+					<div class="footer-col col-md-2 col-sm-6 res-m-bttm">
+						<!-- Each Widget -->
+						<div class="wgs wgs-footer wgs-menu">
+							<h5 class="wgs-title">Quick Links</h5>
+							<div class="wgs-content">
+								<ul class="menu">
+									<li><a href="/index">Home</a></li>
+									<li><a href="/about">About Us</a></li>
+									<!--<li><a href="resources.html">Resources</a></li>-->
+									<!--<li><a href="responsibility.html">Responsibility</a></li>-->
+									<li><a href="/inquire">Contact Us</a></li>
+									<li><a href="/news/news">News</a></li>
+									<li><a href="/terms">Terms of Service</a></li>
+									<li><a href="/privacy">Privacy</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Widget -->
+					</div>
+					<div class="footer-col col-md-2 col-sm-6 res-m-bttm">
+						<!-- Each Widget -->
+						<!--<div class="wgs wgs-footer wgs-text">
+							<h5 class="wgs-title">Areas Serve</h5>
+							<div class="wgs-content">
+								<ul>
+									<li>USA</li>
+									<li>UK</li>
+									<li>Kuwit</li>
+									<li>Japan</li>
+									<li>South Africa</li>
+									<li>Canada</li>
+								</ul>
+							</div>
+						</div>-->
+						<!-- End Widget -->
+					</div>
+					<div class="footer-col col-md-3 col-sm-6">
+						<!-- Each Widget -->
+						<div class="wgs wgs-footer">
+							<h5 class="wgs-title">Contact us</h5>
+							<div class="wgs-content">
+								<p><strong>Vista Laboratories, Inc.</strong><br>
+									1261 Puerta Del Sol <br>
+									San Clemente, CA 92673 <br>
+									United States of America</p>
+								<p><span>Phone</span>: +1 (949) 393-1123<br>
+									<span>Email</span>: info@vista-compliance.com</p>
+								<ul class="social">
+									<li><a href="http://www.facebook.com/VistaLaboratories/"><em class="fa fa-facebook" aria-hidden="true"></em></a></li>
+									<li><a href="https://twitter.com/vista_labs"><em class="fa fa-twitter" aria-hidden="true"></em></a></li>
+									<li><a href="http://www.linkedin.com/company/vistalaboratories/"><em class="fa fa-linkedin" aria-hidden="true"></em></a></li>
+									<li><a href="http://www.instagram.com/vistalaboratories/"><em class="fa fa-instagram" aria-hidden="true"></em></a></li>
+									<li><a href="http://www.youtube.com/channel/UC4KU4PESO6p3-LMe5rkWHVA"><em class="fa fa-youtube" aria-hidden="true"></em></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Widget -->
+					</div>
 
-    <!-- Footer -->
-    <footer id="myFooter">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3" style="margin-top:-15px">
-                    <br>
-                    <a href="/cn/index"><img src="/images/2_inch_logo.png" alt="vista logo" width="75" style="padding-bottom:15px"/></a>
-                    <p style="display:inline;font-weight: 600;font-size:1.6em;text-align:center;">Vista Labs</p>
-                    <ul>
-                        <li><a href="mailto:info@vista-compliance.com"><i class="material-icons" style="color: #495057; vertical-align:middle">mail</i></a>&nbsp;info@vista-compliance.com</li>
-                        <li><a href="tel:+1-949-393-1123"><i class="material-icons" style="color: #495057; vertical-align:middle">call</i></a>&nbsp;(949) 393-1123</li>
-                        <li><a href="http://www.google.com/maps/place/Vista+Laboratories,+Inc./@33.458629,-117.5976271,3110m/data=!3m1!1e3!4m8!1m2!2m1!1svista+laboratories!3m4!1s0x80dcf3711e797f4b:0x4b303dd1bc21b737!8m2!3d33.458629!4d-117.588859"><i class="material-icons" style="color: #495057; vertical-align:middle">pin_drop</i></a>&nbsp;1261 Puerta Del Sol</li>
-                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;San Clemente, CA 92673</li>
-                    </ul>
-                </div>
-                <div class="col-sm-2">
-                  <h5>公司</h5>
-                  <ul>
-                      <li><a href="/cn/about">关于</a></li>
-                      <li><a href="/cn/services">服务</a></li>
-                      <li><a href="/cn/contact">联系我们</a></li>
-                      <li><a href="/cn/privacy">隐私</a></li>
-                      <li><a href="/cn/terms">服务条款</a></li>
-                      <!--<li><a href="/#">Legal</a></li>-->
-                      <!--<li><a href="/#">Reviews</a></li>-->
-                  </ul>
-                  <!--
-                  <h5>Get started</h5>
-                  <ul>
-                      <li><a href="/cn/index">Home</a></li>
-                      <li><a href="/#">Sign up</a></li>
-                      <li><a href="/#">Downloads</a></li>
-                  </ul>-->
-              </div>
-              <div class="col-sm-2">
-                <h5>认证</h5>
-                <ul>
-                    <li><a href="/cn/services#productcertification">产品认证</a></li>
-                    <li><a href="/cn/services#internationalapproval">国际认证</a></li>
-                    <li><a href="/cn/accreditation#cb">证书</a></li>
-                  </ul>
-              </div>
-              <div class="col-sm-2">
-                  <h5>测试</h5>
-                  <ul>
-                      <li><a href="/cn/services#producttesting">EMC/EMI</a></li>
-                      <li><a href="/cn/services#rf">RF</a></li>
-                      <li><a href="/cn/services#dfs">DFS</a></li>
-                      <li><a href="/cn/services#sar">SAR</a></li>
-                      <li><a href="/cn/accreditation">认证</a></li>
-                      <!--<li><a href="/#">Reviews</a></li>-->
-                  </ul>
-                    <!--<h5>Support</h5>
-                    <ul>
-                        <li><a href="/#">FAQ</a></li>
-                        <li><a href="/contact">Contact us</a></li>
-                        <li><a href="/#">Help desk</a></li>
-                        <li><a href="/#">Forums</a></li>
-                    </ul>-->
-                </div>
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                      <a href="http://twitter.com/Vista_Labs_USA" class="fa fa-twitter"></a>
-                      <a href="http://www.facebook.com/VistaLaboratories/" class="fa fa-facebook"></a>
-                      <!--<a href="/#" class="google"><i class="fa fa-google-plus"></i></a>-->
-                      <!--<a href="/http://www.linkedin.com/company/18094885/" class="fa fa-linkedin"></a>-->
-                      <a href="http://www.linkedin.com/company/vistalaboratories/" class="fa fa-linkedin"></a>
-                    </div>
+				</div>
 
-                    <form name="subscribeform" method="post" action="http://getsimpleform.com/messages?form_api_token=a7d2d601ec9c3e16482229a99c3a80b6" enctype="multipart/form-data">
-                        <div class="input-group">
-                          <input class="form-control" style="border-top-left-radius:1.5em;border-bottom-left-radius:1.5em" size="30" id="email" name="email" type="email" placeholder="邮箱地址" required data-validation-required-message="Please enter your email address."/>
-                          <!--<input style="display:inline;" type="submit" value="Subscribe!"> -->
-                          <div id="success"></div>
-                          <input style="margin-top:0px; width: 100px;border-radius:1.5rem;color:white;border-top-left-radius:0;border-bottom-left-radius:0" class="btn btn-primary" size="10" type="submit" value="订阅！">
-                        </div>
-                        <small class="promise" style="color:#ccc"><em>Regulatory compliance updates ONLY.</em></small>
-                    </form>
+			</div>
+		</div>
+	</div>
+	<!-- End Footer Widget -->
 
-                </div>
-            </div>
-            <div class="col-sm-1">
-            </div>
-            <div class="col-sm-10" style="margin-left:auto;margin-right:auto;">
-                <p style="margin-left:auto;margin-right:auto;"> Vista Compliance Laboratories and Vista Laboratories, Inc. &copy; Copyright 2016 - 2019. All rights reserved. </p>
-                <!--<p class="m-0 text-right text-white" style="display:inline-block; float:right">Vista Compliance Laboratories and Vista Laboratories, Inc. &copy; Copyright 2016 - 2019. All rights reserved.</p>-->
-            </div>
-            <div class="col-sm-1">
-            </div>
-        </div>
-    </footer>
-    <!--
-    <footer class="py-5">
-      <div class="container">
-        <a href="/http://www.facebook.com/VistaLaboratories/" class="fa fa-facebook"></a>
-        <a href="/http://twitter.com/vista_labs" class="fa fa-twitter"></a>
-        <a href="/http://www.linkedin.com/company/18094885/" class="fa fa-linkedin"></a>
-        <p class="m-0 text-right text-white" style="display:inline-block; float:right">Vista Compliance Laboratories and Vista Laboratories, Inc. &copy; Copyright 2016 - 2019. All rights reserved.</p>
-      </div>
-    </footer>-->
+	<!-- Copyright -->
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="site-copy col-sm-7">
+					<p>Vista Compliance Laboratories and Vista Laboratories, Inc. &copy; Copyright 2016 - 2019. <span class="sep">All rights reserved.</span></p>
+				</div>
+				<!--<div class="site-by col-sm-5 al-right">
+					<a href="index-fullscreen.html#">Terms of Service</a>
+				</div>-->
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="/vendor/jquery/jquery.min.js"></script>
-    <script src="/vendor/popper/popper.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+			</div>
+		</div>
+	</div>
+	<!-- End Copyright -->
 
-  </body>
+	<!-- Preload Image for Slider -->
+	<!--<div class="preload hide">
+		<img alt="" src="image/slider-lg-civil-a.jpg">
+		<img alt="" src="image/slider-lg-civil-b.jpg">
+	</div>-->
+	<!-- End -->
 
-</html>
+	<!-- Preloader !active please if you want -->
+	<div id="preloader"><div id="status">&nbsp;</div></div>
+	<!-- Preloader End -->
+
+	<!-- JavaScript Bundle -->
+	<script src="/js/jquery.bundle.js"></script>
+	<!-- Theme Script init() -->
+	<script src="/js/script.js"></script>
+	<!-- End script -->
+	</body>
+	</html>

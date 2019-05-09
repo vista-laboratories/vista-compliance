@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="威士达实验室坐落在美国加利福尼亚州洛杉矶橙县，是一家独立的检测和认证公司。我们的目标是让您的检测产品得到合规性需求的测试，验证，认证和国际认可，帮助您更快的打开国际市场。">
+    <meta name="author" content="">
+
+    <title>威士达实验室 - 隐私政策</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- google icons -->
+    <link rel="stylesheet" href="/css/googlefonts_materialicons.css">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/modern-business.css" rel="stylesheet">
+    <!-- for social media icons -->
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <!------>
+    <link href='/css/googlefonts_opensans.css' rel='stylesheet' type='text/css'>
+
+    <!-- favicon for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps -->
+    <link rel="icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+<!------>
+
+    <!-- for loader -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/modernizr.js"></script>
+    <script>
+      $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");
+      });
+    </script>
+
+    <!-- for footer -->
+    <link rel="stylesheet" href="/css/Footer-with-button-logo.css">
+
+    <!--shrink nav on scroll -->
+    <script>
+    var flag = 0;
+    function togglerfnc() {
+      console.log("togglrfnc")
+      if (flag == 0 && scrolled == 0){
+        $("nav").addClass("mobilelarge");
+        flag = 1
+      } else if (flag == 0 && scrolled == 1) {
+        $("nav").removeClass("small").addClass("mobilelarge");
+        flag = 1
+      } else if (flag == 1 && scrolled == 0) {
+        $("nav").removeClass("mobilelarge");
+        flag = 0
+      } else if (flag == 1 && scrolled == 1) {
+        $("nav").removeClass("mobilelarge").addClass("small");
+        flag = 0
+      }
+      /*document.getElementById("demo").innerHTML = "Hello World";*/
+    }
+    </script>
+    <script src="/js/jquery-latest.min.js" type="text/javascript"></script>
+    <script>
+    var scrolled = 0;
+    var openclick = 0;
+    var closeclick = 1;
+    $(document).on("scroll", function() {
+    	if($(document).scrollTop()>10) {
+        if (flag == 0) {
+    		$("nav").removeClass("large").addClass("small");
+        scrolled = 1;}
+    	} else {
+    		$("nav").removeClass("small").addClass("large");
+        scrolled = 0;
+    	}
+    });
+    </script>
+
+    <!--honeypot and reject list -->
+    <script type="text/javascript">
+    	function validateMyForm() {
+        //reject non-corporate domains
+        /*var rejectList = [ "yahoo.com" , "gmail.com", "aol.com" ];
+        var emailValue = document.getElementById("email").value; // To Get Value (can use getElementById)
+        var splitArray = emailValue.split('@'); // To Get Array
+
+        if(rejectList.indexOf(splitArray[1]) >= 0){
+        // Means it has the rejected domains
+          return false;
+        }*/
+
+        // The field is empty, submit the form.
+        if(!document.getElementById("poisonpot").checked) {
+          //console.log(document.getElementById("poisonpot"));
+          //console.log("real");
+          return true;
+        }
+         // the field has a value it's a spam bot
+        else {
+          //console.log(document.getElementById("poisonpot"));
+          //console.log("fake");
+          return false;
+        }
+      }
+    </script>
+
+  </head>
+
+  <body>
+    <div class="se-pre-con"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a href="/cn/index"><span><img src="/images/2_inch_logo.png" alt="vista logo" width="75"/></span></a>
+        <a class="navbar-brand" href="/cn/index" style="padding-top:0.7em;font-weight: 600;font-size:1.7em;text-align:center;">Vista Labs<p style="font-weight:400; font-size:0.75rem">TEST • CERTIFY • COMPLY</p></a>
+        <button onclick="togglerfnc()" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/cn/index">主页</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/cn/about">公司</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cn/services">服务</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cn/accreditation">认证</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cn/contact">咨询</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cn/news/news">新闻</a>
+            </li>
+            <!--
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Portfolio
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="/portfolio-1-col">1 Column Portfolio</a>
+                <a class="dropdown-item" href="/portfolio-2-col">2 Column Portfolio</a>
+                <a class="dropdown-item" href="/portfolio-3-col">3 Column Portfolio</a>
+                <a class="dropdown-item" href="/portfolio-4-col">4 Column Portfolio</a>
+                <a class="dropdown-item" href="/portfolio-item">Single Portfolio Item</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Blog
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="/blog-home-1">Blog Home 1</a>
+                <a class="dropdown-item" href="/blog-home-2">Blog Home 2</a>
+                <a class="dropdown-item" href="/blog-post">Blog Post</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other Pages
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="/full-width">Full Width Page</a>
+                <a class="dropdown-item" href="/sidebar">Sidebar Page</a>
+                <a class="dropdown-item" href="/faq">FAQ</a>
+                <a class="dropdown-item" href="/404">404</a>
+                <a class="dropdown-item" href="/pricing">Pricing Table</a>
+              </div>
+            </li>-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <br>
+      <br>
+      <br>
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">隐私
+        <!--<small>Subheading</small>-->
+      </h1>
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="/cn/index">主页</a>
+        </li>
+        <li class="breadcrumb-item active">隐私</li>
+      </ol>
+
+      <br>
+      <style>
+      #ppBody
+      {
+          font-size:11pt;
+          width:100%;
+          margin:0 auto;
+          text-align:justify;
+      }
+
+      #ppHeader
+      {
+          font-family:verdana;
+          font-size:21pt;
+          width:100%;
+          margin:0 auto;
+      }
+
+      .ppConsistencies
+      {
+          display:none;
+      }
+      </style><div id='ppHeader'><h3>威士达实验室隐私政策</h3></div><div id='ppBody'><div class='ppConsistencies'><div class='col-2'>            <div class="quick-links text-center">Information Collection</div>        </div><div class='col-2'>            <div class="quick-links text-center">Information Usage</div>        </div><div class='col-2'>            <div class="quick-links text-center">Information Protection</div>        </div><div class='col-2'>            <div class="quick-links text-center">Cookie Usage</div>        </div><div class='col-2'>            <div class="quick-links text-center">3rd Party Disclosure</div>        </div><div class='col-2'>            <div class="quick-links text-center">3rd Party Links</div>        </div><div class='col-2'></div></div><div style='clear:both;height:10px;'></div><div class='ppConsistencies'><div class='col-2'>            <div class="col-12 quick-links2 gen-text-center">Google AdSense</div>        </div><div class='col-2'>            <div class="col-12 quick-links2 gen-text-center">                    Fair Information Practices                    <div class="col-8 gen-text-left gen-xs-text-center" style="font-size:12px;position:relative;left:20px;">Fair information<br> Practices</div>                </div>        </div><div class='col-2'>            <div class="col-12 quick-links2 gen-text-center coppa-pad">                    COPPA                </div>        </div><div class='col-2'>            <div class="col-12 quick-links2 quick4 gen-text-center caloppa-pad">                    CalOPPA                </div>        </div><div class='col-2'>            <div class="quick-links2 gen-text-center">Our Contact Information<br></div>        </div></div><div style='clear:both;height:10px;'></div><div class='innerText'>本私隐政策旨在为关注“个人身份资料”如何在网上使用的人士提供更佳服务。PII，如美国隐私法和信息安全中所描述的，是指可以单独或与其他信息一起使用以识别、联系或定位单个人，或在上下文中识别个人的信息。请仔细阅读我们的隐私政策，以清楚了解我们如何根据我们的网站收集、使用、保护或以其他方式处理您的个人身份信息。<br></div><span id='infoCo'></span><br><div class='grayText'><strong>我们从访问我们博客、网站或应用程序的人们那里收集了哪些个人信息?</strong></div><br /><div class='innerText'>在通过我们的网站进行查询时，可能会要求您输入您的姓名，电子邮件地址，电话号码或其他详细信息，以帮助您获得体验。</div><br><div class='grayText'><strong>我们什么时候会收集您的信息?</strong></div><br /><div class='innerText'>当您订阅时事通讯，填写表格或在我们的网站上输入信息时，我们会收集您的信息。</div><br> <span id='infoUs'></span><br><div class='grayText'><strong>我们如何使用您的信息？ </strong></div><br /><div class='innerText'> 当您注册，购买，注册我们的新闻通讯，回复调查或营销传播，浏览网站或使用以下方式使用某些其他网站功能时，我们可能会使用我们向您收集的信息：<br><br></div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> 定期发送有关您的订单或其他产品和服务的电子邮件。</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> 在通信后进行跟进（实时聊天，电子邮件或电话查询）</div><span id='infoPro'></span><br><div class='grayText'><strong>我们如果保护您的信息?</strong></div><br /><div class='innerText'>我们不使用漏洞扫描和/或扫描到PCI标准。</div><div class='innerText'>我们只提供文章和信息。我们从不要求信用卡号码。</div><div class='innerText'>我们不使用恶意软件扫描。<br><br></div><div class='innerText'>我们不使用SSL证书</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> 我们只提供文章和信息。 我们从不要求提供个人或私人信息，如姓名，电子邮件地址或信用卡号码。</div><span id='coUs'></span><br><div class='grayText'><strong>我们使用'cookies'吗？</strong></div><br /><div class='innerText'>我们使用cookies。Cookie是网站或其服务提供商通过您的Web浏览器（如果允许）传输到计算机硬盘驱动器的小文件，使网站或服务提供商的系统能够识别您的浏览器并捕获并记住某些信息。 例如，我们使用cookie来帮助我们记住和处理购物车中的商品。 它们还用于帮助我们根据以前或当前的网站活动了解您的偏好，这使我们能够为您提供改进的服务。 我们还使用cookie来帮助我们编译有关网站流量和网站互动的汇总数据，以便我们在将来提供更好的网站体验和工具。 我们还可以使用可信赖的第三方服务代表我们跟踪此信息。</div><div class='innerText'><br>您可以选择让您的计算机在每次发送cookie时向您发出警告，或者您可以选择关闭所有Cookie。 您可以通过浏览器设置执行此操作。 由于浏览器略有不同，请查看浏览器的“帮助菜单”以了解修改Cookie的正确方法。<br></div><br><div class='innerText'>如果您关闭cookie，一些使您的网站体验更有效的功能可能无法正常运行。它不会影响用户的体验，使您的网站体验更高效，可能无法正常运行。</div><br><span id='trDi'></span><br><div class='grayText'><strong>第三方披露</strong></div><br /><div class='innerText'>我们不会将您的个人身份信息出售，交易或以其他方式转让给外方。</div><span id='trLi'></span><br><div class='grayText'><strong>第三方链接</strong></div><br /><div class='innerText'>我们不在我们的网站上包含或提供第三方产品或服务。</div><span id='gooAd'></span><br><div class='blueText'><strong>Google</strong></div><br /><div class='innerText'>Google的广告要求可以通过Google的广告原则进行总结。 它们用于为用户提供积极的体验。<br> http://support.google.com/adwordspolicy <br><br></div><div class='innerText'>我们尚未在我们的网站上启用Google AdSense，但我们未来可能会这样做。</div><span id='calOppa'></span><br><div class='blueText'><strong>加州在线隐私保护法案</strong></div><br /><div class='innerText'>CalOPPA是美国第一部要求商业网站和在线服务发布隐私政策的州法律。该法律的范围远远超出加利福尼亚州，要求在美国（可以想象世界）运营从加利福尼亚州消费者那里收集个人身份信息的网站的任何个人或公司在其网站上发布明确的隐私政策，明确指出所收集的信息和那些信息与之分享的个人或公司。<br> - 详情请见： http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf<br></div><div class='innerText'><br><strong>根据CalOPPA, 我们同意以下内容:<br></strong><br></div><div class='innerText'>用户可以匿名访问我们的网站</div><div class='innerText'>创建此隐私政策后，我们将在主页上或在进入我们网站后的第一个重要页面上添加指向该隐私政策的链接。<br></div><div class='innerText'>我们的隐私政策链接包含“隐私”一词，可以在上面指定的页面上轻松找到。</div><div class='innerText'><br>您将收到任何隐私政策变更的通知：</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> 在我们的隐私政策页面上<br></div><div class='innerText'>可以更改您的个人信息：</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> 通过发送邮件</div><div class='innerText'><br><strong>我们的网站如何Do Not Track信号？</strong><br></div><div class='innerText'>当Do Not Track（DNT）浏览器机制到位时，我们尊重不跟踪信号和不跟踪，种植cookie或使用广告。 </div><div class='innerText'><br><strong>我们的网站是否允许第三方行为跟踪？</strong><br></div><div class='innerText'>同样重要的是要注意，我们不允许第三方行为跟踪</div><span id='coppAct'></span><br><div class='blueText'><strong>COPPA（儿童在线隐私保护法）</strong></div><br /><div class='innerText'>在收集13岁以下儿童的个人信息时，儿童在线隐私保护法（COPPA）将父母置于控制之下。 美国联邦贸易委员会的消费者保护机构执行COPPA规则，该规则阐明了网站和在线服务的运营商必须采取哪些措施来保护儿童的在线隐私和安全。<br><br></div><div class='innerText'>我们不专门向13岁以下的儿童进行推销</div><div class='innerText'>我们是否允许第三方（包括广告网络或插件）收集13岁以下儿童的PII？</div><span id='ftcFip'></span><br><div class='blueText'><strong>公平信息实践</strong></div><br /><div class='innerText'>公平信息实践原则构成了美国隐私法的支柱，其中所包含的概念在全球数据保护法的发展中发挥了重要作用。了解公平信息实践原则及其实施方式对于遵守保护个人信息的各种隐私法律至关重要。<br><br></div><div class='innerText'><strong>为了与公平信息实践保持一致，如果发生数据泄露，我们将采取以下响应措施:</strong></div><div class='innerText'>我们会通过电子邮件通知您</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> 其他</div><div class='innerText'>在我们最早方便的时候。</div><div class='innerText'><br>我们也同意个人补救原则，该原则要求个人有权对不遵守法律的数据收集者和加工者合法追求可执行的权利。 该原则不仅要求个人对数据用户具有可执行的权利，而且还要求个人诉诸法院或政府机构来调查和/或起诉数据处理者的违规行为。</div><span id='canSpam'></span><br><div class='blueText'><strong>CAN垃圾邮件法案</strong></div><br /><div class='innerText'>“反垃圾邮件法”是一项法律，规定了商业电子邮件的规则，规定了商业邮件的要求，使收件人有权停止向他们发送电子邮件，并对违规行为进行严厉处罚。<br><br></div><div class='innerText'><strong>我们收集您的电子地址邮箱，以便:</strong></div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> 发送信息，回复查询和/或其他请求或问题</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> 市场到我们的邮件列表或在原始交易发生后继续向我们的客户发送电子邮件。</div><div class='innerText'><br><strong>为了符合CANSPAM，我们同意以下内容：</strong></div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> 不得使用虚假或误导性的主题或电子邮件地址。</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> 以合理的方式将消息标识为广告。</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> 包括我们的业务或站点总部的实际地址。</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> 监控第三方电子邮件营销服务的合规性（如果使用）。</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> 荣幸地选择退出/取消订阅请求。</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> 允许用户使用每封电子邮件底部的链接取消订阅。</div><div class='innerText'><strong><br>如果您在任何时候想取消订阅以后收到的电子邮件，您可以发送电子邮件给我们</strong></div><div class='innerText'>info@vista-compliance.com 我们会及时将您从 <strong>所有</strong> 通信中删除。</div><br><span id='ourCon'></span><br><div class='blueText'><strong>联系我们</strong></div><br /><div class='innerText'>如果对本隐私政策有任何疑问，您可以使用以下信息与我们联系。<br><br></div><div class='innerText'>Vista Laboratories, Inc.</div><div class='innerText'>1261 Puerta Del Sol</div>San Clemente, CA 92673 <div class='innerText'>United States</div><div class='innerText'>info@vista-compliance.com</div><div class='innerText'><br>上次编辑时间 2018-01-30</div></div>
+    <br>
+    <br>
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3" style="margin-top:-15px">
+                    <br>
+                    <a href="/cn/index"><img src="/images/2_inch_logo.png" alt="vista logo" width="75" style="padding-bottom:15px"/></a>
+                    <p style="display:inline;font-weight: 600;font-size:1.6em;text-align:center;">Vista Labs</p>
+                    <ul>
+                        <li><a href="mailto:info@vista-compliance.com"><i class="material-icons" style="color: #495057; vertical-align:middle">mail</i></a>&nbsp;info@vista-compliance.com</li>
+                        <li><a href="tel:+1-949-393-1123"><i class="material-icons" style="color: #495057; vertical-align:middle">call</i></a>&nbsp;(949) 393-1123</li>
+                        <li><a href="http://www.google.com/maps/place/Vista+Laboratories,+Inc./@33.458629,-117.5976271,3110m/data=!3m1!1e3!4m8!1m2!2m1!1svista+laboratories!3m4!1s0x80dcf3711e797f4b:0x4b303dd1bc21b737!8m2!3d33.458629!4d-117.588859"><i class="material-icons" style="color: #495057; vertical-align:middle">pin_drop</i></a>&nbsp;1261 Puerta Del Sol</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;San Clemente, CA 92673</li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>公司</h5>
+                    <ul>
+                        <li><a href="/cn/about">关于</a></li>
+                        <li><a href="/cn/services">服务</a></li>
+                        <li><a href="/cn/contact">联系我们</a></li>
+                        <li><a href="/cn/privacy">隐私</a></li>
+                        <li><a href="/cn/terms">服务条款</a></li>
+                        <!--<li><a href="/#">Legal</a></li>-->
+                        <!--<li><a href="/#">Reviews</a></li>-->
+                    </ul>
+                    <!--
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/#">Sign up</a></li>
+                        <li><a href="/#">Downloads</a></li>
+                    </ul>-->
+                </div>
+                <div class="col-sm-2">
+                  <h5>认证</h5>
+                  <ul>
+                      <li><a href="/cn/services#productcertification">产品认证</a></li>
+                      <li><a href="/cn/services#internationalapproval">国际认证</a></li>
+                      <li><a href="/cn/accreditation#cb">证书</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>测试</h5>
+                    <ul>
+                        <li><a href="/cn/services#producttesting">EMC/EMI</a></li>
+                        <li><a href="/cn/services#rf">RF</a></li>
+                        <li><a href="/cn/services#dfs">DFS</a></li>
+                        <li><a href="/cn/services#sar">SAR</a></li>
+                        <li><a href="/cn/accreditation">认证</a></li>
+                        <!--<li><a href="/#">Reviews</a></li>-->
+                    </ul>
+                    <!--<h5>Support</h5>
+                    <ul>
+                        <li><a href="/#">FAQ</a></li>
+                        <li><a href="/contact">Contact us</a></li>
+                        <li><a href="/#">Help desk</a></li>
+                        <li><a href="/#">Forums</a></li>
+                    </ul>-->
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                      <a href="http://twitter.com/Vista_Labs_USA" class="fa fa-twitter"></a>
+                      <a href="http://www.facebook.com/VistaLaboratories/" class="fa fa-facebook"></a>
+                      <!--<a href="/#" class="google"><i class="fa fa-google-plus"></i></a>-->
+                      <!--<a href="/http://www.linkedin.com/company/18094885/" class="fa fa-linkedin"></a>-->
+                      <a href="http://www.linkedin.com/company/vistalaboratories/" class="fa fa-linkedin"></a>
+                    </div>
+
+                    <form name="subscribeform" method="post" action="http://getsimpleform.com/messages?form_api_token=a7d2d601ec9c3e16482229a99c3a80b6" enctype="multipart/form-data">
+                        <div class="input-group">
+                          <input class="form-control" style="border-top-left-radius:1.5em;border-bottom-left-radius:1.5em" size="30" id="email" name="email" type="email" placeholder="邮箱地址" required data-validation-required-message="Please enter your email address."/>
+                          <!--<input style="display:inline;" type="submit" value="Subscribe!"> -->
+                          <div id="success"></div>
+                          <input style="margin-top:0px; width: 100px;border-radius:1.5rem;color:white;border-top-left-radius:0;border-bottom-left-radius:0" class="btn btn-primary" size="10" type="submit" value="订阅!">
+                        </div>
+                        <small class="promise" style="color:#ccc"><em>Regulatory compliance updates ONLY.</em></small>
+                    </form>
+
+                </div>
+            </div>
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm-10" style="margin-left:auto;margin-right:auto;">
+                <p style="margin-left:auto;margin-right:auto;"> Vista Compliance Laboratories and Vista Laboratories, Inc. &copy; Copyright 2016 - 2019. All rights reserved. </p>
+                <!--<p class="m-0 text-right text-white" style="display:inline-block; float:right">Vista Compliance Laboratories and Vista Laboratories, Inc. &copy; Copyright 2016 - 2019. All rights reserved.</p>-->
+            </div>
+            <div class="col-sm-1">
+            </div>
+        </div>
+    </footer>
+    <!--
+    <footer class="py-5">
+      <div class="container">
+        <a href="/http://www.facebook.com/VistaLaboratories/" class="fa fa-facebook"></a>
+        <a href="/http://twitter.com/vista_labs" class="fa fa-twitter"></a>
+        <a href="/http://www.linkedin.com/company/18094885/" class="fa fa-linkedin"></a>
+        <p class="m-0 text-right text-white" style="display:inline-block; float:right">Vista Compliance Laboratories and Vista Laboratories, Inc. &copy; Copyright 2016 - 2019. All rights reserved.</p>
+      </div>
+    </footer>-->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/popper/popper.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

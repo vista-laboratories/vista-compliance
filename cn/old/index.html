@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="威士达实验室的全球认证团队和检测实验室将帮助您的认证产品获得FCC / ISED认证和其他全球认证。威士达实验室总部位于橙县，在EMC / EMI，RF，SAR，DFS以及广泛的认证服务领域提供全面的服务。">
+    <meta name="author" content="">
+
+    <title>威士达实验室 - 主页</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- google icons -->
+    <link rel="stylesheet" href="/css/googlefonts_materialicons.css">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/modern-business.css" rel="stylesheet">
+    <!-- for social media icons -->
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <!------>
+    <link href='/css/googlefonts_opensans.css' rel='stylesheet' type='text/css'>
+
+    <!-- favicon for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps -->
+    <link rel="icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+<!------>
+
+    <!-- for loader -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/modernizr.js"></script>
+    <script>
+      $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");
+      });
+    </script>
+
+    <!-- for footer -->
+    <link rel="stylesheet" href="/css/Footer-with-button-logo.css">
+
+    <!--shrink nav on scroll -->
+    <script>
+    var flag = 0;
+    function togglerfnc() {
+      console.log("togglrfnc")
+      if (flag == 0 && scrolled == 0){
+        $("nav").addClass("mobilelarge");
+        flag = 1
+      } else if (flag == 0 && scrolled == 1) {
+        $("nav").removeClass("small").addClass("mobilelarge");
+        flag = 1
+      } else if (flag == 1 && scrolled == 0) {
+        $("nav").removeClass("mobilelarge");
+        flag = 0
+      } else if (flag == 1 && scrolled == 1) {
+        $("nav").removeClass("mobilelarge").addClass("small");
+        flag = 0
+      }
+      /*document.getElementById("demo").innerHTML = "Hello World";*/
+    }
+    </script>
+    <script src="/js/jquery-latest.min.js" type="text/javascript"></script>
+    <script>
+    var scrolled = 0;
+    var openclick = 0;
+    var closeclick = 1;
+    $(document).on("scroll", function() {
+    	if($(document).scrollTop()>10) {
+        if (flag == 0) {
+    		$("nav").removeClass("large").addClass("small");
+        scrolled = 1;}
+    	} else {
+    		$("nav").removeClass("small").addClass("large");
+        scrolled = 0;
+    	}
+    });
+    </script>
+
+    <!--honeypot and reject list -->
+    <script type="text/javascript">
+    	function validateMyForm() {
+        //reject non-corporate domains
+        /*var rejectList = [ "yahoo.com" , "gmail.com", "aol.com" ];
+        var emailValue = document.getElementById("email").value; // To Get Value (can use getElementById)
+        var splitArray = emailValue.split('@'); // To Get Array
+
+        if(rejectList.indexOf(splitArray[1]) >= 0){
+        // Means it has the rejected domains
+          return false;
+        }*/
+
+        // The field is empty, submit the form.
+        if(!document.getElementById("poisonpot").checked) {
+          //console.log(document.getElementById("poisonpot"));
+          //console.log("real");
+          return true;
+        }
+         // the field has a value it's a spam bot
+        else {
+          //console.log(document.getElementById("poisonpot"));
+          //console.log("fake");
+          return false;
+        }
+      }
+    </script>
+
+  </head>
+
+  <!-- body tags used if preloading with circular load animation -->
+  <!--<body onload="myFunction()" style="margin:0;">-->
+  <body>
+  <div class="se-pre-con"></div>
+
+  <!--preloading with circular load animation -->
+  <!--<div id="loader"></div>
+  <script>
+  var myVar;
+
+  function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+  }
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script> -->
+
+  <!-- outer div for loading content, if preloading with circular load animation -->
+  <!--<div style="display:none;" id="myDiv" class="animate-bottom">-->
+
+  <a class="btn btn-lg btn-info" style="position:fixed;bottom: 30px;right: 30px;z-index:999;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);" href="webinars">5月网络研讨会🇺🇸<br>美国 (FCC): 注册</a>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a href="/cn"><span><img src="/images/2_inch_logo.png" alt="vista logo" width="75"/></span></a>
+        <a class="navbar-brand" href="/cn" style="padding-top:0.7em;font-weight: 600;font-size:1.7em;text-align:center;">Vista Labs<p style="font-weight:400; font-size:0.75rem">TEST • CERTIFY • COMPLY</p></a>
+        <button onclick="togglerfnc()" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <!--<ul class="navbar-nav ml-auto">-->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/cn">主页</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cn/about">公司</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cn/services">服务</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cn/accreditation">认证</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cn/contact">咨询</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cn/news/news">新闻</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/"><i class="material-icons">translate</i></a>
+            </li>
+            <!--
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="/news">News Updates</a>
+                <a class="dropdown-item" href="/pricingtable">Pricing Table</a>
+              </div>
+            </li>-->
+
+            <!--
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Portfolio
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="/portfolio-1-col">1 Column Portfolio</a>
+                <a class="dropdown-item" href="/portfolio-2-col">2 Column Portfolio</a>
+                <a class="dropdown-item" href="/portfolio-3-col">3 Column Portfolio</a>
+                <a class="dropdown-item" href="/portfolio-4-col">4 Column Portfolio</a>
+                <a class="dropdown-item" href="/portfolio-item">Single Portfolio Item</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Blog
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="/blog-home-1">Blog Home 1</a>
+                <a class="dropdown-item" href="/blog-home-2">Blog Home 2</a>
+                <a class="dropdown-item" href="/blog-post">Blog Post</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other Pages
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="/full-width">Full Width Page</a>
+                <a class="dropdown-item" href="/sidebar">Sidebar Page</a>
+                <a class="dropdown-item" href="/faq">FAQ</a>
+                <a class="dropdown-item" href="/404">404</a>
+                <a class="dropdown-item" href="/pricing">Pricing Table</a>
+              </div>
+            </li>-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <br>
+      <br>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url(/images/chamber00.jpg)">
+            <div class="carousel-caption d-none d-md-block">
+
+              <a href="/cn" style="float:middle;-webkit-filter: drop-shadow(4px 4px 4px #fff); filter: drop-shadow(4px 4px 4px #fff);"><span><img src="/images/2_inch_logo.png" alt="vista logo" width="200"/></span></a>
+              <br>
+              <br>
+              <h3 style="font-weight: 600;text-shadow: 1px 1px #000000;">威士达检测认证机构</h3>
+              <p style="text-shadow: 1px 1px #000000;">您的全球法规遵从合作伙伴</p>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <!--<div class="carousel-item" style="background-image: url('/images/SAR testingfront.jpeg')">-->
+          <div class="carousel-item" style="background-image: url('/images/absorber00.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 style="font-weight: 600;text-shadow: 1px 1px #000000;">威士达检测认证担保</h3>
+              <!--<h3>Second Slide</h3>-->
+              <p style="text-shadow: 1px 1px #000000;">威士达实验室提供全面的认证服务，确保您的产品符合要求</p>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('/images/RF testingfront.jpeg')">
+            <div class="carousel-caption d-none d-md-block">
+              <!--<h3>Third Slide</h3>-->
+              <h3 style="font-weight: 600;text-shadow: 1px 1px #000000;">世界级的实验室，世界级的工作人员</h3>
+              <p style="text-shadow: 1px 1px #000000;">我们最先进的实验室坐落在海边古朴而美丽的城市</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">之前</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">继续</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+      <br>
+      <br>
+      <h1 class="my-4" style="text-align: center">进入全球市场</h1>
+      <p style="text-align: center">威士达认证机构是您通过监管合规测试，产品认证和国际认证里迷宫中的指南。
+      <br>为什么 <a href="/cn/about#whyus">选择我们</a>? 请看看我们的综合<a href="/cn/services">服务列表 ›</a></p>
+      <br>
+      <br>
+
+      <!-- Marketing Icons Section -->
+      <div class="row">
+        <div class="swing col-lg-4 mb-4">
+          <div class="card h-100">
+            <h4 class="card-header" style="text-align:center"><i class="material-icons">search</i> 检验检测</h4>
+            <div class="border card-body">
+              <p class="card-text">由于电子产品的多方面使用性，我们广泛认可的电子测试范围，使得我们成为高需求、相互认可的国家的合格评定机构。</p>
+            </div>
+            <div class="card-footer">
+              <a href="/cn/services#compliancetesting" class="btn btn-primary">了解更多 ›</a>
+            </div>
+          </div>
+        </div>
+        <div class="swing col-lg-4 mb-4">
+          <div class="card h-100">
+            <h4 class="card-header" style="text-align:center"><i class="material-icons">done_all</i> 产品认证</h4>
+            <div class="border card-body">
+              <p class="card-text">凭借着过人的专业技术和先进的内部工作流程，威士达实验室能够提供不仅高效且经济高效的认证体验。</p>
+            </div>
+            <div class="card-footer">
+              <a href="/cn/services#productcertification" class="btn btn-primary">了解更多 ›</a>
+            </div>
+          </div>
+        </div>
+        <div class="swing col-lg-4 mb-4">
+          <div class="card h-100">
+            <h4 class="card-header" style="text-align:center"><i class="material-icons">public</i> 全球检测</h4>
+            <div class="border card-body">
+              <p class="card-text">威士达实验室通过150多个国家的代理商处理所有政府法规，以批准您在全球所有市场的产品。立即联系我们！</p>
+            </div>
+            <div class="card-footer">
+              <a href="/cn/services#globalmarketaccess" class="btn btn-primary">了解更多 ›</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <br>
+      <hr>
+
+      <!--capabilities section-->
+      <br>
+      <br>
+      <h2 style="text-align: center">我们的器械设备与业务能力</h2>
+      <br>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 portfolio-item">
+          <div class="card h-100" style="border:0px">
+            <img class="fade card-img-top" src="/images/Picture1.png" alt="" style="width:250px;height:250px;margin-left:auto;margin-right:auto;">
+            <div class="card-body">
+              <h5 class="card-title">
+                <strong style="color:#007bff">10米电波暗室</strong>
+              </h5>
+              <p class="card-text">我们的10米半消声室使我们能够准确测量辐射（RE），确定产品对射频场的抗扰度，并使我们能够对台湾和韩国等多个国家进行测试。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 portfolio-item">
+          <div class="card h-100" style="border:0px">
+            <img class="fade card-img-top" src="/images/Picture2.png" alt="" style="width:250px;height:250px;margin-left:auto;margin-right:auto;">
+            <div class="card-body">
+              <h5 class="card-title">
+                <strong style="color:#007bff">卓越的技术</strong>
+              </h5>
+              <p class="card-text">本团队通过以良好的技术知识以及高效率的流程度处理项目而自豪，以减少管理费用并为您提供高质量，经济高效的解决方案。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 portfolio-item">
+          <div class="card h-100" style="border:0px">
+            <img class="fade card-img-top" src="/images/Picture3.png" alt="" style="width:250px;height:250px;margin-left:auto;margin-right:auto;">
+            <div class="card-body">
+              <h5 class="card-title">
+                <strong style="color:#007bff">先进的设备</strong>
+              </h5>
+              <p class="card-text">我们使用高端测试设备并执行常规校准，以维持我们的ISO / IEC 17025和17065认证。从而产生最准确的结果，并得到全球监管机构的认可。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 portfolio-item">
+          <div class="card h-100" style="border:0px">
+            <img class="fade card-img-top" src="/images/Picture4.png" alt="" style="width:250px;height:250px;margin-left:auto;margin-right:auto;">
+            <div class="card-body">
+              <h5 class="card-title">
+                <strong style="color:#007bff">绝佳的地理位置</strong>
+              </h5>
+              <p class="card-text">威士达实验室总部位于橙县，坐落在美丽的海滨城市，一年四季都是风和日丽。检测产品的同时还能享受到加州热情似火的阳光，请来拜访我们！</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <br>
+      <hr>
+      <!-- Trusted by companies worldwire Section -->
+
+      <br>
+      <br>
+      <h2 style="text-align: center">受到全球公司的信赖</h2>
+
+      <div class="row">
+        <div style="text-align: center">
+          <div class="col-lg-2 col-sm-6 portfolio-item" style="display:inline-block;">
+              <img class="card-img-top" src="/images/companies/huawei.png" alt="">
+          </div>
+          <div class="col-lg-2 col-sm-6 portfolio-item" style="display:inline-block;">
+              <img class="card-img-top" src="/images/companies/extreme.png" alt="">
+          </div>
+          <div class="col-lg-2 col-sm-6 portfolio-item" style="display:inline-block;">
+              <img class="card-img-top" src="/images/companies/dlink.png" alt="">
+          </div>
+          <div class="col-lg-2 col-sm-6 portfolio-item" style="display:inline-block;">
+              <img class="card-img-top" src="/images/companies/acer.png" alt="">
+          </div>
+          <div class="col-lg-2 col-sm-6 portfolio-item" style="display:inline-block;">
+              <img class="card-img-top" src="/images/companies/sonova.png" alt="">
+          </div>
+        </div>
+
+      </div>
+        <!--
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="/#"><img class="card-img-top" src="/https://placehold.it/700x400" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="/#">Project One</a>
+              </h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="/#"><img class="card-img-top" src="/https://placehold.it/700x400" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="/#">Project Two</a>
+              </h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="/#"><img class="card-img-top" src="/https://placehold.it/700x400" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="/#">Project Three</a>
+              </h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="/#"><img class="card-img-top" src="/https://placehold.it/700x400" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="/#">Project Four</a>
+              </h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="/#"><img class="card-img-top" src="/https://placehold.it/700x400" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="/#">Project Five</a>
+              </h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="/#"><img class="card-img-top" src="/https://placehold.it/700x400" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="/#">Project Six</a>
+              </h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
+            </div>
+          </div>
+        </div>
+      </div>-->
+      <!-- /.row -->
+
+      <!-- Features Section -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 style="text-align:center">让我们来处理检测认证和管理规定</h2>
+          <p style="text-align:center">而您只需要专注于构建您的产品。</p>
+          <ul>
+            <li>
+              <!--<strong>Bootstrap v4</strong>-->
+              <!--<i class="material-icons">alarm</i> -->
+              全天候支持
+            </li>
+            <li>个人对成功的承诺</li>
+            <li>测试专业知识</li>
+            <li>设施先进程度</li>
+            <li>准时和规划性的解决方案</li>
+          </ul>
+          <p>威士达实验室是您的一站式服务，可满足您的所有法规遵从需求。无论您是需要经过测试和认证的设备，还是经过国际认证，威士达都是您在整个过程中的合作伙伴，并代表您处理所有方面的产品合规性。</p>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid rounded" src="/images/chamber.jpg" alt="">
+        </div>
+      </div>
+      <!-- /.row -->
+      <br>
+      <hr>
+      <br>
+
+      <!-- Call to Action Section -->
+      <div class="row mb-4">
+        <div class="col-md-8">
+          <p>如果您有任何合规性测试问题，专业性问题，任何定制需求或对威士达的兴趣，请随时与我们联系。</p>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-lg btn-primary btn-block" href="/cn/contact">联系我们!</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3" style="margin-top:-15px">
+                    <br>
+                    <a href="/cn/index"><img src="/images/2_inch_logo.png" alt="vista logo" width="75" style="padding-bottom:15px"/></a>
+                    <p style="display:inline;font-weight: 600;font-size:1.6em;text-align:center;">Vista Labs</p>
+                    <ul>
+                        <li><a href="mailto:info@vista-compliance.com"><i class="material-icons" style="color: #495057; vertical-align:middle">mail</i></a>&nbsp;info@vista-compliance.com</li>
+                        <li><a href="tel:+1-949-393-1123"><i class="material-icons" style="color: #495057; vertical-align:middle">call</i></a>&nbsp;(949) 393-1123</li>
+                        <li><a href="http://www.google.com/maps/place/Vista+Laboratories,+Inc./@33.458629,-117.5976271,3110m/data=!3m1!1e3!4m8!1m2!2m1!1svista+laboratories!3m4!1s0x80dcf3711e797f4b:0x4b303dd1bc21b737!8m2!3d33.458629!4d-117.588859"><i class="material-icons" style="color: #495057; vertical-align:middle">pin_drop</i></a>&nbsp;1261 Puerta Del Sol</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;San Clemente, CA 92673</li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                  <h5>公司</h5>
+                  <ul>
+                      <li><a href="/cn/about">关于</a></li>
+                      <li><a href="/cn/services">服务</a></li>
+                      <li><a href="/cn/contact">联系我们</a></li>
+                      <li><a href="/cn/privacy">隐私</a></li>
+                      <li><a href="/cn/terms">服务条款</a></li>
+                      <!--<li><a href="/#">Legal</a></li>-->
+                      <!--<li><a href="/#">Reviews</a></li>-->
+                  </ul>
+                  <!--
+                  <h5>Get started</h5>
+                  <ul>
+                      <li><a href="/cn/index">Home</a></li>
+                      <li><a href="/#">Sign up</a></li>
+                      <li><a href="/#">Downloads</a></li>
+                  </ul>-->
+              </div>
+              <div class="col-sm-2">
+                <h5>认证</h5>
+                <ul>
+                    <li><a href="/cn/services#productcertification">产品认证</a></li>
+                    <li><a href="/cn/services#internationalapproval">国际认证</a></li>
+                    <li><a href="/cn/accreditation#cb">证书</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-2">
+                  <h5>测试</h5>
+                  <ul>
+                      <li><a href="/cn/services#producttesting">EMC/EMI</a></li>
+                      <li><a href="/cn/services#rf">RF</a></li>
+                      <li><a href="/cn/services#dfs">DFS</a></li>
+                      <li><a href="/cn/services#sar">SAR</a></li>
+                      <li><a href="/cn/accreditation">认证</a></li>
+                      <!--<li><a href="/#">Reviews</a></li>-->
+                  </ul>
+                    <!--<h5>Support</h5>
+                    <ul>
+                        <li><a href="/#">FAQ</a></li>
+                        <li><a href="/contact">Contact us</a></li>
+                        <li><a href="/#">Help desk</a></li>
+                        <li><a href="/#">Forums</a></li>
+                    </ul>-->
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                      <a href="http://twitter.com/Vista_Labs_USA" class="fa fa-twitter"></a>
+                      <a href="http://www.facebook.com/VistaLaboratories/" class="fa fa-facebook"></a>
+                      <!--<a href="/#" class="google"><i class="fa fa-google-plus"></i></a>-->
+                      <!--<a href="/http://www.linkedin.com/company/18094885/" class="fa fa-linkedin"></a>-->
+                      <a href="http://www.linkedin.com/company/vistalaboratories/" class="fa fa-linkedin"></a>
+                    </div>
+
+                    <form name="subscribeform" method="post" action="http://getsimpleform.com/messages?form_api_token=a7d2d601ec9c3e16482229a99c3a80b6" enctype="multipart/form-data">
+                        <div class="input-group">
+                          <input class="form-control" style="border-top-left-radius:1.5em;border-bottom-left-radius:1.5em" size="30" id="email" name="email" type="email" placeholder="邮箱地址" required data-validation-required-message="Please enter your email address."/>
+                          <!--<input style="display:inline;" type="submit" value="Subscribe!"> -->
+                          <div id="success"></div>
+                          <input style="margin-top:0px; width: 100px;border-radius:1.5rem;color:white;border-top-left-radius:0;border-bottom-left-radius:0" class="btn btn-primary" size="10" type="submit" value="订阅！">
+                        </div>
+                        <small class="promise" style="color:#ccc"><em>Regulatory compliance updates ONLY.</em></small>
+                    </form>
+
+                </div>
+            </div>
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm-10" style="margin-left:auto;margin-right:auto;">
+                <p style="margin-left:auto;margin-right:auto;"> Vista Compliance Laboratories and Vista Laboratories, Inc. &copy; Copyright 2016 - 2019. All rights reserved. </p>
+                <!--<p class="m-0 text-right text-white" style="display:inline-block; float:right">Vista Compliance Laboratories and Vista Laboratories, Inc. &copy; Copyright 2016 - 2019. All rights reserved.</p>-->
+            </div>
+            <div class="col-sm-1">
+            </div>
+        </div>
+    </footer>
+    <!--
+    <footer class="py-5">
+      <div class="container">
+        <a href="/http://www.facebook.com/VistaLaboratories/" class="fa fa-facebook"></a>
+        <a href="/http://twitter.com/vista_labs" class="fa fa-twitter"></a>
+        <a href="/http://www.linkedin.com/company/18094885/" class="fa fa-linkedin"></a>
+        <p class="m-0 text-right text-white" style="display:inline-block; float:right">Vista Compliance Laboratories and Vista Laboratories, Inc. &copy; Copyright 2016 - 2019. All rights reserved.</p>
+      </div>
+    </footer>-->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/popper/popper.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
