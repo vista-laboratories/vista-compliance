@@ -4957,7 +4957,7 @@ div[class*="box-flat"].box-flat-alt hr {
 }
 
 .post.post-loop {
-	margin-top: 60px
+	margin-top: 60px;
 }
 
 .post.post-single .post-entry h2,
@@ -4970,7 +4970,7 @@ div[class*="box-flat"].box-flat-alt hr {
 }
 
 .post-col4 .post-loop:nth-child(4n+1) {
-	clear: left
+	clear: left;
 }
 
 .blog-posts {
