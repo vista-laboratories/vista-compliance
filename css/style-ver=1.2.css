@@ -4969,6 +4969,10 @@ div[class*="box-flat"].box-flat-alt hr {
 	clear: left
 }
 
+.post-col4 .post-loop:nth-child(4n+1) {
+	clear: left
+}
+
 .blog-posts {
 	list-style: none;
 	padding: 0;
