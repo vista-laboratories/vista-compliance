@@ -1742,6 +1742,20 @@ form label.error {
 	margin-top: -9px
 }
 
+/*used for the gma page accordian tabs*/
+.accordion .arrow-down {
+	opacity: 0.8;
+	cursor: pointer;
+	transition: opacity 350ms;
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	height: 18px;
+	width: 18px;
+	margin-top: -9px
+}
+
 .accordion .plus-minus span {
 	position: relative;
 	height: 100%;

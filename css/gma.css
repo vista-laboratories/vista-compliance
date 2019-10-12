@@ -1,0 +1,28 @@
+#sidepic {
+    float: left;
+    width: 35%;
+}
+
+#regdesc {
+    float: right;
+    width: 65%;
+}
+
+@media (max-width: 1000px) {
+
+		#sidepic {
+				float: none;
+				display: block;
+			  margin-left: auto;
+			  margin-right: auto;
+			  width: 50%;
+				margin-bottom: 15px;
+		}
+
+		#regdesc {
+		    float: none;
+		    display: inline;
+		    margin-bottom: 15px;
+		}
+
+}
