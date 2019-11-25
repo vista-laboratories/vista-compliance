@@ -883,6 +883,41 @@ div[class*="wide-"]+div[class*="row-column"]:not([class*="mg"]):not([class*="mt-
 	background: #b12323 /*#ED4B41*/
 }
 
+.thank-you-page {
+	background: url("../image/bg-thank-you.png") no-repeat 50% 0;
+	background-size: cover;
+	min-height: 700px;
+	padding-top: 200px;
+	padding-bottom: 350px;
+	text-align: center
+}
+
+.thank-you-page h1 {
+	font-size: 150px;
+	color: #973c3c /*#1863AB*/
+}
+
+.thank-you-page p {
+	font-size: 24px;
+	font-weight: 300;
+	color: #fff
+}
+
+.thank-you-page p+p {
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 10px
+}
+
+.thank-you-page p+p a {
+	color: #973c3c /*#1863AB*/;
+	box-shadow: 0 1px 0 #973c3c /*#1863AB*/
+}
+
+.thank-you-page p+p a:hover {
+	box-shadow: none
+}
+
 .error-page {
 	background: url("../image/bg-404.jpg") no-repeat 50% 0;
 	background-size: cover;
