@@ -1983,6 +1983,19 @@ form label.error {
 	line-height: 118px
 }
 
+.icon-box.size-xxl.sqaure,
+.icon-box.size-xxl.round,
+.icon-box.size-xxl.circle {
+	border-width: 3px
+}
+
+.icon-box.size-xxl {
+	width: 150px;
+	height: 150px;
+	font-size: 3em;
+	line-height: 148px
+}
+
 .icon-box.size-xl.sqaure,
 .icon-box.size-xl.round,
 .icon-box.size-xl.circle {
