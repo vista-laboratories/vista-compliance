@@ -6618,6 +6618,14 @@ div[class*="box-flat"].box-flat-alt hr {
 	}
 }
 
+/*hide careers apply now on mobile*/
+@media screen and (max-width: 600px) {
+	.apply-now {
+		visibility: hidden
+	}
+}
+
+
 @media only screen and (min-width: 1200px) {
 	.is-transparent .banner-slider {
 		height: 625px
