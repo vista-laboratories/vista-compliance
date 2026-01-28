@@ -1,43 +1,33 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
-var pkg = require('./package.json');
+const gulp = require('gulp');
+    const browserSync = require('browser-sync').create();
 
-// Copy vendor files from /node_modules into /vendor
-// NOTE: requires `npm install` before running!
-gulp.task('copy', function() {
-  gulp.src([
-      'node_modules/bootstrap/dist/**/*',
-      '!**/npm.js',
-      '!**/bootstrap-theme.*',
-      '!**/*.map'
-    ])
-    .pipe(gulp.dest('vendor/bootstrap'))
+function browsersyncServe(cb) {
+        browserSync.init({
+            //server: {
+            //    baseDir: './' // Serves files from the current directory
+            //}
+            server: {
+            baseDir: './',
+            serveStaticOptions: {
+                extensions: ['html']
+            }
+            },
+            // Or, if you have a local server running (e.g., PHP):
+            // proxy: 'yourlocal.dev' 
+        });
+        cb();
+    }
 
-  gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
-    .pipe(gulp.dest('vendor/jquery'))
+function browsersyncReload(cb) {
+        browserSync.reload();
+        cb();
+    }
 
-  gulp.src(['node_modules/popper.js/dist/umd/popper.js', 'node_modules/popper.js/dist/umd/popper.min.js'])
-    .pipe(gulp.dest('vendor/popper'))
-})
+    function watchTask() {
+        gulp.watch('*.html', browsersyncReload); // Watch HTML files for changes
+        gulp.watch('css/*.css', browsersyncReload); // Watch CSS files
+        gulp.watch('js/*.js', browsersyncReload); // Watch JS files
+        // Add more watch paths as needed for your project (e.g., Sass, images)
+    }
 
-// Default task
-gulp.task('default', ['copy']);
-
-// Configure the browserSync task
-gulp.task('browserSync', function() {
-  browserSync.init({
-    server: {
-      baseDir: './',
-      serveStaticOptions: {
-          extensions: ['html']
-      }
-    },
-  })
-})
-
-// Dev task with browserSync
-gulp.task('dev', ['browserSync'], function() {
-  // Reloads the browser whenever HTML or CSS files change
-  gulp.watch('css/*.css', browserSync.reload);
-  gulp.watch('*.html', browserSync.reload);
-});
+exports.default = gulp.series(browsersyncServe, watchTask);
